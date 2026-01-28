@@ -133,15 +133,22 @@ python scripts/replace.py working.pptx content.json final.pptx
 
 **Auto-fix feature**: The script automatically adjusts font sizes and spacing if content overflows placeholders. Write full, detailed content—formatting is optimized automatically.
 
-### Step 6: Insert Icons (Optional)
+### Step 6: Insert Icons (Optional - Currently Disabled)
 
-Insert icons based on design-time specifications:
+**⚠️ ICON INSERTION CURRENTLY DISABLED - SKIP THIS STEP**
+
+Icon insertion requires manual, contextually-accurate icon selection which is time-intensive and error-prone. Until a better icon-matching algorithm is developed, it's recommended to skip icon insertion.
+
+<details>
+<summary>Advanced: Manual Icon Insertion (Click to expand)</summary>
+
+If you absolutely need icons, insert them manually based on strong contextual relevance:
 
 ```bash
 python scripts/insert-icons.py final.pptx icons.json final-with-icons.pptx
 ```
 
-**Design-time approach**: Create an `icons.json` file specifying which icon to use on each slide and where to position it. This gives you full control over icon selection and positioning to avoid text overlap.
+**Design-time approach**: Create an `icons.json` file specifying which icon to use on each slide and where to position it.
 
 **Icons JSON format**:
 ```json
@@ -159,12 +166,14 @@ python scripts/insert-icons.py final.pptx icons.json final-with-icons.pptx
 }
 ```
 
-**CRITICAL - Icon selection rules:**
+**CRITICAL - Icon selection rules** (if using):
 - ✅ ONLY use icons with **STRONG contextual relevance** to slide content
 - ✅ NO icon on cover/title slides (slide-0)
 - ✅ NO icon if no relevant match found - **quality over quantity**
 - ✅ Vary sizes: Small (0.7"), Medium (0.8-0.9"), Large (1.0-1.2") based on importance
 - ❌ Do NOT add icons just to have icons - they must be meaningful
+
+</details>
 
 **Icon color variants**:
 - **Dark themes**: Use `_Air_RGB.svg` (light/white icons) - located in `dark-theme/`
