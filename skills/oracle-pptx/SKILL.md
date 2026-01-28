@@ -71,49 +71,48 @@ skills/oracle-pptx/
 #### 1. Layout Variety is Essential
 
 **CRITICAL - Avoid Monotony**:
-- ❌ **NEVER use only bullet list slides** (slide 12/13) for an entire presentation
+- ❌ **NEVER use only bullet list slides** for an entire presentation
 - ❌ **NEVER use the same layout for 5+ consecutive slides**
 - ✅ **MIX layouts** to create visual interest and professionalism
 
 **Required variety for professional presentations**:
-- Bullet lists (slide 13-15): Max 40% of content slides
-- 2-column layouts (slide 19-22): 20-30% for comparisons
-- 3-column layouts (slide 23-25): 10-15% for categories  
-- Bold statements (slide 18): 5-10% for key metrics
-- Image slides (slide 26-30): 10-20% for visual impact
-- Statistics/data slides (slide 36-40): 5-10% for numbers
+- Bullet lists: Max 40% of content slides
+- 2-column layouts: 20-30% for comparisons
+- 3-column layouts: 10-15% for categories  
+- Bold statements: 5-10% for key metrics
+- Image slides: 10-20% for visual impact
+- Statistics/data slides: 5-10% for numbers
 
 **Example varied sequence (10 content slides)**:
 ```
-slide-13 (bullets), slide-19 (2-col), slide-13 (bullets), 
-slide-18 (bold stat), slide-23 (3-col), slide-26 (image), 
-slide-13 (bullets), slide-36 (stats), slide-19 (2-col), slide-13 (bullets)
+bullets, 2-column, bullets, bold statement, 3-column, 
+image, bullets, statistics, 2-column, bullets
 ```
 
 #### 2. Speaker Slides - CRITICAL Usage Rules
 
-**Speaker slides (1-6) are ONLY for actual speakers/presenters**:
+**Speaker slides are ONLY for actual speakers/presenters**:
 - ✅ Place at **beginning of presentation** (after cover, before content)
 - ✅ Use ONCE to introduce who is presenting
 - ❌ **NEVER use in middle of content sections**
 - ❌ **NEVER use for content slides** - they're for people headshots only
 
-**If presentation has no speakers**: Skip slides 1-6 entirely, start with cover (0) then content.
+**If presentation has no speakers**: Skip speaker slides entirely, start with cover then section dividers.
 
 **Correct usage**:
 ```
-Slide 0: Cover
-Slide 1: Speaker introduction (if needed)
-Slide 7: Section divider - START CONTENT
-Slides 13+: Content slides
+Cover slide
+Speaker introduction (if needed)
+Section divider - START CONTENT
+Content slides (varied layouts)
 ```
 
 **WRONG usage** (DO NOT DO THIS):
 ```
-Slide 0: Cover  
-Slide 13: Content
-Slide 1: ❌ WRONG - speaker slide misplaced in content
-Slide 13: Content
+Cover slide
+Content slide
+Speaker slide ❌ WRONG - misplaced in content
+Content slide
 ```
 
 #### 3. Footer Handling (CRITICAL)
@@ -127,10 +126,10 @@ Slide 13: Content
 **Correct approach** - footer shapes absent from replacement JSON:
 ```json
 {
-  "slide-0": {
+  "slide-N": {
     "shape-0": {"paragraphs": [{"text": "Title"}]},
     "shape-1": {"paragraphs": [{"text": "Subtitle"}]}
-    // NO shape-4 (footer) - let template handle it
+    // NO footer shape - let template handle it automatically
   }
 }
 ```
@@ -138,9 +137,9 @@ Slide 13: Content
 **WRONG approach** - DO NOT DO THIS:
 ```json
 {
-  "slide-0": {
+  "slide-N": {
     "shape-0": {"paragraphs": [{"text": "Title"}]},
-    "shape-4": {"paragraphs": [{"text": "Copyright..."}]} // ❌ WRONG
+    "shape-X": {"paragraphs": [{"text": "Copyright..."}]} // ❌ WRONG - manual footer
   }
 }
 ```
@@ -164,14 +163,14 @@ Slide 13: Content
 **How to reference icons in content**:
 ```json
 {
-  "slide-23": {
+  "slide-N": {
     "shape-0": {"paragraphs": [{"text": "Three Pillars"}]},
     "shape-1": {"paragraphs": [
-      {"text": "☁️ Cloud Icon", "bold": true},
+      {"text": "☁️ Cloud", "bold": true},
       {"text": "Scalable infrastructure"}
     ]},
     "shape-2": {"paragraphs": [
-      {"text": "🔒 Security Icon", "bold": true},
+      {"text": "🔒 Security", "bold": true},
       {"text": "Enterprise protection"}
     ]}
   }
@@ -213,43 +212,50 @@ Note: While icons can't be embedded via JSON, referencing them with emoji/text h
 
 **Match content to appropriate layouts**:
 
-**Bullet Lists** (slides 13-15):
+**Bullet Lists** (Title + Body layouts):
 - Use for: General points, features, benefits, steps
 - Content: 3-5 bullets, 8-12 words each
 - Frequency: Max 40% of content slides
+- Look for: "Title + Body" or "Title + single body" layouts
 
-**2-Column Layouts** (slides 19-22):
+**2-Column Layouts**:
 - Use for: Comparisons, before/after, contrasts, parallel concepts
 - Content: 3-4 items per column with headers
 - Frequency: 20-30% of content slides
 - Example topics: "Traditional vs Modern", "Challenges vs Solutions"
+- Look for: "2-column" or "Title + 2 columns" layouts
 
-**3-Column Layouts** (slides 23-25):
+**3-Column Layouts**:
 - Use for: Three distinct categories, pillars, phases
 - Content: Icon/heading + 2-3 supporting points per column
 - Frequency: 10-15% of content slides
 - Example topics: "Bronze/Silver/Gold tiers", "Build/Deploy/Monitor"
+- Look for: "3-column" or "Title + 3 points" layouts
 
-**Bold Statement** (slide 18):
+**Bold Statement**:
 - Use for: Key metrics, impactful statistics, main takeaways
 - Content: Large number/statement + brief context
 - Frequency: 5-10% of content slides
 - Example: "327% growth" with subtitle explaining context
+- Look for: "Bold statement" or "Impact statement" layouts
 
-**Image + Text** (slides 26-30):
+**Image + Text**:
 - Use for: Visual storytelling, product screenshots, diagrams
 - Content: Title + 2-3 caption points
 - Frequency: 10-20% of content slides
+- Look for: "Image + text" or "Photo + caption" layouts
 
-**Statistics/Data** (slides 36-40):
+**Statistics/Data**:
 - Use for: Numbers, metrics, KPIs, data visualization
 - Content: Multiple data points with context
 - Frequency: 5-10% of content slides
+- Look for: "Statistics" or "Timeline" or "Data" layouts
 
-**Section Dividers** (slides 7-8):
+**Section Dividers**:
 - Use for: Topic transitions, section breaks
 - Content: Title ONLY (no body text)
 - Frequency: Every 4-6 content slides
+- Look for: "Divider" or "Section" layouts
 
 #### 3. Text Sizing to Prevent Overflow
 
@@ -259,8 +265,8 @@ Note: While icons can't be embedded via JSON, referencing them with emoji/text h
 - Only reduce font size if validation shows overflow
 
 **Bullet point length limits**:
-- Single-column (slide 12): Max 60 characters per bullet
-- Two-column (slide 24): Max 35 characters per bullet
+- Single-column layouts: Max 60 characters per bullet
+- Two-column layouts: Max 35 characters per bullet per column
 - Always aim for 3-4 bullets, not 5+
 
 **Common overflow fixes**:
@@ -289,22 +295,22 @@ Note: While icons can't be embedded via JSON, referencing them with emoji/text h
 **Use this proven structure for 20-30 slide presentations**:
 
 ```
-Slide 1: Cover
-Slides 2-4: Executive summary/overview (3-4 bullets each)
+Cover
+Executive summary/overview (3-4 slides with bullets)
 
-Slide 5: DIVIDER - Topic Area 1
-Slides 6-10: Deep content (mix of bullets and 2-column)
+DIVIDER - Topic Area 1
+Deep content (4-6 slides: mix bullets, 2-column, stats)
 
-Slide 11: DIVIDER - Topic Area 2  
-Slides 12-16: Deep content (mix of bullets and 2-column)
+DIVIDER - Topic Area 2  
+Deep content (4-6 slides: mix bullets, 3-column, images)
 
-Slide 17: DIVIDER - Topic Area 3
-Slides 18-22: Deep content (mix of bullets and 2-column)
+DIVIDER - Topic Area 3
+Deep content (4-6 slides: mix bullets, 2-column, bold statements)
 
-Slide 23: DIVIDER - Conclusion/Value
-Slides 24-26: Use cases, ROI, results (detailed)
+DIVIDER - Conclusion/Value
+Final content (2-4 slides: use cases, ROI, results)
 
-Slide 27: Thank you
+Thank you
 ```
 
 **Divider usage**:
@@ -315,18 +321,18 @@ Slide 27: Thank you
 
 #### 6. 2-Column Layout Best Practices
 
-**When to use 2-column layouts (slide 24)**:
+**When to use 2-column layouts**:
 - Comparisons: "Before/After", "Option A/Option B"
 - Contrasts: "Traditional/Modern", "Manual/Automated"
 - Parallel concepts: "Developer View/DBA View"
 - Complementary topics: "Features/Benefits"
 
-**2-column content structure**:
+**2-column content structure** (examine inventory for actual shape numbers):
 ```json
 {
-  "slide-X": {
+  "slide-N": {
     "shape-0": {"paragraphs": [{"text": "Comparison Title", "bold": true}]},
-    "shape-2": {
+    "shape-A": {
       "paragraphs": [
         {"text": "Left Column Header", "bold": true},
         {"text": "Point 1", "bullet": true, "level": 0},
@@ -334,7 +340,7 @@ Slide 27: Thank you
         {"text": "Point 3", "bullet": true, "level": 0}
       ]
     },
-    "shape-3": {
+    "shape-B": {
       "paragraphs": [
         {"text": "Right Column Header", "bold": true},
         {"text": "Point 1", "bullet": true, "level": 0},
@@ -354,47 +360,47 @@ Slide 27: Thank you
 
 **❌ BORING - All bullets**:
 ```
-Slide 1: Title + 3 bullets
-Slide 2: Title + 3 bullets  
-Slide 3: Title + 3 bullets
-Slide 4: Title + 3 bullets
+Bullets slide
+Bullets slide
+Bullets slide
+Bullets slide
 ```
 
 **✅ PROFESSIONAL - Varied layouts**:
 ```
-Slide 1: Title + 4 bullets (overview)
-Slide 2: 2-column comparison (before/after)
-Slide 3: Bold statement (key metric)
-Slide 4: 3-column (three categories)
-Slide 5: Title + 3 bullets (details)
-Slide 6: Image + caption (visual proof)
+Bullets (overview)
+2-column comparison (before/after)
+Bold statement (key metric)
+3-column (three categories)
+Bullets (details)
+Image + caption (visual proof)
 ```
 
 **Content variety by slide type**:
 
 **For process/workflow topics**:
-- Slide 13-15: Overview bullets
-- Slide 23-25: 3-column for 3 phases (Plan/Build/Run)
-- Slide 18: Bold metric showing outcome
-- Slide 26: Diagram/screenshot of process
+- Overview bullets
+- 3-column for 3 phases (Plan/Build/Run)
+- Bold metric showing outcome
+- Diagram/screenshot of process
 
 **For comparison topics**:
-- Slide 13: Context bullets
-- Slide 19-22: 2-column side-by-side comparison
-- Slide 18: Bold statement of key difference
-- Slide 13: Detailed implications
+- Context bullets
+- 2-column side-by-side comparison
+- Bold statement of key difference
+- Detailed implications bullets
 
 **For data-driven topics**:
-- Slide 13: Setup/context bullets
-- Slide 36-40: Statistics slide with multiple metrics
-- Slide 18: Bold callout of most important number
-- Slide 26: Chart/graph visualization
+- Setup/context bullets
+- Statistics slide with multiple metrics
+- Bold callout of most important number
+- Chart/graph visualization
 
 **For feature/benefit topics**:
-- Slide 23-25: 3-column for features (with icon references)
-- Slide 19-22: 2-column features vs benefits
-- Slide 18: Bold statement of main value
-- Slide 26: Product screenshot
+- 3-column for features (with icon references)
+- 2-column features vs benefits
+- Bold statement of main value
+- Product screenshot
 
 **Never create "empty" slides**:
 - Every slide must have meaningful content in ALL intended placeholders
@@ -404,39 +410,38 @@ Slide 6: Image + caption (visual proof)
 
 #### 8. Quick Reference: Layout Sequence Patterns
 
-**For a professional 25-slide presentation with variety**:
-```bash
-# EXCELLENT pattern: Cover, varied layouts, visual interest
-rearrange.py template.pptx output.pptx 0,13,7,13,19,23,18,13,26,7,13,19,36,13,18,7,23,13,19,26,13,18,7,13,11
+**For a professional ~25-slide presentation with variety**:
 
-# Breakdown:
-# 0: Cover
-# 13: Overview bullets
-# 7: Section 1 divider
-# 13,19,23,18: Content variety (bullets, 2-col, 3-col, bold stat)
-# 13,26: More content (bullets, image)
-# 7: Section 2 divider
-# 13,19,36,13,18: Content variety (bullets, 2-col, data, bullets, stat)
-# 7: Section 3 divider
-# 23,13,19,26: Content variety (3-col, bullets, 2-col, image)
-# 13,18: Final content (bullets, stat)
-# 7: Conclusion divider
-# 13: Summary bullets
-# 11: Thank you
+**EXCELLENT pattern** - varied layouts, visual interest:
+```
+Cover
+Overview bullets
+Section 1 divider
+Content variety: bullets, 2-column, 3-column, bold statement
+More content: bullets, image
+Section 2 divider  
+Content variety: bullets, 2-column, statistics, bullets, bold
+Section 3 divider
+Content variety: 3-column, bullets, 2-column, image
+Final content: bullets, bold statement
+Conclusion divider
+Summary bullets
+Thank you
 ```
 
 **BAD patterns to avoid**:
-```bash
-# DON'T: All bullets (boring)
-rearrange.py template.pptx output.pptx 0,13,13,13,13,13,13,13,11
-
-# DON'T: Too many dividers, thin content
-rearrange.py template.pptx output.pptx 0,7,13,7,13,7,13,7,13,11
-
-# DON'T: Speaker slides in content (WRONG)
-rearrange.py template.pptx output.pptx 0,13,7,13,1,13,7,13,11
-#                                              ↑ speaker slide misplaced
 ```
+❌ All bullets (boring, monotonous)
+❌ Too many dividers with thin content between
+❌ Speaker slides misplaced in content sections
+❌ Same layout repeated 5+ times consecutively
+```
+
+**General guidance for rearrange.py**:
+- Reference template inventory JSON to find slide numbers for each layout type
+- Example: If "Title + Body" is slide 15 in your template, use 15 for bullet lists
+- If "2-column" is slide 20, use 20 for comparisons
+- Check layout-mapping.md or inventory JSON for your specific template
 
 ## Oracle Brand Guidelines
 
@@ -530,19 +535,19 @@ Replace `[YEAR]` with the current year.
 
 ### Dark Template (51 slides, 0-indexed: 0-50)
 
-**Key layouts** (refer to `resources/templates/dark-inventory.json` for complete list):
-- Slide 0: Master brand/OCI/Database cover
-- Slides 1-6: Speaker slides (1, 2, 3, 4, 6 speakers, profile)
-- Slides 7-12: Section dividers, thank you, impact
-- Slides 13-50: Content layouts (title+body, 2/3-column, quotes, stories, etc.)
+**Key layout categories** (refer to `resources/templates/dark-inventory.json` for exact slide numbers):
+- Cover slide: Master brand/OCI/Database
+- Speaker slides: For 1-6 speakers, speaker profile
+- Themed slides: Section dividers, thank you, impact statements
+- Content slides: Title+body, 2/3-column, quotes, stories, statistics, images
 
 ### Light Template (55 slides, 0-indexed: 0-54)
 
-**Key layouts** (refer to `resources/templates/light-inventory.json` for complete list):
-- Slide 0: Master brand/OCI/Database cover
-- Slides 1-6: Speaker slides (1, 2, 3, 4, 6 speakers, profile)
-- Slides 7-14: Section dividers, thank you, impact
-- Slides 15-54: Content layouts (title+body, 2/3-column, quotes, stories, etc.)
+**Key layout categories** (refer to `resources/templates/light-inventory.json` for exact slide numbers):
+- Cover slide: Master brand/OCI/Database
+- Speaker slides: For 1-6 speakers, speaker profile
+- Themed slides: Section dividers, thank you, impact statements
+- Content slides: Title+body, 2/3-column, quotes, stories, statistics, images
 
 **Note**: Slides are 0-indexed. First slide = 0, last slide = count-1.
 
@@ -559,20 +564,20 @@ Replace `[YEAR]` with the current year.
    - Content types: title, sections, bullet points, images, quotes, speakers, statistics
    - Determine appropriate layouts for each content piece
 
-3. **Create presentation outline** with template mapping:
+3. **Create presentation outline** with layout mapping:
    ```markdown
    # Presentation Outline
    
    ## Slide 1: Cover
-   - Template: slide-0 (OCI/Database cover)
+   - Layout type: Cover (check inventory for slide number)
    - Content: Presentation title, subtitle, presenter info, date
    
-   ## Slide 2: Agenda
-   - Template: slide-12 (Title + single body - ALWAYS use for bullets)
-   - Content: 3-5 bullet points (8-15 words each)
+   ## Slide 2: Agenda  
+   - Layout type: Title + Body (bullet list)
+   - Content: 3-5 bullet points (8-12 words each)
    
    ## Slide 3: Key Message
-   - Template: slide-18 (Bold statement - for stats/metrics)
+   - Layout type: Bold statement (for key metrics)
    - Content: Large metric + supporting context
    
    ...
@@ -583,22 +588,25 @@ Replace `[YEAR]` with the current year.
 Use `scripts/rearrange.py` to create a working presentation with slides in the correct order:
 
 ```bash
-# Example: Create 5-slide presentation from Dark template
-python scripts/rearrange.py resources/templates/dark-template.pptx working.pptx 0,12,12,18,11
+# Step 1: Check inventory JSON to find slide numbers for each layout type
+# Example layouts you might find:
+# - Slide X = Cover
+# - Slide Y = Title + Body (for bullet lists)
+# - Slide Z = Bold statement (for stats/metrics)
+# - Slide W = Thank you
 
-# Slide indices:
-# 0 = Cover
-# 12 = Title+single body (RECOMMENDED - use for all bullet lists)
-# 18 = Bold statement (for stats/metrics)
-# 11 = Thank you
+# Step 2: Create sequence using those slide numbers
+python scripts/rearrange.py resources/templates/dark-template.pptx working.pptx X,Y,Y,Z,W
+
+# This creates: Cover, 2 bullet slides, 1 bold statement, Thank you
 ```
 
-**Critical matching rules**:
-- **Bullet lists**: ALWAYS use slide 12 (single body, 7.0" wide)
-- **NEVER use slide 13**: Multi-box layout causes empty placeholders and cutoff
-- **2-column content**: Use slide 24 (4.9" columns, no cutoff)
-- **Dividers**: Use slide 2 (title only, abstract background)
-- **Stats/metrics**: Use slide 18 (centered, large text)
+**Critical workflow**:
+1. **First**: Examine `resources/templates/dark-inventory.json` or `light-inventory.json`
+2. **Identify**: Find slide numbers for each layout type you need
+3. **Match content to layouts**: Bullet lists, 2-column, 3-column, dividers, stats, etc.
+4. **Avoid problematic layouts**: Some templates have "agenda" or "multi-box" layouts with tiny placeholders - skip these
+5. **Test**: Use inventory to find layouts with appropriately sized text placeholders
 
 **Important**: 
 - Slide indices are 0-based
@@ -617,8 +625,8 @@ python scripts/inventory.py working.pptx text-inventory.json
 **Inventory structure**:
 ```json
 {
-  "slide-0": {
-    "shape-0": {
+  "slide-N": {
+    "shape-M": {
       "placeholder_type": "TITLE",
       "left": 1.5,
       "top": 2.0,
@@ -626,7 +634,7 @@ python scripts/inventory.py working.pptx text-inventory.json
       "height": 1.2,
       "paragraphs": [
         {
-          "text": "Presentation title text",
+          "text": "Example title text from template",
           "bold": true,
           "font_size": 28.0,
           "alignment": "CENTER"
@@ -756,40 +764,40 @@ python scripts/thumbnail.py output.pptx thumbnails --cols 4
 
 ### Matching Content to Layouts
 
-**Use template inventories** (`resources/templates/dark-inventory.json` or `light-inventory.json`) to find appropriate layouts.
+**CRITICAL**: Always examine template inventories first (`resources/templates/dark-inventory.json` or `light-inventory.json`) to find slide numbers for each layout type.
 
-**Decision tree**:
+**Decision tree by layout type**:
 
-1. **Cover/Title slide**: Use slide 0 (OCI/Database themed cover)
+1. **Cover/Title slide**: Look for "Master brand" or "Cover" layout (typically slide 0)
 
-2. **Speaker slides**:
-   - 1 speaker: slide 1
-   - 2 speakers: slide 3
-   - 3 speakers: slide 4
-   - 4 speakers: slide 5
-   - 6 speakers: slide 6
-   - Profile (experience/expertise/location): slide 2
+2. **Speaker slides** (if presenting with speakers):
+   - Look for "Speaker" or "Speakers-virtual" layouts
+   - Check template for 1-speaker, 2-speaker, 3-speaker, 4-speaker, 6-speaker variations
+   - Speaker profile layout for detailed bios
 
-3. **Section dividers**: Slides 7-8 (dark/light variations)
+3. **Section dividers**: Look for "Divider" or "Section" layouts (title-only slides)
 
-4. **Content slides**:
-   - Single topic with bullets: slide 12 (Title + single body placeholder - RECOMMENDED)
-   - **AVOID slide 13**: Multi-box layout (leaves empty placeholders)
-   - Two distinct items/concepts: slide 24 (proper 2-column layout)
-   - Key message/impact: slide 18 (Bold statement)
-   - Quote with attribution: Quote layout slides
-   - Story with image: Story slides with photo layouts
-   - Statistics/data: Stats layouts
+4. **Content slides** (examine inventory carefully):
+   - **Bullet lists**: Find "Title + Body" or "Title + single body" layouts
+     - Check placeholder dimensions - need width >6" for comfortable bullets
+     - **AVOID**: "Agenda" or "Multi-box" layouts with many tiny placeholders
+   - **2-column**: Find layouts with 2 body placeholders side-by-side
+     - Check width - need ~4-5" per column minimum
+   - **3-column**: Find layouts with 3 body placeholders
+   - **Bold statements**: Find "Bold statement" or "Impact" layouts (large centered text)
+   - **Quotes**: Find "Quote" layouts with attribution
+   - **Images**: Find "Photo", "Image + text", or "Story" layouts
+   - **Statistics**: Find "Statistics", "Timeline", or "Data" layouts
 
-5. **Closing**: Slide 11 (Thank you)
+5. **Closing**: Find "Thank you" layout
 
-**Critical matching rules**:
-- **Use slide 12 for bullet lists**: Single large body placeholder (7.0" x 0.8"), fits ~3 bullets
-- **AVOID slide 13**: Multi-box layout with 5 small boxes - leaves empty placeholders
-- **Use slide 24 for 2-column**: Proper 2-column layout with 2 body placeholders (5.4" x 1.4" each)
-- **Match placeholder count to content**: Fill ALL placeholders - no empties
-- **Limit bullets per slide**: Max 3-4 bullets per placeholder to avoid overflow
-- **Break into multiple slides**: If you have too much content, use multiple slide-12 layouts
+**Critical matching workflow**:
+1. **Open inventory JSON** for your template
+2. **Search by layout type** (not by hardcoded number)
+3. **Check placeholder dimensions** - avoid layouts with tiny boxes
+4. **Match content to appropriate sizes** - bullets need wide placeholders
+5. **Fill ALL placeholders** - empty shapes look unprofessional
+6. **Test with inventory.py** - verify your choices work
 
 ## Icons
 
