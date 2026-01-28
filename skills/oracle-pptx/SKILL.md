@@ -159,9 +159,7 @@ python scripts/replace.py working.pptx content.json final.pptx
 - ❌ Same layout repeated 5+ times
 - ❌ Speaker slides in middle of content
 - ❌ Timeline/statistics slides without data
-- ❌ Empty placeholder
-
-s remaining
+- ❌ Empty placeholders
 
 **PREFER varied layouts:**
 - ✅ Mix: bullets, 2-column, 3-column, bold statements
