@@ -116,7 +116,9 @@ Build replacement JSON matching the inventory structure:
 - ❌ Do NOT populate footer shapes - footers are automatic
 - ❌ Do NOT use timeline/statistics layouts without actual data
 - ❌ Do NOT use emoji icons - use professional icons from library
-- ❌ Do NOT insert icons as post-processing - specify them at design time with proper positioning to avoid text overlap
+- ❌ Do NOT insert icons as post-processing - specify them at design time with proper positioning
+- ❌ Do NOT use dark icons (_Bark_) on dark themes - use light icons (_Air_) for visibility
+- ❌ Do NOT place icons over text - use margin positions (left: 0.3 or 11.0) to avoid overlap
 
 ### Step 5: Apply Content
 
@@ -142,20 +144,26 @@ python scripts/insert-icons.py final.pptx icons.json final-with-icons.pptx
 ```json
 {
   "slide-1": {
-    "icon": "RMIL_Database-and-AI_GenAI-Agents_Bark_RGB.svg",
-    "position": {"left": 10.5, "top": 1.5, "width": 1.2, "height": 1.2}
+    "icon": "RMIL_Database-and-AI_GenAI-Agents_Air_RGB.svg",
+    "position": {"left": 11.0, "top": 1.2, "width": 1.0, "height": 1.0}
   },
   "slide-2": {
-    "icon": "RMIL_Technology_AI-Database_Bark_RGB.svg",
-    "position": {"left": 0.5, "top": 1.2, "width": 1.0, "height": 1.0}
+    "icon": "RMIL_Technology_AI-Database_Air_RGB.svg",
+    "position": {"left": 0.3, "top": 2.5, "width": 0.8, "height": 0.8}
   }
 }
 ```
 
-**Position guide**: Use inches for coordinates. Common positions:
-- Top-right corner: `{"left": 10.5, "top": 1.5}`
-- Top-left corner: `{"left": 0.5, "top": 1.2}`
-- Adjust text content in `replacement.json` to avoid icon overlap
+**Icon color variants**:
+- **Dark themes**: Use `_Air_RGB.svg` (light/white icons) - located in `light-theme/`
+- **Light themes**: Use `_Bark_RGB.svg` (dark icons) - located in `dark-theme/`
+- Script auto-detects theme and switches variants if needed
+
+**Position guide**: Use inches for coordinates.
+- **Top-right (no text overlap)**: `{"left": 11.0, "top": 1.2}` - Outside slide content area
+- **Left sidebar (below title)**: `{"left": 0.3, "top": 2.5}` - Below slide title
+- **Icon size**: 0.8-1.0 inches (professional scale)
+- Icons automatically placed behind text (z-order controlled)
 
 ---
 
