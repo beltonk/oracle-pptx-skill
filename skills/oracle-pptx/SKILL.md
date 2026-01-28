@@ -127,6 +127,16 @@ python scripts/replace.py working.pptx content.json final.pptx
 
 **Auto-fix feature**: The script automatically adjusts font sizes and spacing if content overflows placeholders. Write full, detailed content—formatting is optimized automatically.
 
+### Step 6: Insert Icons (Optional)
+
+Automatically insert relevant icons based on content keywords:
+
+```bash
+python scripts/insert-icons.py final.pptx final-with-icons.pptx
+```
+
+**Smart icon matching**: Analyzes slide content for keywords (ai, agent, finance, customer, etc.) and automatically inserts relevant icons from the library. Converts SVG to PNG for PowerPoint compatibility.
+
 ---
 
 ## Critical Rules
@@ -235,7 +245,10 @@ python scripts/replace.py working.pptx content.json final.pptx
 python scripts/rearrange.py --help   # Build slide structure
 python scripts/inventory.py --help   # Extract placeholders
 python scripts/replace.py --help     # Apply content
+python scripts/insert-icons.py --help # Insert icons automatically
 ```
+
+**New**: `insert-icons.py` analyzes content and inserts relevant icons from the 540-icon library.
 
 ### Template Inventories
 
