@@ -122,13 +122,15 @@ python scripts/replace.py working.pptx content.json final.pptx
 
 **Footers are AUTOMATIC - never add manually:**
 
+**Year Token:** Template footers contain `{YEAR}` tokens that are automatically replaced with the current year (following Claude agent skills best practices for time-sensitive content).
+
 ✅ **CORRECT** - Leave footer shapes empty:
 ```json
 {
   "slide-N": {
     "shape-0": {"paragraphs": [{"text": "Title"}]},
     "shape-1": {"paragraphs": [{"text": "Content"}]}
-    // Footer shapes NOT included - template handles automatically
+    // Footer shapes NOT included - template handles automatically with current year
   }
 }
 ```
@@ -138,7 +140,7 @@ python scripts/replace.py working.pptx content.json final.pptx
 {
   "slide-N": {
     "shape-0": {"paragraphs": [{"text": "Title"}]},
-    "shape-X": {"paragraphs": [{"text": "Copyright..."}]}  // ❌ NEVER DO THIS
+    "shape-X": {"paragraphs": [{"text": "Copyright © 2026..."}]}  // ❌ HARDCODED YEAR
   }
 }
 ```

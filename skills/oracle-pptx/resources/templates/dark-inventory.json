@@ -22,7 +22,8 @@
       "default_font_size": 24.0,
       "paragraphs": [
         {
-          "text": "Subhead goes here on one line"
+          "text": "Subhead goes here on one line",
+          "color": "FFFFFF"
         }
       ]
     },
@@ -74,7 +75,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -132,7 +134,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -189,7 +192,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -274,7 +278,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -384,7 +389,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -541,7 +547,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -758,7 +765,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -1099,7 +1107,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -1156,7 +1165,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -1239,7 +1249,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -1348,7 +1359,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -1483,7 +1495,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -1511,7 +1524,8 @@
       "default_font_size": 20.0,
       "paragraphs": [
         {
-          "text": "Subhead goes here."
+          "text": "Subhead goes here.",
+          "color": "FFFFFF"
         }
       ]
     },
@@ -1531,7 +1545,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -1719,7 +1734,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -1806,7 +1822,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -1850,7 +1867,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -1919,7 +1937,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -2013,7 +2032,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -2133,7 +2153,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -2243,7 +2264,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -2349,7 +2371,8 @@
       "default_font_size": 20.0,
       "paragraphs": [
         {
-          "text": "Subhead goes here."
+          "text": "Subhead goes here.",
+          "color": "FFFFFF"
         }
       ]
     },
@@ -2380,7 +2403,8 @@
       "default_font_size": 20.0,
       "paragraphs": [
         {
-          "text": "Subhead goes here."
+          "text": "Subhead goes here.",
+          "color": "FFFFFF"
         }
       ]
     },
@@ -2411,7 +2435,8 @@
       "default_font_size": 20.0,
       "paragraphs": [
         {
-          "text": "Subhead goes here."
+          "text": "Subhead goes here.",
+          "color": "FFFFFF"
         }
       ]
     },
@@ -2447,7 +2472,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -2549,7 +2575,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -2576,7 +2603,8 @@
       "default_font_size": 16.0,
       "paragraphs": [
         {
-          "text": "Subhead goes here"
+          "text": "Subhead goes here",
+          "color": "FFFFFF"
         }
       ]
     },
@@ -2602,7 +2630,8 @@
       "default_font_size": 16.0,
       "paragraphs": [
         {
-          "text": "Subhead goes here"
+          "text": "Subhead goes here",
+          "color": "FFFFFF"
         }
       ]
     },
@@ -2628,7 +2657,8 @@
       "default_font_size": 16.0,
       "paragraphs": [
         {
-          "text": "Subhead goes here"
+          "text": "Subhead goes here",
+          "color": "FFFFFF"
         }
       ]
     },
@@ -2658,7 +2688,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -2685,7 +2716,8 @@
       "default_font_size": 16.0,
       "paragraphs": [
         {
-          "text": "Subhead goes here"
+          "text": "Subhead goes here",
+          "color": "FFFFFF"
         }
       ]
     },
@@ -2711,7 +2743,8 @@
       "default_font_size": 16.0,
       "paragraphs": [
         {
-          "text": "Subhead goes here"
+          "text": "Subhead goes here",
+          "color": "FFFFFF"
         }
       ]
     },
@@ -2737,7 +2770,8 @@
       "default_font_size": 16.0,
       "paragraphs": [
         {
-          "text": "Subhead goes here"
+          "text": "Subhead goes here",
+          "color": "FFFFFF"
         }
       ]
     },
@@ -2763,7 +2797,8 @@
       "default_font_size": 16.0,
       "paragraphs": [
         {
-          "text": "Subhead goes here"
+          "text": "Subhead goes here",
+          "color": "FFFFFF"
         }
       ]
     },
@@ -2793,7 +2828,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -2916,7 +2952,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -3061,7 +3098,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -3118,7 +3156,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -3149,7 +3188,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -3485,7 +3525,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -3598,7 +3639,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     },
@@ -3652,7 +3694,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -3722,7 +3765,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -3806,7 +3850,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -3854,7 +3899,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -3910,7 +3956,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -3966,7 +4013,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -4234,7 +4282,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     },
@@ -4362,7 +4411,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     },
@@ -4529,7 +4579,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     },
@@ -4659,7 +4710,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -4690,7 +4742,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -4722,7 +4775,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -4753,7 +4807,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -4797,7 +4852,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -4828,7 +4884,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -4884,7 +4941,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -4930,7 +4988,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -5037,7 +5096,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -5056,7 +5116,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }
@@ -5075,7 +5136,8 @@
       },
       "paragraphs": [
         {
-          "text": "Copyright © 2026, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted"
+          "text": "Copyright © {YEAR}, Oracle and/or its affiliates |  Confidential: Internal/Restricted/Highly Restricted",
+          "color": "FFFFFF"
         }
       ]
     }

@@ -411,6 +411,27 @@ def apply_replacements(pptx_file: str, json_file: str, output_file: str):
             f"Found {len(overflow_errors)} overflow error(s) and {len(warnings)} warning(s)"
         )
 
+    # Post-process: Replace time-sensitive tokens
+    # {YEAR} -> current year (following Claude agent skills best practices)
+    from datetime import datetime
+    current_year = str(datetime.now().year)
+    token_replacements = 0
+    
+    for slide in prs.slides:
+        for shape in slide.shapes:
+            if hasattr(shape, 'text_frame'):
+                try:
+                    for paragraph in shape.text_frame.paragraphs:
+                        for run in paragraph.runs:
+                            if "{YEAR}" in run.text:
+                                run.text = run.text.replace("{YEAR}", current_year)
+                                token_replacements += 1
+                except:
+                    pass  # Skip shapes that don't support text operations
+    
+    if token_replacements > 0:
+        print(f"  - Replaced {token_replacements} {{YEAR}} token(s) with {current_year}")
+
     # Save the presentation
     prs.save(output_file)
 
