@@ -2,189 +2,49 @@
 
 **AI agent skill for creating Oracle-compliant PowerPoint presentations**
 
-Universal agent skill that enables AI assistants (Claude, ChatGPT, Cursor, etc.) to create professional PowerPoint presentations that strictly follow Oracle's brand guidelines, templates, and accessibility requirements.
+Universal agent skill that enables AI assistants to create professional PowerPoint presentations following Oracle's brand guidelines, templates, and accessibility requirements.
 
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Skills Format](https://img.shields.io/badge/format-Claude%20Agent%20Skills-blue.svg)](https://platform.claude.com/docs/en/agents-and-tools/agent-skills)
 [![Compatible](https://img.shields.io/badge/compatible-openskills-green.svg)](https://github.com/numman-ali/openskills)
 
-**Size**: 32MB | **Files**: 1,179 | **Self-contained**: No external dependencies
+**Self-contained**: 32MB | 1,179 files | No external dependencies
 
 ---
 
 ## 🚀 Installation
 
-### Recommended: Install with openskills
-
-[openskills](https://github.com/numman-ali/openskills) is the universal skills loader for AI coding agents. It works with Claude Code, Cursor, Windsurf, Aider, and any agent that can read `AGENTS.md`.
-
-**One command to install globally for all agents**:
+Install the skill globally with [openskills](https://github.com/numman-ali/openskills):
 
 ```bash
+# Install the skill
 npx openskills install beltonk/oracle-pptx-skill --global --universal
+
+# Sync to update AGENTS.md
+npx openskills sync
 ```
 
-**What this does**:
-- ✅ Installs to `~/.agent/skills/` (works with all AI agents)
-- ✅ Updates your `AGENTS.md` automatically
-- ✅ Enables progressive disclosure (loads skill only when needed)
-- ✅ No manual copying or configuration required
-
-**Use the skill**:
-
-Once installed, AI agents automatically discover and use the skill when you request Oracle presentations:
-
-```
-Create an Oracle presentation about cloud migration with 5 slides using the Dark theme
-```
+**That's it!** The skill is now available to all your AI agents (Claude Code, Cursor, Windsurf, Aider, etc.).
 
 **Verify installation**:
 
 ```bash
 npx openskills list
 # Should show: oracle-pptx
-
-npx openskills read oracle-pptx
-# Should display the skill documentation
 ```
 
 **Update the skill**:
 
 ```bash
 npx openskills update oracle-pptx
+npx openskills sync
 ```
 
 ---
 
-### Alternative: Manual Installation Methods
+## 🎯 How to Use
 
-<details>
-<summary><b>Claude.ai - Upload as custom skill</b></summary>
-
-1. **Clone and package**:
-   ```bash
-   git clone https://github.com/beltonk/oracle-pptx-skill.git
-   cd oracle-pptx-skill/skills
-   zip -r oracle-pptx.zip oracle-pptx/
-   ```
-
-2. **Upload to Claude.ai**:
-   - Go to Settings > Features > Custom Skills
-   - Click "Upload Skill"
-   - Select `oracle-pptx.zip`
-   - Wait for upload to complete
-
-3. **Use the skill**:
-   ```
-   Create an Oracle presentation about cloud migration with 5 slides
-   ```
-</details>
-
-<details>
-<summary><b>Claude Code / Cursor - Manual copy</b></summary>
-
-```bash
-# Clone the repository
-git clone https://github.com/beltonk/oracle-pptx-skill.git
-
-# For Cursor (global)
-cp -r oracle-pptx-skill/skills/oracle-pptx ~/.cursor/skills/
-
-# For Cursor (project-specific)
-cp -r oracle-pptx-skill/skills/oracle-pptx .cursor/skills/
-
-# For Claude Code (global)
-cp -r oracle-pptx-skill/skills/oracle-pptx ~/.claude/skills/
-
-# For Claude Code (project-specific)
-cp -r oracle-pptx-skill/skills/oracle-pptx .claude/skills/
-```
-
-The AI agent will automatically discover and use the skill when you request Oracle presentations.
-</details>
-
-<details>
-<summary><b>Claude API - Upload via API</b></summary>
-
-```bash
-# Clone and navigate to the repository
-git clone https://github.com/beltonk/oracle-pptx-skill.git
-cd oracle-pptx-skill/skills/oracle-pptx
-
-# Create a tarball
-tar -czf oracle-pptx.tar.gz .
-
-# Upload using curl (replace YOUR_API_KEY)
-curl -X POST https://api.anthropic.com/v1/skills \
-  -H "x-api-key: YOUR_API_KEY" \
-  -H "anthropic-version: 2024-10-22" \
-  -H "anthropic-beta: skills-2025-10-02" \
-  -F "file=@oracle-pptx.tar.gz" \
-  -F "name=oracle-pptx"
-
-# Or use the Skills API client (Python example)
-python3 <<EOF
-from anthropic import Anthropic
-
-client = Anthropic(api_key="YOUR_API_KEY")
-
-with open("oracle-pptx.tar.gz", "rb") as f:
-    skill = client.skills.create(
-        file=f,
-        name="oracle-pptx"
-    )
-
-print(f"Skill uploaded: {skill.id}")
-EOF
-```
-</details>
-
----
-
-### Prerequisites for Local Script Usage
-
-If you want to run the Python scripts directly (optional):
-
-```bash
-# Install Python dependencies
-pip3 install "markitdown[pptx]" defusedxml python-pptx
-
-# Install Oracle fonts (required for PowerPoint editing)
-# Navigate to: skills/oracle-pptx/resources/fonts/OracleSans/
-# Then install all .otf files on your system:
-# - macOS: Double-click each .otf file and click "Install Font"
-# - Windows: Right-click each .otf file and select "Install"
-# - Linux: Copy to ~/.fonts/ and run fc-cache -f -v
-```
-
----
-
-## 📦 What's Included
-
-The `skills/oracle-pptx/` directory is a **self-contained agent skill** with everything needed:
-
-- **Templates**: Dark (51 slides) and Light (55 slides) Oracle FY26 templates with pre-generated inventories
-- **Brand Guidelines**: Complete Oracle PowerPoint design standards (181 lines)
-- **Fonts**: Oracle Sans Tab font family (37 .otf files)
-- **Icons**: 1,078 SVG icons optimized for dark and light themes
-- **Scripts**: Python utilities for PPTX manipulation (inventory, rearrange, replace, thumbnail)
-- **OOXML Tools**: XML manipulation utilities (unpack, pack, validate)
-- **Documentation**: Comprehensive guides, examples, and troubleshooting
-- **Examples**: Step-by-step workflow tutorials
-
-**Self-contained design**:
-- ✅ All scripts bundled (no external references)
-- ✅ All resources copied (fonts, icons, templates)
-- ✅ All guidelines included (no Oracle VPN required)
-- ✅ Portable: Copy/move without breaking references
-
----
-
-## 🎯 Quick Start
-
-### Using with AI Agents
-
-Once installed via openskills (or any alternative method), simply ask:
+Once installed, simply ask your AI agent to create Oracle presentations:
 
 ```
 Create an Oracle presentation with the following structure:
@@ -193,313 +53,229 @@ Create an Oracle presentation with the following structure:
 - Content slide: Migration timeline
 - Thank you slide
 
-Use the Dark theme.
+Use the Dark theme and follow Oracle brand guidelines.
 ```
 
 The AI agent will:
-1. Read the skill documentation
+1. Load the oracle-pptx skill automatically
 2. Select appropriate template slides
 3. Follow Oracle brand guidelines
-4. Create the presentation using the scripts
-5. Validate brand compliance
+4. Create a compliant presentation
 
-### Creating a Presentation Manually (Scripts)
+---
 
-```bash
-cd skills/oracle-pptx
+## 📦 What's Included
 
-# 1. Rearrange template slides (Dark theme: cover, content, closing)
-python3 scripts/rearrange.py \
-  resources/templates/dark-template.pptx \
-  "0,13,11" \
-  output.pptx
+This skill provides everything needed to create Oracle-branded presentations:
 
-# 2. Generate inventory of text placeholders
-python3 scripts/inventory.py output.pptx inventory.json
+### Templates
+- **Dark theme** (51 slides): For large live events, formal presentations
+- **Light theme** (55 slides): For virtual events, documentation, internal use
 
-# 3. Create replacement JSON with your content
-# See examples/basic-presentation/README.md for JSON structure
+### Resources
+- **Brand guidelines**: Complete Oracle PowerPoint design standards
+- **Fonts**: Oracle Sans Tab font family (37 font files)
+- **Icons**: 1,078 SVG icons optimized for dark and light themes
+- **Scripts**: Python utilities for PPTX manipulation
+- **Examples**: Step-by-step workflow tutorials
 
-# 4. Populate slides with content
-python3 scripts/replace.py \
-  output.pptx \
-  replacement.json \
-  final-presentation.pptx
-
-# 5. Validate OOXML structure
-python3 ooxml/scripts/validate.py final-presentation.pptx
-
-# 6. Open and review in PowerPoint
-open final-presentation.pptx  # macOS
-# or: start final-presentation.pptx  # Windows
-```
+### Documentation
+- **SKILL.md** (460 lines): Complete agent skill documentation with workflows
+- **Layout mapping**: Guide for selecting appropriate slide layouts
+- **Brand compliance**: Validation checklist and troubleshooting
+- **Examples**: 5-slide tutorial and multi-speaker patterns
 
 ---
 
 ## 🎨 Templates
 
 ### Dark Theme (Default)
-- **Use for**: Large live events, formal presentations, executive briefings
-- **Slides**: 51 (indexed 0-50)
-- **Key layouts**: 
-  - Cover with OCI/Database branding (slide 0)
-  - Speaker profiles (1-6 speakers, slides 1-6)
-  - Section dividers (slides 7-8)
-  - Impact statements (slides 9-10)
-  - Content slides (13-50): bullet points, 2-column, 3-column, images, etc.
-  - Thank you/closing (slide 11)
+**Use for**: Large live events, formal presentations, executive briefings
+
+**Key layouts**:
+- Cover with OCI/Database branding
+- Speaker profiles (1-6 speakers)
+- Section dividers
+- Impact statements
+- Content slides: bullet points, 2-column, 3-column, images
+- Thank you/closing
 
 ### Light Theme
-- **Use for**: Virtual events, documentation, internal meetings, workshops
-- **Slides**: 55 (indexed 0-54)
-- **Key layouts**: Similar to Dark theme with 4 additional layouts
+**Use for**: Virtual events, documentation, internal meetings, workshops
 
-**Complete layout reference**: See `skills/oracle-pptx/resources/templates/layout-mapping.md`
+**Key layouts**: Similar to Dark theme with additional layouts
+
+**Complete reference**: See `skills/oracle-pptx/resources/templates/layout-mapping.md`
 
 ---
 
-## ✅ Brand Compliance
+## ✅ Oracle Brand Compliance
 
-All presentations must follow Oracle's brand guidelines:
+All presentations created with this skill follow Oracle's brand standards:
 
 ### Required Elements
 - ✅ **Footer**: `Copyright © [YEAR], Oracle and/or its affiliates | Confidential: Internal/Restricted/Highly Restricted`
 - ✅ **Fonts**: Oracle Sans Tab only (Bold for headers, Regular for body)
-- ✅ **Colors**: Oracle palette only (Brand 170, Teal 70, Pine 70, Sky 140, Rose 140, Oracle Red, Pine 140)
+- ✅ **Colors**: Oracle palette (Brand 170, Teal 70, Pine 70, Sky 140, Rose 140, Oracle Red, Pine 140)
 - ✅ **Layouts**: From Oracle templates (no custom layouts)
 - ✅ **Icons**: From Oracle icon library (1,078 included)
-- ✅ **Accessibility**: High contrast, alt text guidance, logical reading order
+- ✅ **Accessibility**: High contrast, alt text, logical reading order
 
-### Validation Checklist
+### Validation
+The skill includes:
+- Complete validation checklist
+- Common issue troubleshooting
+- Export guidance for external sharing
+- Oracle Brand Team contact information
 
-Before finalizing presentations:
-- Oracle Sans Tab fonts used throughout
-- Footer format correct with current year
-- Colors from Oracle palette only (no PowerPoint tints)
-- No text cutoff or overlap
-- Layouts from templates (not custom)
-- Theme-appropriate icons (dark vs. light)
-
-**Complete checklist**: See `skills/oracle-pptx/resources/brand-compliance.md`
-
----
-
-## 📚 Documentation
-
-### Core Documentation
-- **`skills/oracle-pptx/SKILL.md`** (460 lines): Main agent skill documentation with complete workflows
-- **`skills/oracle-pptx/README.md`** (81 lines): Quick reference for the skill
-- **`skills/oracle-pptx/resources/guidelines.md`** (181 lines): Oracle brand guidelines extracted from official docs
-- **`skills/oracle-pptx/resources/brand-compliance.md`**: Validation checklist, troubleshooting, export guide
-
-### Reference Guides
-- **`skills/oracle-pptx/resources/templates/layout-mapping.md`** (183 lines): Complete layout selection guide with decision trees
-- **`skills/oracle-pptx/examples/README.md`** (143 lines): Example workflows overview
-- **`skills/oracle-pptx/examples/basic-presentation/README.md`** (315 lines): Step-by-step tutorial for 5-slide presentation
-
----
-
-## 🛠️ Technical Details
-
-### Scripts
-
-| Script | Purpose | Usage |
-|--------|---------|-------|
-| `inventory.py` | Extract text placeholders from slides | Read-only analysis |
-| `rearrange.py` | Duplicate and reorder slides from template | Creates new PPTX |
-| `replace.py` | Populate placeholders with content | Modifies PPTX |
-| `thumbnail.py` | Generate visual thumbnail grids | Requires LibreOffice |
-| `ooxml/scripts/unpack.py` | Extract PPTX to XML files | Advanced editing |
-| `ooxml/scripts/pack.py` | Repackage XML files to PPTX | Advanced editing |
-| `ooxml/scripts/validate.py` | Verify OOXML structure | Quality assurance |
-
-### Dependencies
-
-**Required** (for script usage):
-- Python 3.7+
-- `markitdown[pptx]`: Text extraction from PowerPoint
-- `defusedxml`: Secure XML parsing
-- `python-pptx`: PowerPoint file manipulation
-
-**Optional**:
-- LibreOffice (`soffice`): For thumbnail generation
-
-**Install with**:
-```bash
-pip3 install "markitdown[pptx]" defusedxml python-pptx
-```
-
-### Compatibility
-
-| Platform | Support | Notes |
-|----------|---------|-------|
-| **AI Agents** | ✅ Claude Code, Cursor, Windsurf, Aider, any agent with AGENTS.md | Via openskills or manual install |
-| **Claude.ai** | ✅ Custom Skills upload | Zip and upload via Settings |
-| **Claude API** | ✅ Skills API (`/v1/skills`) | Upload via API endpoint |
-| **Python** | ✅ 3.7+ | For script execution |
-| **PowerPoint** | ✅ Desktop app (Windows/Mac) | Required for editing/presenting |
-| **PowerPoint Web** | ⚠️ Limited | Fonts not supported, view-only |
-| **Linux** | ✅ Scripts work | Use LibreOffice Impress (partial compatibility) |
+**Details**: See `skills/oracle-pptx/resources/brand-compliance.md`
 
 ---
 
 ## 💡 Examples
 
-### Example 1: 5-Slide Product Launch (Dark Theme)
+### Example 1: Simple 5-Slide Presentation
 
-See `skills/oracle-pptx/examples/basic-presentation/README.md` for:
-- Complete step-by-step workflow
-- JSON structure examples
-- Brand compliance checklist
-- Common mistakes to avoid
-- Expected output samples
+```
+Create a 5-slide Oracle presentation about our Q1 results:
+- Cover: "Q1 2026 Results"
+- Content: Key highlights (3 bullet points)
+- Content: Revenue growth chart placeholder
+- Content: Next quarter goals
+- Closing: Thank you with contact info
 
-### Example 2: Multi-Speaker Presentation
+Use Dark theme.
+```
 
-See `skills/oracle-pptx/examples/README.md` for common patterns:
-- Cover slide + speaker profiles (1-6 speakers)
-- Section dividers for topic breaks
-- Content variations (bullet points, 2-column, 3-column, images)
-- Impact statements and quotes
-- Closing/thank you slides
+### Example 2: Multi-Speaker Event
+
+```
+Create an Oracle presentation for a 3-speaker panel:
+- Cover: "AI Innovation Summit"
+- Speaker profiles for: Sarah Chen (AI Lead), Mike Rodriguez (Cloud Architect), Lisa Park (Product Manager)
+- Section divider: "The Future of AI"
+- Content: 5 key trends
+- Thank you slide
+
+Use Light theme.
+```
+
+**Detailed tutorials**: See `skills/oracle-pptx/examples/`
 
 ---
 
-## 🔧 Troubleshooting
+## 📚 Documentation
 
-### "ModuleNotFoundError" when running scripts
-**Solution**: Install Python dependencies:
+All documentation is included in the skill package:
+
+- **`skills/oracle-pptx/SKILL.md`**: Main agent skill documentation (460 lines)
+- **`skills/oracle-pptx/resources/guidelines.md`**: Oracle brand guidelines (181 lines)
+- **`skills/oracle-pptx/resources/brand-compliance.md`**: Validation and troubleshooting
+- **`skills/oracle-pptx/resources/templates/layout-mapping.md`**: Layout selection guide (183 lines)
+- **`skills/oracle-pptx/examples/`**: Step-by-step tutorials
+
+AI agents access these automatically when needed through progressive disclosure.
+
+---
+
+## 🔧 For PowerPoint Editing
+
+If you need to edit presentations in PowerPoint (optional):
+
+1. **Install Oracle fonts**: Available in `skills/oracle-pptx/resources/fonts/OracleSans/`
+   - macOS: Double-click each .otf file and click "Install Font"
+   - Windows: Right-click each .otf file and select "Install"
+   - Linux: Copy to `~/.fonts/` and run `fc-cache -f -v`
+
+2. **Use PowerPoint desktop app**: Web version doesn't support Oracle fonts
+
+3. **For external sharing**: Export to PDF to preserve fonts
+
+---
+
+## 🛠️ Troubleshooting
+
+### Skill not loading
 ```bash
-pip3 install "markitdown[pptx]" defusedxml python-pptx
+npx openskills list        # Verify oracle-pptx is installed
+npx openskills sync        # Update AGENTS.md
 ```
 
-### Fonts not displaying correctly in PowerPoint
-**Solution**: 
-- Install Oracle Sans Tab fonts from `skills/oracle-pptx/resources/fonts/OracleSans/`
-- Restart PowerPoint after installation
-- Use PowerPoint desktop app (not web version)
-- For external sharing, export to PDF to preserve fonts
+### AI agent not using the skill
+Make sure your request mentions "Oracle presentation" or "Oracle slides" to trigger the skill.
 
-### "Shape not found" error when running replace.py
-**Solution**: 
-- Generate fresh inventory: `python3 scripts/inventory.py working.pptx fresh-inventory.json`
-- Verify shape names in inventory match your replacement JSON
-- Check slide numbers are correct (0-indexed)
+### Font issues in PowerPoint
+Install Oracle Sans Tab fonts from `skills/oracle-pptx/resources/fonts/OracleSans/` and use PowerPoint desktop app.
 
-### Colors don't match Oracle brand
-**Solution**: 
-- Use only colors specified in `resources/guidelines.md`
-- Reference theme colors or custom color swatches 1-49
-- Avoid PowerPoint's standard colors or tints
-
-### Text overflow in shapes
-**Solution**: 
-- Reduce text length or font size
-- Select a larger placeholder layout
-- Split content across multiple slides
-
-### openskills command not found
-**Solution**: 
-- Run with `npx`: `npx openskills list`
-- Or install globally: `npm install -g openskills`
-
-**For complete troubleshooting**: See `skills/oracle-pptx/resources/brand-compliance.md`
+### For more help
+- Check `skills/oracle-pptx/resources/brand-compliance.md` for complete troubleshooting
+- Report issues: [GitHub Issues](https://github.com/beltonk/oracle-pptx-skill/issues)
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ What is OpenSpec?
 
-### Project Structure
+This project uses [OpenSpec](https://github.com/fissionai/openspec) for spec-driven development. OpenSpec manages:
 
-```
-oracle-pptx-skill/
-├── README.md                          # This file
-├── AGENTS.md                          # Agent skills system configuration
-├── .gitignore                         # Git ignore rules
-├── skills/                            # Agent skills
-│   └── oracle-pptx/                  # Oracle PPTX skill (self-contained)
-│       ├── SKILL.md                  # Main skill documentation (460 lines)
-│       ├── README.md                 # Quick reference (81 lines)
-│       ├── scripts/                  # Python utilities
-│       │   ├── inventory.py          # Extract text placeholders
-│       │   ├── rearrange.py          # Duplicate/reorder slides
-│       │   ├── replace.py            # Populate content
-│       │   └── thumbnail.py          # Generate visual thumbnails
-│       ├── ooxml/                    # OOXML manipulation
-│       │   ├── scripts/              # pack, unpack, validate
-│       │   └── schemas/              # XML validation schemas
-│       ├── resources/                # Self-contained resources
-│       │   ├── templates/            # Dark + Light templates + inventories
-│       │   ├── fonts/OracleSans/    # Font files (37 .otf files)
-│       │   ├── icons/                # 1,078 SVG icons (dark + light)
-│       │   ├── guidelines.md         # Brand guidelines (181 lines)
-│       │   └── brand-compliance.md   # Validation guide
-│       └── examples/                 # Example workflows
-│           ├── README.md             # Examples overview
-│           └── basic-presentation/   # 5-slide tutorial
-└── openspec/                         # Spec-driven development
-    ├── specs/                        # Approved specifications
-    │   └── oracle-pptx-creation/     # 12 requirements
-    └── changes/archive/              # Historical changes
+- **Specifications**: Requirements for the oracle-pptx-creation capability (12 requirements)
+- **Change tracking**: Historical record of how the skill was built
+- **Validation**: Ensures changes meet requirements before implementation
+
+```bash
+# View specifications
+openspec list --specs
+
+# View change history
+ls openspec/changes/archive/
 ```
 
-**Note**: `/reference` directory excluded from repository (development materials only)
+**For contributors**: See the Contributing section below.
 
 ---
 
 ## 🤝 Contributing
 
-### Adding New Features
+### Adding Features
 
-This project uses [OpenSpec](https://github.com/fissionai/openspec) for spec-driven development:
-
-1. **Create a proposal**:
+1. Create an OpenSpec proposal:
    ```bash
    openspec create <change-id>
    ```
 
-2. **Document** requirements, design, and tasks in `openspec/changes/<id>/`
+2. Document requirements, design, and tasks
 
-3. **Implement** following the tasks
+3. Implement following the tasks
 
-4. **Archive** when complete:
+4. Archive when complete:
    ```bash
    openspec archive <change-id> --yes
    ```
-
-### Code Style
-
-- Follow existing patterns in `skills/oracle-pptx/scripts/`
-- Concise Python code with minimal verbosity
-- Clear, descriptive variable names
-- Include error handling and validation
-- Add docstrings for functions
 
 ### Submitting Changes
 
 1. Fork the repository
 2. Create a feature branch
-3. Make your changes following the code style
-4. Test thoroughly with Oracle templates
-5. Submit a pull request with clear description
+3. Make your changes
+4. Test with Oracle templates
+5. Submit a pull request
 
 ---
 
 ## 📖 Resources
 
-### Oracle Brand Resources (Included in this Skill)
-- ✅ FY26 Dark and Light templates (v8.5)
+### Included in This Skill
+- ✅ Oracle FY26 templates (Dark and Light, v8.5)
 - ✅ Oracle Sans Tab fonts (37 font files)
-- ✅ Oracle icons for presentations (1,078 SVG files)
-- ✅ Brand guidelines (extracted from official docs)
+- ✅ Oracle icons (1,078 SVG files)
+- ✅ Brand guidelines
 - ✅ Pre-generated template inventories
 
-### Oracle Brand Resources (VPN Required)
-- Oracle icon library (extended collection)
-- Oracle photography guidelines
-- Custom template building guidance
+### Requires Oracle VPN
+- Extended icon library
+- Photography guidelines
+- Custom template building
 
-**Contact Oracle Brand Team** for resources requiring VPN access or custom template requests.
+**Contact Oracle Brand Team** for VPN-required resources.
 
 ---
 
@@ -507,58 +283,50 @@ This project uses [OpenSpec](https://github.com/fissionai/openspec) for spec-dri
 
 Oracle templates, fonts, icons, and guidelines are proprietary to Oracle Corporation. This skill is for internal Oracle use or authorized partners only.
 
-See [LICENSE](LICENSE) for complete terms.
-
 ---
 
-## 📌 Version Information
+## 📌 Version
 
-- **Skill Version**: 1.0.0
-- **Template Base**: Oracle FY26 v8.5 (January 2026)
-- **SKILL.md Format**: Claude Agent Skills specification compliant
-- **Compliance**: 100% with Claude Agent Skills best practices
-- **openskills Compatible**: ✅ Yes (standard SKILL.md format)
+- **Version**: 1.0.0
+- **Template Base**: Oracle FY26 v8.5
+- **Format**: Claude Agent Skills specification compliant
+- **openskills**: ✅ Compatible
 - **Status**: Production-ready
 
 ---
 
 ## 💬 Support
 
-### For Agent Skill Issues
-- Review `skills/oracle-pptx/SKILL.md` for complete usage guidance
-- Check `skills/oracle-pptx/resources/brand-compliance.md` for troubleshooting
-- Verify Python dependencies are installed: `pip3 list | grep -E "markitdown|defusedxml|python-pptx"`
-- Report issues: [GitHub Issues](https://github.com/beltonk/oracle-pptx-skill/issues)
+### Issues with the Skill
+- Review documentation: `skills/oracle-pptx/SKILL.md`
+- Check troubleshooting: `skills/oracle-pptx/resources/brand-compliance.md`
+- Report bugs: [GitHub Issues](https://github.com/beltonk/oracle-pptx-skill/issues)
 
-### For Oracle Brand Questions
-- Contact Oracle Brand Team for official guidance
-- Reference `skills/oracle-pptx/resources/guidelines.md` for documented standards
-- VPN required for extended icon library and custom template requests
+### Oracle Brand Questions
+- Contact Oracle Brand Team
+- Reference: `skills/oracle-pptx/resources/guidelines.md`
 
-### For Technical Issues
-- Validate PPTX structure: `python3 ooxml/scripts/validate.py <file.pptx>`
-- Check Python version: `python3 --version` (3.7+ required)
-- Verify fonts installed: Check system font library for "Oracle Sans Tab"
-- Check openskills: `npx openskills list` should show `oracle-pptx`
+### openskills Issues
+- See [openskills documentation](https://github.com/numman-ali/openskills)
+- Verify: `npx openskills list` shows `oracle-pptx`
 
 ---
 
-## 🌟 Related Projects
+## 🌟 Related
 
-- [openskills](https://github.com/numman-ali/openskills) - Universal skills loader for AI coding agents
+- [openskills](https://github.com/numman-ali/openskills) - Universal skills loader for AI agents
 - [Anthropic Skills](https://github.com/anthropics/skills) - Official Anthropic agent skills
-- [Claude Agent Skills](https://platform.claude.com/docs/en/agents-and-tools/agent-skills) - Official documentation
+- [Claude Agent Skills Docs](https://platform.claude.com/docs/en/agents-and-tools/agent-skills) - Official specification
 
 ---
 
-**Ready to create Oracle-compliant presentations with AI?**
+**Ready to create Oracle presentations?**
 
 ```bash
-# Install with one command
+# Install in 2 commands
 npx openskills install beltonk/oracle-pptx-skill --global --universal
+npx openskills sync
 
 # Then ask your AI agent
-"Create an Oracle presentation about cloud migration with 5 slides"
+"Create an Oracle presentation about cloud security with 5 slides"
 ```
-
-Start with the examples in `skills/oracle-pptx/examples/` or read the main documentation in `skills/oracle-pptx/SKILL.md`.
