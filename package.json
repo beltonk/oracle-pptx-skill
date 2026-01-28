@@ -1,0 +1,37 @@
+{
+  "name": "oracle-pptx-skill",
+  "version": "1.0.0",
+  "description": "AI agent skill for creating Oracle-compliant PowerPoint presentations",
+  "keywords": [
+    "oracle",
+    "powerpoint",
+    "pptx",
+    "agent-skill",
+    "claude",
+    "openskills",
+    "presentation",
+    "slides"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beltonk/oracle-pptx-skill.git"
+  },
+  "homepage": "https://github.com/beltonk/oracle-pptx-skill#readme",
+  "bugs": {
+    "url": "https://github.com/beltonk/oracle-pptx-skill/issues"
+  },
+  "author": "Belton Kwong",
+  "license": "Proprietary",
+  "openskills": {
+    "skills": [
+      {
+        "name": "oracle-pptx",
+        "path": "skills/oracle-pptx",
+        "description": "Create Oracle-compliant PowerPoint presentations following Oracle brand guidelines. Supports Dark (default) and Light themes with OCI/Database branding. Use when creating Oracle presentations, slides, or decks that must follow Oracle design standards."
+      }
+    ]
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
