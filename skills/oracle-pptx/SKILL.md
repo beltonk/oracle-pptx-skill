@@ -190,7 +190,7 @@ python scripts/replace.py working.pptx content.json final.pptx
 
 ✅ **CORRECT** - Reference library icons:
 ```
-"Cloud Migration" → Reference OCI Migration icon (see ICON-LIBRARY.md)
+"Cloud Migration" → Reference OCI Migration icon (see icon-library.md)
 "Data Analytics" → Reference Analytics icon (Business category)
 "Customer Experience" → Reference CX icon (Customer category)
 ```
@@ -202,8 +202,8 @@ python scripts/replace.py working.pptx content.json final.pptx
 "🎯 Goals" → Use Target/Arrow icon instead
 ```
 
-**Icon library**: 1,078 professional SVG icons organized by category
-**See**: `resources/icons/ICON-LIBRARY.md` for complete catalog with search
+**Icon library**: 540 professional SVG icons organized by category
+**See**: `resources/icons/icon-library.md` for complete catalog with search
 
 ### Content Quality
 
@@ -316,8 +316,9 @@ skills/oracle-pptx/
 │   └── thumbnail.py                # Generate previews
 ├── resources/
 │   ├── fonts/OracleSans/          # Oracle Sans Tab fonts (37 files)
-│   ├── icons/                      # 1,078 SVG icons
-│   │   ├── ICON-LIBRARY.md        # ← Icon catalog with categories
+│   ├── icons/                      # 540 SVG icons
+│   │   ├── icon-library.md        # ← Icon catalog with categories
+│   │   ├── icon-index.json        # ← Machine-readable index
 │   │   ├── dark-theme/            # Icons for dark presentations
 │   │   └── light-theme/           # Icons for light presentations
 │   ├── templates/
