@@ -68,7 +68,119 @@ skills/oracle-pptx/
 
 **CRITICAL**: Follow these rules to avoid common issues like content cutoff, floating footers, and sparse slides.
 
-#### 1. Content Density
+#### 1. Layout Variety is Essential
+
+**CRITICAL - Avoid Monotony**:
+- ❌ **NEVER use only bullet list slides** (slide 12/13) for an entire presentation
+- ❌ **NEVER use the same layout for 5+ consecutive slides**
+- ✅ **MIX layouts** to create visual interest and professionalism
+
+**Required variety for professional presentations**:
+- Bullet lists (slide 13-15): Max 40% of content slides
+- 2-column layouts (slide 19-22): 20-30% for comparisons
+- 3-column layouts (slide 23-25): 10-15% for categories  
+- Bold statements (slide 18): 5-10% for key metrics
+- Image slides (slide 26-30): 10-20% for visual impact
+- Statistics/data slides (slide 36-40): 5-10% for numbers
+
+**Example varied sequence (10 content slides)**:
+```
+slide-13 (bullets), slide-19 (2-col), slide-13 (bullets), 
+slide-18 (bold stat), slide-23 (3-col), slide-26 (image), 
+slide-13 (bullets), slide-36 (stats), slide-19 (2-col), slide-13 (bullets)
+```
+
+#### 2. Speaker Slides - CRITICAL Usage Rules
+
+**Speaker slides (1-6) are ONLY for actual speakers/presenters**:
+- ✅ Place at **beginning of presentation** (after cover, before content)
+- ✅ Use ONCE to introduce who is presenting
+- ❌ **NEVER use in middle of content sections**
+- ❌ **NEVER use for content slides** - they're for people headshots only
+
+**If presentation has no speakers**: Skip slides 1-6 entirely, start with cover (0) then content.
+
+**Correct usage**:
+```
+Slide 0: Cover
+Slide 1: Speaker introduction (if needed)
+Slide 7: Section divider - START CONTENT
+Slides 13+: Content slides
+```
+
+**WRONG usage** (DO NOT DO THIS):
+```
+Slide 0: Cover  
+Slide 13: Content
+Slide 1: ❌ WRONG - speaker slide misplaced in content
+Slide 13: Content
+```
+
+#### 3. Footer Handling (CRITICAL)
+
+**Footers are AUTOMATIC - Do NOT add to replacement JSON**:
+- ✅ **Leave footer shapes EMPTY** in replacement JSON
+- ✅ Template footers already include "Copyright © 2026, Oracle and/or its affiliates"
+- ❌ **NEVER populate footer shapes** in replacement JSON
+- ❌ Adding footer text manually causes duplicate/floating footers
+
+**Correct approach** - footer shapes absent from replacement JSON:
+```json
+{
+  "slide-0": {
+    "shape-0": {"paragraphs": [{"text": "Title"}]},
+    "shape-1": {"paragraphs": [{"text": "Subtitle"}]}
+    // NO shape-4 (footer) - let template handle it
+  }
+}
+```
+
+**WRONG approach** - DO NOT DO THIS:
+```json
+{
+  "slide-0": {
+    "shape-0": {"paragraphs": [{"text": "Title"}]},
+    "shape-4": {"paragraphs": [{"text": "Copyright..."}]} // ❌ WRONG
+  }
+}
+```
+
+#### 4. Using Oracle Icons
+
+**Icon library**: 530+ SVG icons in `resources/icons/dark-theme/` and `light-theme/`
+
+**When to reference icons**:
+- Technology concepts (cloud, database, security, AI, etc.)
+- Process steps (workflow icons)
+- Categories (industry icons, function icons)
+- Features/benefits callouts
+
+**Icon categories available**:
+- Technology: cloud, database, AI, security, networking
+- Business: analytics, growth, efficiency, collaboration
+- Industry: healthcare, finance, retail, manufacturing
+- Actions: deploy, monitor, optimize, scale
+
+**How to reference icons in content**:
+```json
+{
+  "slide-23": {
+    "shape-0": {"paragraphs": [{"text": "Three Pillars"}]},
+    "shape-1": {"paragraphs": [
+      {"text": "☁️ Cloud Icon", "bold": true},
+      {"text": "Scalable infrastructure"}
+    ]},
+    "shape-2": {"paragraphs": [
+      {"text": "🔒 Security Icon", "bold": true},
+      {"text": "Enterprise protection"}
+    ]}
+  }
+}
+```
+
+Note: While icons can't be embedded via JSON, referencing them with emoji/text helps convey the visual intent. For actual icon embedding, manual PowerPoint editing is required after generation.
+
+#### 5. Content Density
 
 **Minimum content per slide**:
 - **Bullet list slides**: 3-5 bullets, 8-15 words per bullet
@@ -76,37 +188,68 @@ skills/oracle-pptx/
 - **Divider slides**: Title only (no bullet points or body text)
 - **Stats slides**: 1 large metric + 2-3 supporting bullets
 
-**DON'T**:
+**DON'T - Avoid Boring Presentations**:
 - ❌ Create slides with only 1-2 bullets
 - ❌ Use excessive white space on content slides
 - ❌ Put body text on divider slides
 - ❌ Create 5+ consecutive slides with minimal content
+- ❌ Use ONLY bullet points throughout entire presentation
+- ❌ Leave slides with empty placeholders
+- ❌ Make every slide look the same
 
-**DO**:
-- ✅ Pack content meaningfully (3-4 bullets minimum)
+**DO - Create Professional, Engaging Content**:
+- ✅ Pack content meaningfully (3-4 bullets minimum per slide)
 - ✅ Use 2-column layouts for comparisons/contrasts
+- ✅ Use 3-column layouts for categories/options
+- ✅ Add bold statement slides for key metrics
+- ✅ Include image slides for visual impact
+- ✅ Vary slide types every 2-3 slides
+- ✅ Reference icons to enhance concepts
+- ✅ Use data/statistics slides for numbers
 - ✅ Reserve dividers for section breaks only
-- ✅ Vary slide types: bullets, columns, stats, quotes
+- ✅ Fill ALL placeholders on each slide (no empties)
 
-#### 2. Layout Selection Critical Rules
+#### 6. Layout Selection Guide by Content Type
 
-**For bullet lists, ALWAYS use**:
-- **Slide 12**: Title + single body (7.0" wide, handles 3-5 bullets)
-- This is the RECOMMENDED layout for all bullet list content
+**Match content to appropriate layouts**:
 
-**AVOID these problematic layouts**:
-- **Slide 13**: Multi-box layout (creates empty placeholders, cutoff issues)
-- **Slide 19**: 2-column with narrow boxes (text cutoff problems)
+**Bullet Lists** (slides 13-15):
+- Use for: General points, features, benefits, steps
+- Content: 3-5 bullets, 8-12 words each
+- Frequency: Max 40% of content slides
 
-**For 2-column content, use**:
-- **Slide 24**: True 2-column layout (4.9" wide columns, no cutoff)
-- Each column can handle 3-4 bullets comfortably
+**2-Column Layouts** (slides 19-22):
+- Use for: Comparisons, before/after, contrasts, parallel concepts
+- Content: 3-4 items per column with headers
+- Frequency: 20-30% of content slides
+- Example topics: "Traditional vs Modern", "Challenges vs Solutions"
 
-**For divider slides, use**:
-- **Slide 2**: Section divider (title only, abstract background)
+**3-Column Layouts** (slides 23-25):
+- Use for: Three distinct categories, pillars, phases
+- Content: Icon/heading + 2-3 supporting points per column
+- Frequency: 10-15% of content slides
+- Example topics: "Bronze/Silver/Gold tiers", "Build/Deploy/Monitor"
 
-**For stats/metrics, use**:
-- **Slide 18**: Bold statement + subtitle (large text, centered)
+**Bold Statement** (slide 18):
+- Use for: Key metrics, impactful statistics, main takeaways
+- Content: Large number/statement + brief context
+- Frequency: 5-10% of content slides
+- Example: "327% growth" with subtitle explaining context
+
+**Image + Text** (slides 26-30):
+- Use for: Visual storytelling, product screenshots, diagrams
+- Content: Title + 2-3 caption points
+- Frequency: 10-20% of content slides
+
+**Statistics/Data** (slides 36-40):
+- Use for: Numbers, metrics, KPIs, data visualization
+- Content: Multiple data points with context
+- Frequency: 5-10% of content slides
+
+**Section Dividers** (slides 7-8):
+- Use for: Topic transitions, section breaks
+- Content: Title ONLY (no body text)
+- Frequency: Every 4-6 content slides
 
 #### 3. Text Sizing to Prevent Overflow
 
@@ -203,32 +346,96 @@ Slide 27: Thank you
 }
 ```
 
-#### 7. Quick Reference: Layout Sequence Patterns
+#### 7. Creating Rich, Professional Content
 
-**For a 25-slide presentation**:
+**Avoid boring bullet-only presentations**. Professional slides use varied formats:
+
+**Instead of plain bullets, use**:
+
+**❌ BORING - All bullets**:
+```
+Slide 1: Title + 3 bullets
+Slide 2: Title + 3 bullets  
+Slide 3: Title + 3 bullets
+Slide 4: Title + 3 bullets
+```
+
+**✅ PROFESSIONAL - Varied layouts**:
+```
+Slide 1: Title + 4 bullets (overview)
+Slide 2: 2-column comparison (before/after)
+Slide 3: Bold statement (key metric)
+Slide 4: 3-column (three categories)
+Slide 5: Title + 3 bullets (details)
+Slide 6: Image + caption (visual proof)
+```
+
+**Content variety by slide type**:
+
+**For process/workflow topics**:
+- Slide 13-15: Overview bullets
+- Slide 23-25: 3-column for 3 phases (Plan/Build/Run)
+- Slide 18: Bold metric showing outcome
+- Slide 26: Diagram/screenshot of process
+
+**For comparison topics**:
+- Slide 13: Context bullets
+- Slide 19-22: 2-column side-by-side comparison
+- Slide 18: Bold statement of key difference
+- Slide 13: Detailed implications
+
+**For data-driven topics**:
+- Slide 13: Setup/context bullets
+- Slide 36-40: Statistics slide with multiple metrics
+- Slide 18: Bold callout of most important number
+- Slide 26: Chart/graph visualization
+
+**For feature/benefit topics**:
+- Slide 23-25: 3-column for features (with icon references)
+- Slide 19-22: 2-column features vs benefits
+- Slide 18: Bold statement of main value
+- Slide 26: Product screenshot
+
+**Never create "empty" slides**:
+- Every slide must have meaningful content in ALL intended placeholders
+- If a layout has 3 columns, fill all 3 columns
+- If a layout has 2 text boxes, fill both
+- Empty placeholders look unprofessional
+
+#### 8. Quick Reference: Layout Sequence Patterns
+
+**For a professional 25-slide presentation with variety**:
 ```bash
-# Good pattern: Cover, overview, dividers with dense content
-rearrange.py template.pptx output.pptx 0,12,12,12,2,12,12,24,12,12,2,12,12,24,12,12,2,12,18,24,12,12,2,12,24,11
+# EXCELLENT pattern: Cover, varied layouts, visual interest
+rearrange.py template.pptx output.pptx 0,13,7,13,19,23,18,13,26,7,13,19,36,13,18,7,23,13,19,26,13,18,7,13,11
 
 # Breakdown:
 # 0: Cover
-# 12,12,12: 3 overview slides (bullets)
-# 2: Divider 1
-# 12,12,24,12,12: 5 content slides (mix)
-# 2: Divider 2  
-# 12,12,24,12,12: 5 content slides (mix)
-# 2: Divider 3
-# 12,18,24,12,12: 5 content slides (with stats slide 18)
-# 2: Divider 4
-# 12,24: 2 final content slides
+# 13: Overview bullets
+# 7: Section 1 divider
+# 13,19,23,18: Content variety (bullets, 2-col, 3-col, bold stat)
+# 13,26: More content (bullets, image)
+# 7: Section 2 divider
+# 13,19,36,13,18: Content variety (bullets, 2-col, data, bullets, stat)
+# 7: Section 3 divider
+# 23,13,19,26: Content variety (3-col, bullets, 2-col, image)
+# 13,18: Final content (bullets, stat)
+# 7: Conclusion divider
+# 13: Summary bullets
 # 11: Thank you
 ```
 
-**BAD pattern to avoid**:
+**BAD patterns to avoid**:
 ```bash
-# DON'T: Too many dividers, minimal content
-rearrange.py template.pptx output.pptx 0,2,12,2,12,2,12,2,12,11
-# This creates choppy flow with too many section breaks
+# DON'T: All bullets (boring)
+rearrange.py template.pptx output.pptx 0,13,13,13,13,13,13,13,11
+
+# DON'T: Too many dividers, thin content
+rearrange.py template.pptx output.pptx 0,7,13,7,13,7,13,7,13,11
+
+# DON'T: Speaker slides in content (WRONG)
+rearrange.py template.pptx output.pptx 0,13,7,13,1,13,7,13,11
+#                                              ↑ speaker slide misplaced
 ```
 
 ## Oracle Brand Guidelines
