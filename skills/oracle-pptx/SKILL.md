@@ -116,6 +116,7 @@ Build replacement JSON matching the inventory structure:
 - ❌ Do NOT populate footer shapes - footers are automatic
 - ❌ Do NOT use timeline/statistics layouts without actual data
 - ❌ Do NOT use emoji icons - use professional icons from library
+- ❌ Do NOT insert icons as post-processing - specify them at design time with proper positioning to avoid text overlap
 
 ### Step 5: Apply Content
 
@@ -129,13 +130,32 @@ python scripts/replace.py working.pptx content.json final.pptx
 
 ### Step 6: Insert Icons (Optional)
 
-Automatically insert relevant icons based on content keywords:
+Insert icons based on design-time specifications:
 
 ```bash
-python scripts/insert-icons.py final.pptx final-with-icons.pptx
+python scripts/insert-icons.py final.pptx icons.json final-with-icons.pptx
 ```
 
-**Smart icon matching**: Analyzes slide content for keywords (ai, agent, finance, customer, etc.) and automatically inserts relevant icons from the library. Converts SVG to PNG for PowerPoint compatibility.
+**Design-time approach**: Create an `icons.json` file specifying which icon to use on each slide and where to position it. This gives you full control over icon selection and positioning to avoid text overlap.
+
+**Icons JSON format**:
+```json
+{
+  "slide-1": {
+    "icon": "RMIL_Database-and-AI_GenAI-Agents_Bark_RGB.svg",
+    "position": {"left": 10.5, "top": 1.5, "width": 1.2, "height": 1.2}
+  },
+  "slide-2": {
+    "icon": "RMIL_Technology_AI-Database_Bark_RGB.svg",
+    "position": {"left": 0.5, "top": 1.2, "width": 1.0, "height": 1.0}
+  }
+}
+```
+
+**Position guide**: Use inches for coordinates. Common positions:
+- Top-right corner: `{"left": 10.5, "top": 1.5}`
+- Top-left corner: `{"left": 0.5, "top": 1.2}`
+- Adjust text content in `replacement.json` to avoid icon overlap
 
 ---
 
@@ -245,10 +265,10 @@ python scripts/insert-icons.py final.pptx final-with-icons.pptx
 python scripts/rearrange.py --help   # Build slide structure
 python scripts/inventory.py --help   # Extract placeholders
 python scripts/replace.py --help     # Apply content
-python scripts/insert-icons.py --help # Insert icons automatically
+python scripts/insert-icons.py --help # Insert icons from specs
 ```
 
-**New**: `insert-icons.py` analyzes content and inserts relevant icons from the 540-icon library.
+**Icon insertion**: `insert-icons.py` requires a JSON file specifying icon file and position for each slide. See `icon-library.md` and `icon-index.json` for available icons (540 professional SVG icons automatically converted to PNG).
 
 ### Template Inventories
 

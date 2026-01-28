@@ -1,212 +1,169 @@
 #!/usr/bin/env python3
-"""Insert icons into PowerPoint slides based on content keywords.
+"""Insert icons into PowerPoint slides based on icon specifications in JSON.
 
 Usage:
-    python insert-icons.py <input.pptx> <output.pptx>
+    python insert-icons.py <input.pptx> <icons.json> <output.pptx>
     
-Analyzes slide content and inserts relevant icons from the icon library.
-Converts SVG to PNG on-the-fly for PowerPoint compatibility.
+Icons JSON format:
+{
+  "slide-1": {
+    "icon": "RMIL_Database-and-AI_GenAI-Agents_Bark_RGB.svg",
+    "position": {"left": 10.5, "top": 1.5, "width": 1.0, "height": 1.0}
+  },
+  "slide-5": {
+    "icon": "RMIL_Business_Analytics_Bark_RGB.svg",
+    "position": {"left": 0.5, "top": 1.2, "width": 1.2, "height": 1.2}
+  }
+}
+
+Note: SVG files will be converted to PNG for PowerPoint compatibility.
 """
 
 import sys
 import json
 import tempfile
+import subprocess
 from pathlib import Path
 from pptx import Presentation
 from pptx.util import Inches
 
-def load_icon_index():
-    """Load icon index from icon-index.json"""
-    icon_index_path = Path(__file__).parent.parent / "resources" / "icons" / "icon-index.json"
-    
-    if not icon_index_path.exists():
-        print("Warning: icon-index.json not found")
-        return {}
-    
-    with open(icon_index_path, 'r') as f:
-        return json.load(f)
-
-# Keyword to icon mappings
-ICON_KEYWORDS = {
-    'ai': 'AI',
-    'agent': 'Agents',
-    'agentic': 'Agents',
-    'autonomous': 'Autonomous',
-    'database': 'Database',
-    'cloud': 'Cloud',
-    'finance': 'Financial',
-    'operations': 'Operations',
-    'customer': 'Customer',
-    'supply': 'Supply',
-    'architecture': 'Architecture',
-    'security': 'Security',
-    'governance': 'Governance',
-    'business': 'Business',
-    'enterprise': 'Enterprise',
-    'data': 'Data',
-    'analytics': 'Analytics',
-    'automation': 'Automation',
-    'strategy': 'Strategy',
-    'experience': 'Experience',
-}
-
-def svg_to_png_placeholder(svg_path, output_path, size=300):
-    """Convert SVG to PNG using available tools or create placeholder"""
+def svg_to_png(svg_path, png_path, size=300):
+    """Convert SVG to PNG using available methods"""
     try:
-        # Try using cairosvg if available
+        # Try cairosvg first (best quality)
         import cairosvg
         cairosvg.svg2png(
             url=str(svg_path),
-            write_to=str(output_path),
+            write_to=str(png_path),
             output_width=size,
-            output_height=size
+            output_height=size,
+            background_color='transparent'
         )
         return True
     except ImportError:
         pass
     
     try:
-        # Try using PIL/Pillow with svglib
+        # Try using rsvg-convert (if available on system)
+        result = subprocess.run(
+            ['rsvg-convert', '-w', str(size), '-h', str(size), 
+             '-f', 'png', '-o', str(png_path), str(svg_path)],
+            capture_output=True,
+            timeout=10
+        )
+        if result.returncode == 0 and png_path.exists():
+            return True
+    except (FileNotFoundError, subprocess.TimeoutExpired):
+        pass
+    
+    try:
+        # Try svglib + reportlab
         from svglib.svglib import svg2rlg
         from reportlab.graphics import renderPM
         drawing = svg2rlg(svg_path)
-        renderPM.drawToFile(drawing, output_path, fmt='PNG')
-        return True
+        if drawing:
+            renderPM.drawToFile(drawing, str(png_path), fmt='PNG')
+            return True
     except ImportError:
         pass
     
-    # Fallback: create a simple placeholder PNG
-    try:
-        from PIL import Image, ImageDraw, ImageFont
-        img = Image.new('RGBA', (size, size), (45, 49, 146, 255))  # Oracle blue
-        draw = ImageDraw.Draw(img)
-        
-        # Draw simple icon placeholder
-        margin = size // 4
-        draw.rectangle([margin, margin, size-margin, size-margin], 
-                      fill=(255, 255, 255, 200))
-        
-        img.save(output_path)
-        return True
-    except Exception as e:
-        print(f"    Warning: Could not create icon placeholder: {e}")
-        return False
+    print(f"  ⚠️  Warning: No SVG converter available, skipping {svg_path.name}")
+    print("     Install cairosvg: pip install cairosvg")
+    print("     Or install librsvg: brew install librsvg (macOS)")
+    return False
 
-def find_icon_by_keyword(keyword, icon_index):
-    """Find best matching icon for a keyword"""
-    keyword_lower = keyword.lower()
+def insert_icons(input_pptx, icons_json_path, output_pptx):
+    """Insert icons based on JSON specifications"""
     
-    # Try keyword mapping
-    if keyword_lower in ICON_KEYWORDS:
-        search_term = ICON_KEYWORDS[keyword_lower].lower()
-        for category, icons in icon_index.get('categories', {}).items():
-            for icon in icons:
-                if search_term in icon['name'].lower():
-                    return icon['file']
-    
-    # Try direct search
-    for category, icons in icon_index.get('categories', {}).items():
-        for icon in icons:
-            if keyword_lower in icon['name'].lower():
-                return icon['file']
-    
-    return None
-
-def analyze_slide_content(slide):
-    """Extract keywords from slide content"""
-    text_parts = []
-    
-    for shape in slide.shapes:
-        if hasattr(shape, 'text_frame') and shape.text_frame.text:
-            text_parts.append(shape.text_frame.text)
-    
-    combined_text = ' '.join(text_parts).lower()
-    
-    # Find matching keywords
-    matches = []
-    for keyword in ICON_KEYWORDS.keys():
-        if keyword in combined_text:
-            matches.append((keyword, combined_text.count(keyword)))
-    
-    matches.sort(key=lambda x: x[1], reverse=True)
-    return [m[0] for m in matches[:1]]  # Top keyword only
-
-def insert_icon(slide, icon_png_path):
-    """Insert an icon PNG into the slide"""
-    try:
-        # Position in top-right corner
-        pic = slide.shapes.add_picture(
-            str(icon_png_path),
-            Inches(10.5), Inches(1.2),
-            width=Inches(1.2), height=Inches(1.2)
-        )
-        return True
-    except Exception as e:
-        print(f"    Warning: Could not insert icon: {e}")
-        return False
-
-def process_presentation(input_pptx, output_pptx):
-    """Process presentation and insert icons based on content"""
-    
-    icon_index = load_icon_index()
-    if not icon_index:
-        print("No icon index available")
-        import shutil
-        shutil.copy(input_pptx, output_pptx)
-        return
+    # Load icon specifications
+    with open(icons_json_path, 'r') as f:
+        icon_specs = json.load(f)
     
     prs = Presentation(input_pptx)
     icons_dir = Path(__file__).parent.parent / "resources" / "icons" / "dark-theme"
     
-    icons_inserted = 0
+    inserted = 0
+    skipped = 0
     
-    # Create temp directory for PNG conversions
     with tempfile.TemporaryDirectory() as temp_dir:
         temp_path = Path(temp_dir)
         
-        # Process each content slide
-        for slide_idx, slide in enumerate(prs.slides):
-            if slide_idx == 0 or slide_idx == len(prs.slides) - 1:
-                continue  # Skip cover and thank you
+        for slide_key, spec in icon_specs.items():
+            # Parse slide index
+            slide_idx = int(slide_key.split('-')[1])
             
-            keywords = analyze_slide_content(slide)
+            if slide_idx >= len(prs.slides):
+                print(f"  ⚠️  Slide {slide_idx} not found, skipping")
+                skipped += 1
+                continue
             
-            if keywords:
-                keyword = keywords[0]
-                icon_file = find_icon_by_keyword(keyword, icon_index)
+            slide = prs.slides[slide_idx]
+            icon_file = spec.get('icon')
+            position = spec.get('position', {})
+            
+            if not icon_file:
+                print(f"  ⚠️  No icon specified for {slide_key}, skipping")
+                skipped += 1
+                continue
+            
+            svg_path = icons_dir / icon_file
+            if not svg_path.exists():
+                print(f"  ❌ Icon not found: {icon_file}")
+                skipped += 1
+                continue
+            
+            # Convert SVG to PNG
+            png_path = temp_path / f"icon_{slide_idx}.png"
+            if not svg_to_png(svg_path, png_path):
+                skipped += 1
+                continue
+            
+            # Insert icon
+            try:
+                left = Inches(position.get('left', 10.5))
+                top = Inches(position.get('top', 1.5))
+                width = Inches(position.get('width', 1.0))
+                height = Inches(position.get('height', 1.0))
                 
-                if icon_file:
-                    svg_path = icons_dir / icon_file
-                    if svg_path.exists():
-                        # Convert to PNG
-                        png_path = temp_path / f"icon_{slide_idx}.png"
-                        if svg_to_png_placeholder(svg_path, png_path):
-                            if insert_icon(slide, png_path):
-                                icons_inserted += 1
-                                print(f"  ✓ Slide {slide_idx + 1}: {keyword}")
+                slide.shapes.add_picture(
+                    str(png_path),
+                    left, top,
+                    width=width, height=height
+                )
+                inserted += 1
+                print(f"  ✓ Slide {slide_idx}: {icon_file}")
+            except Exception as e:
+                print(f"  ❌ Failed to insert icon on slide {slide_idx}: {e}")
+                skipped += 1
         
         prs.save(output_pptx)
     
     print(f"\n✅ Icon insertion complete:")
-    print(f"   Icons inserted: {icons_inserted}")
-    print(f"   Saved to: {output_pptx}")
+    print(f"   Inserted: {inserted}")
+    print(f"   Skipped: {skipped}")
+    print(f"   Output: {output_pptx}")
 
 def main():
-    if len(sys.argv) != 3:
+    if len(sys.argv) != 4:
         print(__doc__)
         sys.exit(1)
     
     input_pptx = Path(sys.argv[1])
-    output_pptx = Path(sys.argv[2])
+    icons_json = Path(sys.argv[2])
+    output_pptx = Path(sys.argv[3])
     
     if not input_pptx.exists():
-        print(f"Error: Input file '{input_pptx}' not found")
+        print(f"Error: Input file not found: {input_pptx}")
         sys.exit(1)
     
-    print(f"🎨 Inserting icons with keyword matching...\n")
+    if not icons_json.exists():
+        print(f"Error: Icons JSON not found: {icons_json}")
+        sys.exit(1)
+    
+    print(f"🎨 Inserting icons from specifications...\n")
     
     try:
-        process_presentation(str(input_pptx), str(output_pptx))
+        insert_icons(str(input_pptx), str(icons_json), str(output_pptx))
     except Exception as e:
         print(f"Error: {e}")
         import traceback
