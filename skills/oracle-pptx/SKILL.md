@@ -62,6 +62,175 @@ skills/oracle-pptx/
 └── examples/                     # Example workflows
 ```
 
+## Best Practices for Camera-Ready Slides
+
+### Single-Shot Generation Guidelines
+
+**CRITICAL**: Follow these rules to avoid common issues like content cutoff, floating footers, and sparse slides.
+
+#### 1. Content Density
+
+**Minimum content per slide**:
+- **Bullet list slides**: 3-5 bullets, 8-15 words per bullet
+- **2-column slides**: 3-4 items per column minimum
+- **Divider slides**: Title only (no bullet points or body text)
+- **Stats slides**: 1 large metric + 2-3 supporting bullets
+
+**DON'T**:
+- ❌ Create slides with only 1-2 bullets
+- ❌ Use excessive white space on content slides
+- ❌ Put body text on divider slides
+- ❌ Create 5+ consecutive slides with minimal content
+
+**DO**:
+- ✅ Pack content meaningfully (3-4 bullets minimum)
+- ✅ Use 2-column layouts for comparisons/contrasts
+- ✅ Reserve dividers for section breaks only
+- ✅ Vary slide types: bullets, columns, stats, quotes
+
+#### 2. Layout Selection Critical Rules
+
+**For bullet lists, ALWAYS use**:
+- **Slide 12**: Title + single body (7.0" wide, handles 3-5 bullets)
+- This is the RECOMMENDED layout for all bullet list content
+
+**AVOID these problematic layouts**:
+- **Slide 13**: Multi-box layout (creates empty placeholders, cutoff issues)
+- **Slide 19**: 2-column with narrow boxes (text cutoff problems)
+
+**For 2-column content, use**:
+- **Slide 24**: True 2-column layout (4.9" wide columns, no cutoff)
+- Each column can handle 3-4 bullets comfortably
+
+**For divider slides, use**:
+- **Slide 2**: Section divider (title only, abstract background)
+
+**For stats/metrics, use**:
+- **Slide 18**: Bold statement + subtitle (large text, centered)
+
+#### 3. Text Sizing to Prevent Overflow
+
+**Default font sizes work best**:
+- Title: 40pt (don't override unless needed)
+- Body text: 20pt for bullets
+- Only reduce font size if validation shows overflow
+
+**Bullet point length limits**:
+- Single-column (slide 12): Max 60 characters per bullet
+- Two-column (slide 24): Max 35 characters per bullet
+- Always aim for 3-4 bullets, not 5+
+
+**Common overflow fixes**:
+```json
+// If validation shows overflow, try in order:
+// 1. Shorten text (remove filler words)
+// 2. Reduce bullet count (combine related items)
+// 3. Use abbreviations (e.g., "ML" not "machine learning")
+// 4. Only as last resort: reduce font_size to 18.0
+```
+
+#### 4. Footer Handling (CRITICAL)
+
+**DO NOT manually add footers to replacement JSON**:
+- Footers are built into the template slides
+- Template footers already include "Copyright © [YEAR], Oracle and/or its affiliates"
+- Adding footer content manually causes floating/duplicate footers
+
+**Correct approach**:
+- Leave footer placeholders empty in replacement JSON
+- Template defaults will show automatically
+- Only override footer if you need custom text (rare)
+
+#### 5. Content Flow Patterns
+
+**Use this proven structure for 20-30 slide presentations**:
+
+```
+Slide 1: Cover
+Slides 2-4: Executive summary/overview (3-4 bullets each)
+
+Slide 5: DIVIDER - Topic Area 1
+Slides 6-10: Deep content (mix of bullets and 2-column)
+
+Slide 11: DIVIDER - Topic Area 2  
+Slides 12-16: Deep content (mix of bullets and 2-column)
+
+Slide 17: DIVIDER - Topic Area 3
+Slides 18-22: Deep content (mix of bullets and 2-column)
+
+Slide 23: DIVIDER - Conclusion/Value
+Slides 24-26: Use cases, ROI, results (detailed)
+
+Slide 27: Thank you
+```
+
+**Divider usage**:
+- Use 3-5 dividers max for a 25-30 slide deck
+- Space dividers 4-6 content slides apart
+- Dividers should have ONLY a title, no body text
+- Follow each divider with detailed content slides
+
+#### 6. 2-Column Layout Best Practices
+
+**When to use 2-column layouts (slide 24)**:
+- Comparisons: "Before/After", "Option A/Option B"
+- Contrasts: "Traditional/Modern", "Manual/Automated"
+- Parallel concepts: "Developer View/DBA View"
+- Complementary topics: "Features/Benefits"
+
+**2-column content structure**:
+```json
+{
+  "slide-X": {
+    "shape-0": {"paragraphs": [{"text": "Comparison Title", "bold": true}]},
+    "shape-2": {
+      "paragraphs": [
+        {"text": "Left Column Header", "bold": true},
+        {"text": "Point 1", "bullet": true, "level": 0},
+        {"text": "Point 2", "bullet": true, "level": 0},
+        {"text": "Point 3", "bullet": true, "level": 0}
+      ]
+    },
+    "shape-3": {
+      "paragraphs": [
+        {"text": "Right Column Header", "bold": true},
+        {"text": "Point 1", "bullet": true, "level": 0},
+        {"text": "Point 2", "bullet": true, "level": 0},
+        {"text": "Point 3", "bullet": true, "level": 0}
+      ]
+    }
+  }
+}
+```
+
+#### 7. Quick Reference: Layout Sequence Patterns
+
+**For a 25-slide presentation**:
+```bash
+# Good pattern: Cover, overview, dividers with dense content
+rearrange.py template.pptx output.pptx 0,12,12,12,2,12,12,24,12,12,2,12,12,24,12,12,2,12,18,24,12,12,2,12,24,11
+
+# Breakdown:
+# 0: Cover
+# 12,12,12: 3 overview slides (bullets)
+# 2: Divider 1
+# 12,12,24,12,12: 5 content slides (mix)
+# 2: Divider 2  
+# 12,12,24,12,12: 5 content slides (mix)
+# 2: Divider 3
+# 12,18,24,12,12: 5 content slides (with stats slide 18)
+# 2: Divider 4
+# 12,24: 2 final content slides
+# 11: Thank you
+```
+
+**BAD pattern to avoid**:
+```bash
+# DON'T: Too many dividers, minimal content
+rearrange.py template.pptx output.pptx 0,2,12,2,12,2,12,2,12,11
+# This creates choppy flow with too many section breaks
+```
+
 ## Oracle Brand Guidelines
 
 ### Theme Selection
@@ -192,12 +361,12 @@ Replace `[YEAR]` with the current year.
    - Content: Presentation title, subtitle, presenter info, date
    
    ## Slide 2: Agenda
-   - Template: slide-12 (Title + single body - RECOMMENDED)
-   - Content: 3 bullet points (max for this layout)
+   - Template: slide-12 (Title + single body - ALWAYS use for bullets)
+   - Content: 3-5 bullet points (8-15 words each)
    
    ## Slide 3: Key Message
-   - Template: slide-18 (Bold statement)
-   - Content: Impact statement with visual
+   - Template: slide-18 (Bold statement - for stats/metrics)
+   - Content: Large metric + supporting context
    
    ...
    ```
@@ -212,17 +381,23 @@ python scripts/rearrange.py resources/templates/dark-template.pptx working.pptx 
 
 # Slide indices:
 # 0 = Cover
-# 12 = Title+single body (used twice) - RECOMMENDED for bullet lists
-# 18 = Bold statement
+# 12 = Title+single body (RECOMMENDED - use for all bullet lists)
+# 18 = Bold statement (for stats/metrics)
 # 11 = Thank you
-
-# AVOID: slide 13 (multi-box layout leaves empty placeholders)
 ```
+
+**Critical matching rules**:
+- **Bullet lists**: ALWAYS use slide 12 (single body, 7.0" wide)
+- **NEVER use slide 13**: Multi-box layout causes empty placeholders and cutoff
+- **2-column content**: Use slide 24 (4.9" columns, no cutoff)
+- **Dividers**: Use slide 2 (title only, abstract background)
+- **Stats/metrics**: Use slide 18 (centered, large text)
 
 **Important**: 
 - Slide indices are 0-based
 - Same index can appear multiple times (duplicates that slide)
 - Order matters—appears in final presentation in the order specified
+- Fill ALL placeholders—empty shapes create visual issues
 
 ### Step 3: Generate Text Inventory
 
@@ -328,7 +503,17 @@ Generate JSON with Oracle-formatted content:
 - **Font**: Specify `"font_name": "Oracle Sans Tab"`, `"font_size": 14.0` when different from default
 - **Auto-clearing**: Shapes not listed in replacement JSON are automatically cleared
 
-**Validation tip**: The `replace.py` script validates that all shapes in replacement JSON exist in the inventory. If you reference non-existent shapes, you'll get clear error messages showing available shapes.
+**FOOTER HANDLING (CRITICAL)**:
+- **DO NOT add footer content to replacement JSON**
+- Template slides already include pre-formatted footers
+- Footers show automatically: "Copyright © [YEAR], Oracle and/or its affiliates"
+- Only override footer placeholders if you need custom text (very rare)
+- Adding footer text manually causes duplicate/floating footers
+
+**Validation tips**: 
+- The `replace.py` script validates that all shapes in replacement JSON exist in the inventory
+- Overflow errors mean text is too long—shorten content or reduce bullet count
+- If shapes are outside visible range, check placeholder dimensions in inventory
 
 ### Step 5: Apply Replacements
 
