@@ -42,6 +42,19 @@ npx openskills sync
 
 ---
 
+## ✨ Latest Updates
+
+### January 2026: Auto-Fix Text Overflow
+The skill now automatically adjusts font sizes and spacing when content exceeds placeholder bounds. Write full, detailed content without worrying about text overflow errors - the system will optimize formatting automatically while preserving all your content.
+
+**Benefits:**
+- ✅ Write rich, detailed content without manual shortening
+- ✅ Automatic font and spacing optimization
+- ✅ 100% content preservation
+- ✅ Professional, readable output (9pt minimum)
+
+---
+
 ## 🎯 How to Use
 
 Once installed, simply ask your AI agent to create Oracle presentations:
