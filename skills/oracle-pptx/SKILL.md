@@ -155,8 +155,9 @@ python scripts/insert-icons.py final.pptx icons.json final-with-icons.pptx
 ```
 
 **Icon color variants**:
-- **Dark themes**: Use `_Air_RGB.svg` (light/white icons) - located in `light-theme/`
-- **Light themes**: Use `_Bark_RGB.svg` (dark icons) - located in `dark-theme/`
+- **Dark themes**: Use `_Air_RGB.svg` (light/white icons) - located in `dark-theme/`
+- **Light themes**: Use `_Bark_RGB.svg` (dark icons) - located in `light-theme/`
+- Folder names indicate which theme they're FOR (not icon color)
 - Script auto-detects theme and switches variants if needed
 
 **Position guide**: Use inches for coordinates.

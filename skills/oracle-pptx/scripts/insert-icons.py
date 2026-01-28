@@ -96,10 +96,10 @@ def insert_icons(input_pptx, icons_json_path, output_pptx):
     
     # Determine icon directory
     if theme == 'dark':
-        icons_dir = Path(__file__).parent.parent / "resources" / "icons" / "light-theme"
+        icons_dir = Path(__file__).parent.parent / "resources" / "icons" / "dark-theme"
         print(f"  📋 Detected dark theme, using light-colored (_Air_RGB) icons")
     else:
-        icons_dir = Path(__file__).parent.parent / "resources" / "icons" / "dark-theme"
+        icons_dir = Path(__file__).parent.parent / "resources" / "icons" / "light-theme"
         print(f"  📋 Detected light theme, using dark-colored (_Bark_RGB) icons")
     
     inserted = 0
