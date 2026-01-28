@@ -303,6 +303,70 @@ def apply_replacements(pptx_file: str, json_file: str, output_file: str):
     finally:
         tmp_path.unlink()  # Clean up temp file
 
+    # Auto-fix overflow by reducing font sizes
+    max_iterations = 8
+    for iteration in range(max_iterations):
+        # Find shapes with worsened overflow
+        shapes_to_fix = []
+        for slide_key, shape_overflows in updated_overflow.items():
+            for shape_key, new_overflow in shape_overflows.items():
+                original = original_overflow.get(slide_key, {}).get(shape_key, 0.0)
+                if new_overflow > original + 0.02:  # Tolerance of 0.02"
+                    shapes_to_fix.append((slide_key, shape_key, new_overflow, original))
+        
+        if not shapes_to_fix:
+            if iteration > 0:
+                print(f"✓ Auto-fixed all overflows after {iteration} iteration(s)")
+            break
+        
+        if iteration == 0:
+            print(f"\n⚙ Auto-adjusting {len(shapes_to_fix)} shape(s) with overflow...")
+        
+        # Apply fixes to each overflowing shape
+        for slide_key, shape_key, overflow, original in shapes_to_fix:
+            slide_index = int(slide_key.split("-")[1])
+            shape_data = inventory[slide_key][shape_key]
+            shape = shape_data.shape
+            
+            if not shape or not hasattr(shape, 'text_frame'):
+                continue
+            
+            text_frame = shape.text_frame
+            
+            # More aggressive strategy based on overflow severity
+            if overflow > 0.5:
+                reduction = 3  # Large overflow: reduce by 3pt
+            elif overflow > 0.2:
+                reduction = 2  # Medium overflow: reduce by 2pt
+            else:
+                reduction = 1  # Small overflow: reduce by 1pt
+            
+            for paragraph in text_frame.paragraphs:
+                # Reduce font sizes
+                for run in paragraph.runs:
+                    # Get current font size (use default if not set)
+                    current_size = run.font.size.pt if run.font.size else shape_data.default_font_size
+                    if current_size and current_size > 9:  # Min font size 9pt
+                        new_size = max(9, current_size - reduction)
+                        run.font.size = Pt(new_size)
+                        if iteration == 0:
+                            print(f"  {slide_key}/{shape_key}: Reducing font from {current_size}pt to {new_size}pt (overflow: {overflow:.2f}\")")
+                
+                # Also tighten line spacing on later iterations
+                if iteration >= 2:
+                    paragraph.line_spacing = Pt(13)  # Even tighter spacing
+        
+        # Re-save and re-check
+        with tempfile.NamedTemporaryFile(suffix=".pptx", delete=False) as tmp:
+            tmp_path = Path(tmp.name)
+            prs.save(str(tmp_path))
+        
+        try:
+            updated_inventory = extract_text_inventory(tmp_path)
+            updated_overflow = detect_frame_overflow(updated_inventory)
+        finally:
+            tmp_path.unlink()
+    
     # Check if any text overflow got worse
     overflow_errors = []
     for slide_key, shape_overflows in updated_overflow.items():
