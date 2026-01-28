@@ -269,13 +269,18 @@ def apply_replacements(pptx_file: str, json_file: str, output_file: str):
             # ShapeData already validates text_frame in __init__
             text_frame = shape.text_frame  # type: ignore
 
+            # Check for replacement paragraphs FIRST to determine if we should clear
+            replacement_shape_data = replacements.get(slide_key, {}).get(shape_key, {})
+            
+            # ONLY clear shapes that have replacements
+            # This preserves template content for footers, subtitles, etc. unless explicitly replaced
+            if "paragraphs" not in replacement_shape_data:
+                # No replacement - preserve original template text
+                continue
+            
+            # Has replacement content - clear and replace
             text_frame.clear()  # type: ignore
             shapes_cleared += 1
-
-            # Check for replacement paragraphs
-            replacement_shape_data = replacements.get(slide_key, {}).get(shape_key, {})
-            if "paragraphs" not in replacement_shape_data:
-                continue
 
             shapes_replaced += 1
 
