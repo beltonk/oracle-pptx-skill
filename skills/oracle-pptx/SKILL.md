@@ -192,8 +192,8 @@ Replace `[YEAR]` with the current year.
    - Content: Presentation title, subtitle, presenter info, date
    
    ## Slide 2: Agenda
-   - Template: slide-13 (Title + body)
-   - Content: 3-4 bullet points
+   - Template: slide-12 (Title + single body - RECOMMENDED)
+   - Content: 3 bullet points (max for this layout)
    
    ## Slide 3: Key Message
    - Template: slide-18 (Bold statement)
@@ -208,13 +208,15 @@ Use `scripts/rearrange.py` to create a working presentation with slides in the c
 
 ```bash
 # Example: Create 5-slide presentation from Dark template
-python scripts/rearrange.py resources/templates/dark-template.pptx working.pptx 0,13,13,18,11
+python scripts/rearrange.py resources/templates/dark-template.pptx working.pptx 0,12,12,18,11
 
 # Slide indices:
 # 0 = Cover
-# 13 = Title+body (used twice)
+# 12 = Title+single body (used twice) - RECOMMENDED for bullet lists
 # 18 = Bold statement
 # 11 = Thank you
+
+# AVOID: slide 13 (multi-box layout leaves empty placeholders)
 ```
 
 **Important**: 
@@ -379,9 +381,9 @@ python scripts/thumbnail.py output.pptx thumbnails --cols 4
 3. **Section dividers**: Slides 7-8 (dark/light variations)
 
 4. **Content slides**:
-   - Single topic with bullets: slide 13 (Title + body)
-   - Two distinct items/concepts: slide with 2-column layout
-   - Three distinct items/concepts: slide with 3-column layout
+   - Single topic with bullets: slide 12 (Title + single body placeholder - RECOMMENDED)
+   - **AVOID slide 13**: Multi-box layout (leaves empty placeholders)
+   - Two distinct items/concepts: slide 24 (proper 2-column layout)
    - Key message/impact: slide 18 (Bold statement)
    - Quote with attribution: Quote layout slides
    - Story with image: Story slides with photo layouts
@@ -390,10 +392,12 @@ python scripts/thumbnail.py output.pptx thumbnails --cols 4
 5. **Closing**: Slide 11 (Thank you)
 
 **Critical matching rules**:
-- **Match placeholder count to content**: Don't use 3-column layout for 2 items
-- **Count items first**: Before selecting layout, count distinct content pieces
-- **Verify placeholders**: Each placeholder must be filled with meaningful content
-- **Break into multiple slides**: If you have 4+ items for a multi-column layout, consider splitting
+- **Use slide 12 for bullet lists**: Single large body placeholder (7.0" x 0.8"), fits ~3 bullets
+- **AVOID slide 13**: Multi-box layout with 5 small boxes - leaves empty placeholders
+- **Use slide 24 for 2-column**: Proper 2-column layout with 2 body placeholders (5.4" x 1.4" each)
+- **Match placeholder count to content**: Fill ALL placeholders - no empties
+- **Limit bullets per slide**: Max 3-4 bullets per placeholder to avoid overflow
+- **Break into multiple slides**: If you have too much content, use multiple slide-12 layouts
 
 ## Icons
 
