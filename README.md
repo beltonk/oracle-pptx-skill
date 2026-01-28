@@ -44,14 +44,28 @@ npx openskills sync
 
 ## ✨ Latest Updates
 
-### January 2026: Auto-Fix Text Overflow
-The skill now automatically adjusts font sizes and spacing when content exceeds placeholder bounds. Write full, detailed content without worrying about text overflow errors - the system will optimize formatting automatically while preserving all your content.
+### January 2026: Major Skill Optimization
+
+**SKILL.md Refactored** (60% smaller, follows Anthropic best practices):
+- Reduced from 864 to 340 lines for faster loading
+- Progressive disclosure design with clear workflows
+- Concise guidance assuming Claude's intelligence
+
+**Icon Library Added** (1,078 professional icons):
+- Comprehensive ICON-LIBRARY.md with 27 categories
+- Search-friendly organization by Business, Technology, Customer, etc.
+- Professional icons ONLY - no emoji in presentations
+
+**Critical Fixes**:
+- Footer handling clarified (most common error fixed)
+- Timeline slide troubleshooting added
+- Auto-fix feature fully documented
 
 **Benefits:**
-- ✅ Write rich, detailed content without manual shortening
-- ✅ Automatic font and spacing optimization
-- ✅ 100% content preservation
-- ✅ Professional, readable output (9pt minimum)
+- ✅ Faster skill discovery and loading
+- ✅ Professional presentations with proper icons
+- ✅ Fewer errors from clearer guidance
+- ✅ Rich, detailed content with auto-formatting
 
 ---
 
