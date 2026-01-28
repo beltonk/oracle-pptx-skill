@@ -119,6 +119,9 @@ Build replacement JSON matching the inventory structure:
 - ❌ Do NOT insert icons as post-processing - specify them at design time with proper positioning
 - ❌ Do NOT use dark icons (_Bark_) on dark themes - use light icons (_Air_) for visibility
 - ❌ Do NOT place icons over text - use margin positions (left: 0.3 or 11.0) to avoid overlap
+- ❌ Do NOT add icons to cover slides (slide-0) or divider slides
+- ❌ Do NOT use generic/random icons - ensure STRONG contextual relevance or omit icon
+- ❌ Do NOT use same size for all icons - vary 0.7-1.2" based on content importance
 
 ### Step 5: Apply Content
 
@@ -143,16 +146,25 @@ python scripts/insert-icons.py final.pptx icons.json final-with-icons.pptx
 **Icons JSON format**:
 ```json
 {
-  "slide-1": {
-    "icon": "RMIL_Database-and-AI_GenAI-Agents_Air_RGB.svg",
-    "position": {"left": 11.0, "top": 1.2, "width": 1.0, "height": 1.0}
+  "slide-6": {
+    "icon": "RMIL_Business_Analytics_Air_RGB.svg",
+    "position": {"left": 0.3, "top": 2.8, "width": 0.7, "height": 0.7},
+    "context": "Analytics - Business metrics slide"
   },
-  "slide-2": {
-    "icon": "RMIL_Technology_AI-Database_Air_RGB.svg",
-    "position": {"left": 0.3, "top": 2.5, "width": 0.8, "height": 0.8}
+  "slide-14": {
+    "icon": "RMIL_Technology_Machine-Learning_Air_RGB.svg",
+    "position": {"left": 11.1, "top": 1.0, "width": 1.0, "height": 1.0},
+    "context": "Machine learning capabilities"
   }
 }
 ```
+
+**CRITICAL - Icon selection rules:**
+- ✅ ONLY use icons with **STRONG contextual relevance** to slide content
+- ✅ NO icon on cover/title slides (slide-0)
+- ✅ NO icon if no relevant match found - **quality over quantity**
+- ✅ Vary sizes: Small (0.7"), Medium (0.8-0.9"), Large (1.0-1.2") based on importance
+- ❌ Do NOT add icons just to have icons - they must be meaningful
 
 **Icon color variants**:
 - **Dark themes**: Use `_Air_RGB.svg` (light/white icons) - located in `dark-theme/`

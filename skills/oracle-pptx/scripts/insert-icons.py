@@ -6,14 +6,20 @@ Usage:
     
 Icons JSON format:
 {
-  "slide-1": {
-    "icon": "RMIL_Database-and-AI_GenAI-Agents_Air_RGB.svg",
-    "position": {"left": 11.0, "top": 1.2, "width": 1.0, "height": 1.0}
+  "slide-6": {
+    "icon": "RMIL_Business_Analytics_Air_RGB.svg",
+    "position": {"left": 0.3, "top": 2.8, "width": 0.7, "height": 0.7},
+    "context": "Analytics - Business metrics slide"
   }
 }
 
-For dark themes, use _Air_RGB.svg icons (light/white).
-For light themes, use _Bark_RGB.svg icons (dark).
+CRITICAL RULES:
+- Only specify icons with STRONG contextual relevance
+- NO icon on cover slides (slide-0)
+- NO icon if no relevant match found
+- Vary icon sizes: 0.7-1.2" based on importance
+- For dark themes, use _Air_RGB.svg (light/white)
+- For light themes, use _Bark_RGB.svg (dark)
 """
 
 import sys
