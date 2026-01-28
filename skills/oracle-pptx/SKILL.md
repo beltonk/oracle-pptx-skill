@@ -298,7 +298,7 @@ Before finalizing presentations:
 - **`resources/brand-compliance.md`** - Oracle brand requirements (REQUIRED)
 
 **Reference Materials:**
-- **`resources/icons/ICON-LIBRARY.md`** - 540 professional icons with filenames
+- **`resources/icons/icon-library.md`** - 540 professional icons with filenames
 - **`resources/icons/icon-index.json`** - Machine-readable icon index for scripts
 - **`resources/templates/layout-mapping.md`** - Layout descriptions and best practices
 
@@ -353,4 +353,4 @@ pip install python-pptx pillow six
 **Questions?** 
 - **Oracle brand**: Read `resources/guidelines.md` and `resources/brand-compliance.md` (REQUIRED)
 - **Layout selection**: See `resources/templates/layout-mapping.md`
-- **Icons**: See `resources/icons/ICON-LIBRARY.md` for complete index
+- **Icons**: See `resources/icons/icon-library.md` for complete index
