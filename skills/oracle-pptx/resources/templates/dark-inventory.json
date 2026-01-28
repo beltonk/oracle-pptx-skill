@@ -1516,20 +1516,6 @@
       ]
     },
     "shape-1": {
-      "left": 0.85,
-      "top": 4.52,
-      "width": 7.0,
-      "height": 0.75,
-      "placeholder_type": "BODY",
-      "default_font_size": 20.0,
-      "paragraphs": [
-        {
-          "text": "Subhead goes here.",
-          "color": "FFFFFF"
-        }
-      ]
-    },
-    "shape-2": {
       "left": 1.23,
       "top": 7.55,
       "width": 6.28,
@@ -2364,20 +2350,6 @@
     },
     "shape-3": {
       "left": 0.83,
-      "top": 2.15,
-      "width": 5.21,
-      "height": 0.3,
-      "placeholder_type": "BODY",
-      "default_font_size": 20.0,
-      "paragraphs": [
-        {
-          "text": "Subhead goes here.",
-          "color": "FFFFFF"
-        }
-      ]
-    },
-    "shape-4": {
-      "left": 0.83,
       "top": 2.53,
       "width": 5.21,
       "height": 0.5,
@@ -2394,21 +2366,7 @@
         }
       ]
     },
-    "shape-5": {
-      "left": 0.83,
-      "top": 3.52,
-      "width": 5.21,
-      "height": 0.3,
-      "placeholder_type": "BODY",
-      "default_font_size": 20.0,
-      "paragraphs": [
-        {
-          "text": "Subhead goes here.",
-          "color": "FFFFFF"
-        }
-      ]
-    },
-    "shape-6": {
+    "shape-4": {
       "left": 0.83,
       "top": 3.9,
       "width": 5.21,
@@ -2426,21 +2384,7 @@
         }
       ]
     },
-    "shape-7": {
-      "left": 0.83,
-      "top": 5.02,
-      "width": 5.21,
-      "height": 0.3,
-      "placeholder_type": "BODY",
-      "default_font_size": 20.0,
-      "paragraphs": [
-        {
-          "text": "Subhead goes here.",
-          "color": "FFFFFF"
-        }
-      ]
-    },
-    "shape-8": {
+    "shape-5": {
       "left": 0.83,
       "top": 5.4,
       "width": 5.21,
@@ -2458,7 +2402,7 @@
         }
       ]
     },
-    "shape-9": {
+    "shape-6": {
       "left": 1.23,
       "top": 7.03,
       "width": 6.28,

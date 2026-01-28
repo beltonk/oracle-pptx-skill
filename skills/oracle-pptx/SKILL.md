@@ -17,6 +17,17 @@ Create professional PowerPoint presentations that strictly follow Oracle's FY26 
 - **Dark theme** (default): Large live events, formal presentations (51 layouts)
 - **Light theme**: Virtual events, documentation, internal meetings (55 layouts)
 
+## ⚠️ BEFORE YOU START - READ THESE FIRST
+
+**CRITICAL - Read these guidelines BEFORE creating presentations:**
+
+1. **`resources/guidelines.md`** - Complete Oracle design standards, color palettes, typography
+2. **`resources/brand-compliance.md`** - Oracle brand requirements, compliance rules
+
+These documents contain essential Oracle brand requirements that MUST be followed. Skipping them will result in non-compliant presentations.
+
+---
+
 ## Quick Start
 
 ### Step 1: Plan Your Presentation
@@ -116,7 +127,11 @@ python scripts/replace.py working.pptx content.json final.pptx
 
 **Auto-fix feature**: The script automatically adjusts font sizes and spacing if content overflows placeholders. Write full, detailed content—formatting is optimized automatically.
 
+---
+
 ## Critical Rules
+
+**⚠️ REMINDER:** Have you read `resources/guidelines.md` and `resources/brand-compliance.md`? These are REQUIRED reading.
 
 ### Footer Handling (MOST COMMON ERROR)
 
@@ -214,18 +229,13 @@ python scripts/replace.py working.pptx content.json final.pptx
 
 ### Scripts Reference
 
-**All scripts include `--help` for usage:**
+**Core scripts** (all include `--help`):
 
 ```bash
-python scripts/rearrange.py --help
-python scripts/inventory.py --help
-python scripts/replace.py --help
+python scripts/rearrange.py --help   # Build slide structure
+python scripts/inventory.py --help   # Extract placeholders
+python scripts/replace.py --help     # Apply content
 ```
-
-**Additional utilities:**
-- `ooxml/scripts/unpack.py` - Extract PPTX to XML
-- `ooxml/scripts/pack.py` - Rebuild PPTX from XML
-- `ooxml/scripts/validate.py` - Validate OOXML structure
 
 ### Template Inventories
 
@@ -283,11 +293,14 @@ Before finalizing presentations:
 
 ## Resources
 
-**Icon Library**: `resources/icons/ICON-LIBRARY.md` - 1,078 professional icons organized by category
+**⚠️ MUST READ BEFORE GENERATING:**
+- **`resources/guidelines.md`** - Complete Oracle design standards (REQUIRED)
+- **`resources/brand-compliance.md`** - Oracle brand requirements (REQUIRED)
 
-**Brand Guidelines**: `resources/guidelines.md` - Complete Oracle design standards
-
-**Layout Reference**: `resources/templates/layout-mapping.md` - Layout descriptions and best practices
+**Reference Materials:**
+- **`resources/icons/ICON-LIBRARY.md`** - 540 professional icons with filenames
+- **`resources/icons/icon-index.json`** - Machine-readable icon index for scripts
+- **`resources/templates/layout-mapping.md`** - Layout descriptions and best practices
 
 **Examples**: `examples/` directory - Step-by-step workflow tutorials
 
@@ -313,8 +326,8 @@ skills/oracle-pptx/
 │   │   ├── dark-inventory.json    # Pre-generated inventory
 │   │   ├── light-inventory.json   # Pre-generated inventory
 │   │   └── layout-mapping.md      # Layout descriptions
-│   └── guidelines.md              # Oracle brand standards
-└── examples/                      # Tutorial workflows
+│   ├── guidelines.md              # Oracle brand standards (REQUIRED)
+│   └── brand-compliance.md        # Oracle compliance (REQUIRED)
 ```
 
 ## Dependencies
@@ -337,4 +350,7 @@ pip install python-pptx pillow six
 
 ---
 
-**Questions?** Check `resources/guidelines.md` for Oracle brand questions, or `layout-mapping.md` for layout selection guidance.
+**Questions?** 
+- **Oracle brand**: Read `resources/guidelines.md` and `resources/brand-compliance.md` (REQUIRED)
+- **Layout selection**: See `resources/templates/layout-mapping.md`
+- **Icons**: See `resources/icons/ICON-LIBRARY.md` for complete index

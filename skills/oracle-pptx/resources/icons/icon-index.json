@@ -1,0 +1,2217 @@
+{
+  "total": 540,
+  "categories": {
+    "Buildings": [
+      {
+        "file": "RMIL_Buildings_Bank-Building_Bark_RGB.svg",
+        "name": "Bank Building"
+      },
+      {
+        "file": "RMIL_Buildings_Business-to-Business_Bark_RGB.svg",
+        "name": "Business to Business"
+      },
+      {
+        "file": "RMIL_Buildings_Enterprise-Business_Bark_RGB.svg",
+        "name": "Enterprise Business"
+      },
+      {
+        "file": "RMIL_Buildings_Factory_Bark_RGB.svg",
+        "name": "Factory"
+      },
+      {
+        "file": "RMIL_Buildings_Government_Bark_RGB.svg",
+        "name": "Government"
+      },
+      {
+        "file": "RMIL_Buildings_Hospital-Clinic_Bark_RGB.svg",
+        "name": "Hospital Clinic"
+      },
+      {
+        "file": "RMIL_Buildings_Large-Factory_Bark_RGB.svg",
+        "name": "Large Factory"
+      },
+      {
+        "file": "RMIL_Buildings_Medium-Business_Bark_RGB.svg",
+        "name": "Medium Business"
+      },
+      {
+        "file": "RMIL_Buildings_Office_Bark_RGB.svg",
+        "name": "Office"
+      },
+      {
+        "file": "RMIL_Buildings_Operations-Warehouse_Bark_RGB.svg",
+        "name": "Operations Warehouse"
+      },
+      {
+        "file": "RMIL_Buildings_Small-Business_Bark_RGB.svg",
+        "name": "Small Business"
+      },
+      {
+        "file": "RMIL_Buildings_University_Bark_RGB.svg",
+        "name": "University"
+      },
+      {
+        "file": "RMIL_Buildings_Warehouse_Bark_RGB.svg",
+        "name": "Warehouse"
+      }
+    ],
+    "Business": [
+      {
+        "file": "RMIL_Business_Analytics_Bark_RGB.svg",
+        "name": "Analytics"
+      },
+      {
+        "file": "RMIL_Business_Archiving-Data_Bark_RGB.svg",
+        "name": "Archiving Data"
+      },
+      {
+        "file": "RMIL_Business_Arena_Bark_RGB.svg",
+        "name": "Arena"
+      },
+      {
+        "file": "RMIL_Business_Arrow1_Bark_RGB.svg",
+        "name": "Arrow1"
+      },
+      {
+        "file": "RMIL_Business_Arrow2_Bark_RGB.svg",
+        "name": "Arrow2"
+      },
+      {
+        "file": "RMIL_Business_Arrow3_Bark_RGB.svg",
+        "name": "Arrow3"
+      },
+      {
+        "file": "RMIL_Business_B_Tree_Index_Bark_RGB.svg",
+        "name": "B"
+      },
+      {
+        "file": "RMIL_Business_Bar-Graph_Bark_RGB.svg",
+        "name": "Bar Graph"
+      },
+      {
+        "file": "RMIL_Business_Big-Data_Bark_RGB.svg",
+        "name": "Big Data"
+      },
+      {
+        "file": "RMIL_Business_Billing_Bark_RGB.svg",
+        "name": "Billing"
+      },
+      {
+        "file": "RMIL_Business_Billing-Euro_Bark_RGB.svg",
+        "name": "Billing Euro"
+      },
+      {
+        "file": "RMIL_Business_Billing-Pound_Bark_RGB.svg",
+        "name": "Billing Pound"
+      },
+      {
+        "file": "RMIL_Business_Billing-Yen_Bark_RGB.svg",
+        "name": "Billing Yen"
+      },
+      {
+        "file": "RMIL_Business_Break_Room_Bark_RGB.svg",
+        "name": "Break"
+      },
+      {
+        "file": "RMIL_Business_Budget_Bark_RGB.svg",
+        "name": "Budget"
+      },
+      {
+        "file": "RMIL_Business_Building-Permit_Bark_RGB.svg",
+        "name": "Building Permit"
+      },
+      {
+        "file": "RMIL_Business_Calendar_Bark_RGB.svg",
+        "name": "Calendar"
+      },
+      {
+        "file": "RMIL_Business_Campaign-Design_Bark_RGB.svg",
+        "name": "Campaign Design"
+      },
+      {
+        "file": "RMIL_Business_Case-Management_Bark_RGB.svg",
+        "name": "Case Management"
+      },
+      {
+        "file": "RMIL_Business_Certificate_Bark_RGB.svg",
+        "name": "Certificate"
+      },
+      {
+        "file": "RMIL_Business_Check_Mark_Bark_RGB.svg",
+        "name": "Check"
+      },
+      {
+        "file": "RMIL_Business_Client-Management-1_Bark_RGB.svg",
+        "name": "Client Management 1"
+      },
+      {
+        "file": "RMIL_Business_Client-Management-2_Bark_RGB.svg",
+        "name": "Client Management 2"
+      },
+      {
+        "file": "RMIL_Business_Client-Management-3_Bark_RGB.svg",
+        "name": "Client Management 3"
+      },
+      {
+        "file": "RMIL_Business_Client-Management-4_Bark_RGB.svg",
+        "name": "Client Management 4"
+      },
+      {
+        "file": "RMIL_Business_Clock_Bark_RGB.svg",
+        "name": "Clock"
+      },
+      {
+        "file": "RMIL_Business_Collaboration-Space_Bark_RGB.svg",
+        "name": "Collaboration Space"
+      },
+      {
+        "file": "RMIL_Business_Collaboration-Tools_Bark_RGB.svg",
+        "name": "Collaboration Tools"
+      },
+      {
+        "file": "RMIL_Business_Color_Bark_RGB.svg",
+        "name": "Color"
+      },
+      {
+        "file": "RMIL_Business_Conference_Room_Bark_RGB.svg",
+        "name": "Conference"
+      },
+      {
+        "file": "RMIL_Business_Content-Management_Bark_RGB.svg",
+        "name": "Content Management"
+      },
+      {
+        "file": "RMIL_Business_Contract_Bark_RGB.svg",
+        "name": "Contract"
+      },
+      {
+        "file": "RMIL_Business_Contract-Approval_Bark_RGB.svg",
+        "name": "Contract Approval"
+      },
+      {
+        "file": "RMIL_Business_Contract-Management_Bark_RGB.svg",
+        "name": "Contract Management"
+      },
+      {
+        "file": "RMIL_Business_Contract-Negotiation_Bark_RGB.svg",
+        "name": "Contract Negotiation"
+      },
+      {
+        "file": "RMIL_Business_Data-Integration_Bark_RGB.svg",
+        "name": "Data Integration"
+      },
+      {
+        "file": "RMIL_Business_Data-Management_Bark_RGB.svg",
+        "name": "Data Management"
+      },
+      {
+        "file": "RMIL_Business_Document_Bark_RGB.svg",
+        "name": "Document"
+      },
+      {
+        "file": "RMIL_Business_Drop-in_Space_Bark_RGB.svg",
+        "name": "Drop in"
+      },
+      {
+        "file": "RMIL_Business_Editorial_Guidelines_Bark_RGB.svg",
+        "name": "Editorial"
+      },
+      {
+        "file": "RMIL_Business_Enterprise-Architecture_Bark_RGB.svg",
+        "name": "Enterprise Architecture"
+      },
+      {
+        "file": "RMIL_Business_Expenses_Bark_RGB.svg",
+        "name": "Expenses"
+      },
+      {
+        "file": "RMIL_Business_Flex_Workspace_Bark_RGB.svg",
+        "name": "Flex"
+      },
+      {
+        "file": "RMIL_Business_Focus_Room_Bark_RGB.svg",
+        "name": "Focus"
+      },
+      {
+        "file": "RMIL_Business_Folder_Bark_RGB.svg",
+        "name": "Folder"
+      },
+      {
+        "file": "RMIL_Business_Forecast-Planning_Bark_RGB.svg",
+        "name": "Forecast Planning"
+      },
+      {
+        "file": "RMIL_Business_Form_Bark_RGB.svg",
+        "name": "Form"
+      },
+      {
+        "file": "RMIL_Business_Gant_Chart_Bark_RGB.svg",
+        "name": "Gant"
+      },
+      {
+        "file": "RMIL_Business_Globe-Eastern_Bark_RGB.svg",
+        "name": "Globe Eastern"
+      },
+      {
+        "file": "RMIL_Business_Globe-Western_Bark_RGB.svg",
+        "name": "Globe Western"
+      },
+      {
+        "file": "RMIL_Business_Governance-Risk-and-Compliance_Bark_RGB.svg",
+        "name": "Governance Risk and Compliance"
+      },
+      {
+        "file": "RMIL_Business_Graduation_Certificate_Bark_RGB.svg",
+        "name": "Graduation"
+      },
+      {
+        "file": "RMIL_Business_Grant-Management_Bark_RGB.svg",
+        "name": "Grant Management"
+      },
+      {
+        "file": "RMIL_Business_Hand-Shake_Bark_RGB.svg",
+        "name": "Hand Shake"
+      },
+      {
+        "file": "RMIL_Business_Hazard_Bark_RGB.svg",
+        "name": "Hazard"
+      },
+      {
+        "file": "RMIL_Business_Hourglass_Bark_RGB.svg",
+        "name": "Hourglass"
+      },
+      {
+        "file": "RMIL_Business_Huddle_Room_Bark_RGB.svg",
+        "name": "Huddle"
+      },
+      {
+        "file": "RMIL_Business_Human-Resources-Female_Bark_RGB.svg",
+        "name": "Human Resources Female"
+      },
+      {
+        "file": "RMIL_Business_Human-Resources-Male_Bark_RGB.svg",
+        "name": "Human Resources Male"
+      },
+      {
+        "file": "RMIL_Business_IP-Management_Bark_RGB.svg",
+        "name": "IP Management"
+      },
+      {
+        "file": "RMIL_Business_Iconography_Bark_RGB.svg",
+        "name": "Iconography"
+      },
+      {
+        "file": "RMIL_Business_Identity_Bark_RGB.svg",
+        "name": "Identity"
+      },
+      {
+        "file": "RMIL_Business_Identity-Management_Bark_RGB.svg",
+        "name": "Identity Management"
+      },
+      {
+        "file": "RMIL_Business_Incentives_Bark_RGB.svg",
+        "name": "Incentives"
+      },
+      {
+        "file": "RMIL_Business_Information-Management_Bark_RGB.svg",
+        "name": "Information Management"
+      },
+      {
+        "file": "RMIL_Business_Innovation_Bark_RGB.svg",
+        "name": "Innovation"
+      },
+      {
+        "file": "RMIL_Business_Integration_Bark_RGB.svg",
+        "name": "Integration"
+      },
+      {
+        "file": "RMIL_Business_Inventory_Bark_RGB.svg",
+        "name": "Inventory"
+      },
+      {
+        "file": "RMIL_Business_Inventory-Management_Bark_RGB.svg",
+        "name": "Inventory Management"
+      },
+      {
+        "file": "RMIL_Business_Lead-Generation_Bark_RGB.svg",
+        "name": "Lead Generation"
+      },
+      {
+        "file": "RMIL_Business_Legislation-and-Regulation_Bark_RGB.svg",
+        "name": "Legislation and Regulation"
+      },
+      {
+        "file": "RMIL_Business_Location-Pin_Bark_RGB.svg",
+        "name": "Location Pin"
+      },
+      {
+        "file": "RMIL_Business_Magnifying_Glass_Bark_RGB.svg",
+        "name": "Magnifying"
+      },
+      {
+        "file": "RMIL_Business_Money-Dollar_Bark_RGB.svg",
+        "name": "Money Dollar"
+      },
+      {
+        "file": "RMIL_Business_Money-Pound_Bark_RGB.svg",
+        "name": "Money Pound"
+      },
+      {
+        "file": "RMIL_Business_Money-Yen_Bark_RGB.svg",
+        "name": "Money Yen"
+      },
+      {
+        "file": "RMIL_Business_Network_Bark_RGB.svg",
+        "name": "Network"
+      },
+      {
+        "file": "RMIL_Business_Newsletter_Bark_RGB.svg",
+        "name": "Newsletter"
+      },
+      {
+        "file": "RMIL_Business_Online_Finance_Bark_RGB.svg",
+        "name": "Online"
+      },
+      {
+        "file": "RMIL_Business_Optimization_Bark_RGB.svg",
+        "name": "Optimization"
+      },
+      {
+        "file": "RMIL_Business_Order-Execution_Bark_RGB.svg",
+        "name": "Order Execution"
+      },
+      {
+        "file": "RMIL_Business_Patient-Administration-Female_Bark_RGB.svg",
+        "name": "Patient Administration Female"
+      },
+      {
+        "file": "RMIL_Business_Patient-Administration-Male_Bark_RGB.svg",
+        "name": "Patient Administration Male"
+      },
+      {
+        "file": "RMIL_Business_Performance-Management_Bark_RGB.svg",
+        "name": "Performance Management"
+      },
+      {
+        "file": "RMIL_Business_Phone_Bark_RGB.svg",
+        "name": "Phone"
+      },
+      {
+        "file": "RMIL_Business_Photography_Bark_RGB.svg",
+        "name": "Photography"
+      },
+      {
+        "file": "RMIL_Business_Pie_Charts_Bark_RGB.svg",
+        "name": "Pie"
+      },
+      {
+        "file": "RMIL_Business_Plus_Sign_Bark_RGB.svg",
+        "name": "Plus"
+      },
+      {
+        "file": "RMIL_Business_Presentation-Female_Bark_RGB.svg",
+        "name": "Presentation Female"
+      },
+      {
+        "file": "RMIL_Business_Presentation-Male_Bark_RGB.svg",
+        "name": "Presentation Male"
+      },
+      {
+        "file": "RMIL_Business_Procurement_Bark_RGB.svg",
+        "name": "Procurement"
+      },
+      {
+        "file": "RMIL_Business_Product-Demo_Bark_RGB.svg",
+        "name": "Product Demo"
+      },
+      {
+        "file": "RMIL_Business_Product-Development_Bark_RGB.svg",
+        "name": "Product Development"
+      },
+      {
+        "file": "RMIL_Business_Product-Portfolio_Bark_RGB.svg",
+        "name": "Product Portfolio"
+      },
+      {
+        "file": "RMIL_Business_Project-Close_Bark_RGB.svg",
+        "name": "Project Close"
+      },
+      {
+        "file": "RMIL_Business_Proposals_Bark_RGB.svg",
+        "name": "Proposals"
+      },
+      {
+        "file": "RMIL_Business_Quality-Control_Bark_RGB.svg",
+        "name": "Quality Control"
+      },
+      {
+        "file": "RMIL_Business_Recruitment-Female_Bark_RGB.svg",
+        "name": "Recruitment Female"
+      },
+      {
+        "file": "RMIL_Business_Recruitment-Male_Bark_RGB.svg",
+        "name": "Recruitment Male"
+      },
+      {
+        "file": "RMIL_Business_Recycling_Bark_RGB.svg",
+        "name": "Recycling"
+      },
+      {
+        "file": "RMIL_Business_Reports_Bark_RGB.svg",
+        "name": "Reports"
+      },
+      {
+        "file": "RMIL_Business_Research_Bark_RGB.svg",
+        "name": "Research"
+      },
+      {
+        "file": "RMIL_Business_Revenue-Accounting_Bark_RGB.svg",
+        "name": "Revenue Accounting"
+      },
+      {
+        "file": "RMIL_Business_Risk_and_Performance_Analysis_Bark_RGB.svg",
+        "name": "Risk"
+      },
+      {
+        "file": "RMIL_Business_Sales-Channel-Management_Bark_RGB.svg",
+        "name": "Sales Channel Management"
+      },
+      {
+        "file": "RMIL_Business_Security_Bark_RGB.svg",
+        "name": "Security"
+      },
+      {
+        "file": "RMIL_Business_Spreadsheet_Bark_RGB.svg",
+        "name": "Spreadsheet"
+      },
+      {
+        "file": "RMIL_Business_Staffing-Female_Bark_RGB.svg",
+        "name": "Staffing Female"
+      },
+      {
+        "file": "RMIL_Business_Staffing-Male_Bark_RGB.svg",
+        "name": "Staffing Male"
+      },
+      {
+        "file": "RMIL_Business_Statutory-Compliance_Bark_RGB.svg",
+        "name": "Statutory Compliance"
+      },
+      {
+        "file": "RMIL_Business_Strategy_Bark_RGB.svg",
+        "name": "Strategy"
+      },
+      {
+        "file": "RMIL_Business_Supply-Chain-Management_Bark_RGB.svg",
+        "name": "Supply Chain Management"
+      },
+      {
+        "file": "RMIL_Business_Supply-Chain-Planning_Bark_RGB.svg",
+        "name": "Supply Chain Planning"
+      },
+      {
+        "file": "RMIL_Business_Table_Bark_RGB.svg",
+        "name": "Table"
+      },
+      {
+        "file": "RMIL_Business_Table-Columnar-Row_Bark_RGB.svg",
+        "name": "Table Columnar Row"
+      },
+      {
+        "file": "RMIL_Business_Tables_Bark_RGB.svg",
+        "name": "Tables"
+      },
+      {
+        "file": "RMIL_Business_Training_Bark_RGB.svg",
+        "name": "Training"
+      },
+      {
+        "file": "RMIL_Business_Typography_Bark_RGB.svg",
+        "name": "Typography"
+      },
+      {
+        "file": "RMIL_Business_Typography-Interactive_Bark_RGB.svg",
+        "name": "Typography Interactive"
+      },
+      {
+        "file": "RMIL_Business_Video-Camera_Bark_RGB.svg",
+        "name": "Video Camera"
+      },
+      {
+        "file": "RMIL_Business_Voice_Bark_RGB.svg",
+        "name": "Voice"
+      },
+      {
+        "file": "RMIL_Business_Voice-and-Tone_Bark_RGB.svg",
+        "name": "Voice and Tone"
+      },
+      {
+        "file": "RMIL_Business_X_Mark_Bark_RGB.svg",
+        "name": "X"
+      }
+    ],
+    "Communications": [
+      {
+        "file": "RMIL_Communications_Call-Recording_Bark_RGB.svg",
+        "name": "Call Recording"
+      },
+      {
+        "file": "RMIL_Communications_Enterprise-Communications-Broker_Bark_RGB.svg",
+        "name": "Enterprise Communications Broker"
+      },
+      {
+        "file": "RMIL_Communications_Media-Server_Bark_RGB.svg",
+        "name": "Media Server"
+      },
+      {
+        "file": "RMIL_Communications_Oracle-Communications-Converged-Application-Server-OCCAS_Bark_RGB.svg",
+        "name": "Oracle Communications Converged Application Server OCCAS"
+      },
+      {
+        "file": "RMIL_Communications_Session-Delivery-Manager_Bark_RGB.svg",
+        "name": "Session Delivery Manager"
+      }
+    ],
+    "Construction-and-Engineering": [
+      {
+        "file": "RMIL_Construction-and-Engineering_Construction_Bark_RGB.svg",
+        "name": "Construction"
+      },
+      {
+        "file": "RMIL_Construction-and-Engineering_Construction and Engineering_Bark_RGB.svg",
+        "name": "Construction and Engineering"
+      },
+      {
+        "file": "RMIL_Construction-and-Engineering_Energy and Resources_Bark_RGB.svg",
+        "name": "Energy and Resources"
+      },
+      {
+        "file": "RMIL_Construction-and-Engineering_Facilities_Bark_RGB.svg",
+        "name": "Facilities"
+      },
+      {
+        "file": "RMIL_Construction-and-Engineering_Manufacturing_Bark_RGB.svg",
+        "name": "Manufacturing"
+      },
+      {
+        "file": "RMIL_Construction-and-Engineering_Transportation_Bark_RGB.svg",
+        "name": "Transportation"
+      }
+    ],
+    "Customer": [
+      {
+        "file": "RMIL_Customer_CX-F_Bark_RGB.svg",
+        "name": "CX F"
+      },
+      {
+        "file": "RMIL_Customer_CX-M_Bark_RGB.svg",
+        "name": "CX M"
+      },
+      {
+        "file": "RMIL_Customer_Customer-Profile-Female_Bark_RGB.svg",
+        "name": "Customer Profile Female"
+      },
+      {
+        "file": "RMIL_Customer_Customer-Profile-Male_Bark_RGB.svg",
+        "name": "Customer Profile Male"
+      },
+      {
+        "file": "RMIL_Customer_Customer-Relationship-Management_Bark_RGB.svg",
+        "name": "Customer Relationship Management"
+      },
+      {
+        "file": "RMIL_Customer_Customer-Satisfaction-Female_Bark_RGB.svg",
+        "name": "Customer Satisfaction Female"
+      },
+      {
+        "file": "RMIL_Customer_Customer-Satisfaction-Male_Bark_RGB.svg",
+        "name": "Customer Satisfaction Male"
+      },
+      {
+        "file": "RMIL_Customer_Loyalty-Program_Bark_RGB.svg",
+        "name": "Loyalty Program"
+      },
+      {
+        "file": "RMIL_Customer_Market-Analysis_Bark_RGB.svg",
+        "name": "Market Analysis"
+      },
+      {
+        "file": "RMIL_Customer_Marketing_Bark_RGB.svg",
+        "name": "Marketing"
+      },
+      {
+        "file": "RMIL_Customer_Marketing-and-Planning_Bark_RGB.svg",
+        "name": "Marketing and Planning"
+      },
+      {
+        "file": "RMIL_Customer_Marketing-and-Planning-Campaign_Bark_RGB.svg",
+        "name": "Marketing and Planning Campaign"
+      },
+      {
+        "file": "RMIL_Customer_Online-Store_Bark_RGB.svg",
+        "name": "Online Store"
+      },
+      {
+        "file": "RMIL_Customer_Planning_Bark_RGB.svg",
+        "name": "Planning"
+      },
+      {
+        "file": "RMIL_Customer_Sales_Bark_RGB.svg",
+        "name": "Sales"
+      },
+      {
+        "file": "RMIL_Customer_Sales-Account-Management-Female_Bark_RGB.svg",
+        "name": "Sales Account Management Female"
+      },
+      {
+        "file": "RMIL_Customer_Sales-Account-Management-Male_Bark_RGB.svg",
+        "name": "Sales Account Management Male"
+      },
+      {
+        "file": "RMIL_Customer_Sales-Customer-Segmentation-1_Bark_RGB.svg",
+        "name": "Sales Customer Segmentation 1"
+      },
+      {
+        "file": "RMIL_Customer_Sales-Customer-Segmentation-2_Bark_RGB.svg",
+        "name": "Sales Customer Segmentation 2"
+      },
+      {
+        "file": "RMIL_Customer_Sales-Direct_Bark_RGB.svg",
+        "name": "Sales Direct"
+      },
+      {
+        "file": "RMIL_Customer_Shopping-Cart_Bark_RGB.svg",
+        "name": "Shopping Cart"
+      },
+      {
+        "file": "RMIL_Customer_eCommerce_Bark_RGB.svg",
+        "name": "eCommerce"
+      }
+    ],
+    "Database": [
+      {
+        "file": "RMIL_Database_ADB-Data-Studio_Bark_RGB.svg",
+        "name": "ADB Data Studio"
+      },
+      {
+        "file": "RMIL_Database_ADB-Exadata-Cloud-at-Customer_Bark_RGB.svg",
+        "name": "ADB Exadata Cloud at Customer"
+      },
+      {
+        "file": "RMIL_Database_ADB-Select-AI_Bark_RGB.svg",
+        "name": "ADB Select AI"
+      },
+      {
+        "file": "RMIL_Database_Autonomous-AI-JSON-Database_Bark_RGB.svg",
+        "name": "Autonomous AI JSON Database"
+      },
+      {
+        "file": "RMIL_Database_Globally-Distributed-AI-Database_Bark_RGB.svg",
+        "name": "Globally Distributed AI Database"
+      }
+    ],
+    "Database-and-AI": [
+      {
+        "file": "RMIL_Database-and-AI_Active-Data-Guard_Bark_RGB.svg",
+        "name": "Active Data Guard"
+      },
+      {
+        "file": "RMIL_Database-and-AI_Automatic-Storage-Management-(ASM)_Bark_RGB.svg",
+        "name": "Automatic Storage Management (ASM)"
+      },
+      {
+        "file": "RMIL_Database-and-AI_Autonomous-Health-Framework_Bark_RGB.svg",
+        "name": "Autonomous Health Framework"
+      },
+      {
+        "file": "RMIL_Database-and-AI_Data-Transforms_Bark_RGB.svg",
+        "name": "Data Transforms"
+      },
+      {
+        "file": "RMIL_Database-and-AI_Document-Understanding_Bark_RGB.svg",
+        "name": "Document Understanding"
+      },
+      {
+        "file": "RMIL_Database-and-AI_Fleet-Application-Management-Service_Bark_RGB.svg",
+        "name": "Fleet Application Management Service"
+      },
+      {
+        "file": "RMIL_Database-and-AI_GenAI-Agents_Bark_RGB.svg",
+        "name": "GenAI Agents"
+      },
+      {
+        "file": "RMIL_Database-and-AI_Global-Data-Services-(GDS)_Bark_RGB.svg",
+        "name": "Global Data Services (GDS)"
+      },
+      {
+        "file": "RMIL_Database-and-AI_ML-in-Oracle-Database_Bark_RGB.svg",
+        "name": "ML in Oracle Database"
+      },
+      {
+        "file": "RMIL_Database-and-AI_MySQL-HeatWave-AutoML_Bark_RGB.svg",
+        "name": "MySQL HeatWave AutoML"
+      },
+      {
+        "file": "RMIL_Database-and-AI_MySQL-HeatWave-Vector-Store_+_GenAI_Bark_RGB.svg",
+        "name": "MySQL HeatWave Vector Store"
+      },
+      {
+        "file": "RMIL_Database-and-AI_Online-Data-Reorganization-and-Redefinition_Bark_RGB.svg",
+        "name": "Online Data Reorganization and Redefinition"
+      },
+      {
+        "file": "RMIL_Database-and-AI_Oracle-Advanced-Cluster-File-System-(ACFS)_Bark_RGB.svg",
+        "name": "Oracle Advanced Cluster File System (ACFS)"
+      },
+      {
+        "file": "RMIL_Database-and-AI_Oracle-Data-Labeling_Bark_RGB.svg",
+        "name": "Oracle Data Labeling"
+      },
+      {
+        "file": "RMIL_Database-and-AI_Oracle-Maximum-Availability-Architecture-(MAA)_Bark_RGB.svg",
+        "name": "Oracle Maximum Availability Architecture (MAA)"
+      }
+    ],
+    "Database-and-AI-Oracle-Clusterware": [
+      {
+        "file": "RMIL_Database-and-AI-Oracle-Clusterware_Bark_RGB.svg",
+        "name": "Bark"
+      }
+    ],
+    "Energy-and-Water-Training": [
+      {
+        "file": "RMIL_Energy-and-Water-Training_Electric-Switch_Bark_RGB.svg",
+        "name": "Electric Switch"
+      },
+      {
+        "file": "RMIL_Energy-and-Water-Training_Flame_Bark_RGB.svg",
+        "name": "Flame"
+      },
+      {
+        "file": "RMIL_Energy-and-Water-Training_Stove_Bark_RGB.svg",
+        "name": "Stove"
+      },
+      {
+        "file": "RMIL_Energy-and-Water-Training_Street-Light_Bark_RGB.svg",
+        "name": "Street Light"
+      },
+      {
+        "file": "RMIL_Energy-and-Water-Training_Traffic-Light_Bark_RGB.svg",
+        "name": "Traffic Light"
+      },
+      {
+        "file": "RMIL_Energy-and-Water-Training_Water-Facet_Bark_RGB.svg",
+        "name": "Water Facet"
+      }
+    ],
+    "General": [
+      {
+        "file": "Application-Continuity_Bark_RGB.svg",
+        "name": "Application-Continuity"
+      },
+      {
+        "file": "Data-Reorganization-and-Redefinition_Bark_RGB.svg",
+        "name": "Data-Reorganization-and-Redefinition"
+      },
+      {
+        "file": "Database-Tools-Service_Bark_RGB.svg",
+        "name": "Database-Tools-Service"
+      },
+      {
+        "file": "Globally_Distributed_Autonomous_Database_Bark_RGB.svg",
+        "name": "Globally Distributed Autonomous Database"
+      },
+      {
+        "file": "Globally_Distributed_Exadata_Database_on_Exascale_Infrastructure_service_Bark_RGB.svg",
+        "name": "Globally Distributed Exadata Database on Exascale Infrastructure service"
+      },
+      {
+        "file": "OCI-Cloud-Migration-Advisor_Bark_RGB.svg",
+        "name": "OCI-Cloud-Migration-Advisor"
+      },
+      {
+        "file": "OCI-Database-Migration-Service_Bark_RGB.svg",
+        "name": "OCI-Database-Migration-Service"
+      },
+      {
+        "file": "OCI-Estate-Explorer_Bark_RGB.svg",
+        "name": "OCI-Estate-Explorer"
+      },
+      {
+        "file": "OCI-Migration-Workbench_Bark_RGB.svg",
+        "name": "OCI-Migration-Workbench"
+      },
+      {
+        "file": "Oracle-Fleet-Patching-Provisioning_Bark_RGB.svg",
+        "name": "Oracle-Fleet-Patching-Provisioning"
+      },
+      {
+        "file": "Security-Unlocked_Bark_RGB.svg",
+        "name": "Security-Unlocked"
+      },
+      {
+        "file": "Srv-Zero-Data-Loss-Recovery-Appliance_Bark_RGB.svg",
+        "name": "Srv-Zero-Data-Loss-Recovery-Appliance"
+      }
+    ],
+    "Health": [
+      {
+        "file": "RMIL_Health_Analyze-X-Ray_Bark_RGB.svg",
+        "name": "Analyze X Ray"
+      },
+      {
+        "file": "RMIL_Health_Atom_Bark_RGB.svg",
+        "name": "Atom"
+      },
+      {
+        "file": "RMIL_Health_Balance_Bark_RGB.svg",
+        "name": "Balance"
+      },
+      {
+        "file": "RMIL_Health_Cancer-Awareness-Ribbon_Bark_RGB.svg",
+        "name": "Cancer Awareness Ribbon"
+      },
+      {
+        "file": "RMIL_Health_Fitness-Tracker_Bark_RGB.svg",
+        "name": "Fitness Tracker"
+      },
+      {
+        "file": "RMIL_Health_Health-Check_Bark_RGB.svg",
+        "name": "Health Check"
+      },
+      {
+        "file": "RMIL_Health_Healthcare_Bark_RGB.svg",
+        "name": "Healthcare"
+      },
+      {
+        "file": "RMIL_Health_Healthcare-Provider-Unisex_Bark_RGB.svg",
+        "name": "Healthcare Provider Unisex"
+      },
+      {
+        "file": "RMIL_Health_Heart-Rate-Monitor_Bark_RGB.svg",
+        "name": "Heart Rate Monitor"
+      },
+      {
+        "file": "RMIL_Health_International-Symbol-of-Access_Bark_RGB.svg",
+        "name": "International Symbol of Access"
+      },
+      {
+        "file": "RMIL_Health_Lifestyle-Barbells_Bark_RGB.svg",
+        "name": "Lifestyle Barbells"
+      },
+      {
+        "file": "RMIL_Health_Lifestyle-Nutrition_Bark_RGB.svg",
+        "name": "Lifestyle Nutrition"
+      },
+      {
+        "file": "RMIL_Health_Lifestyle-Nutrition-Fruit_Bark_RGB.svg",
+        "name": "Lifestyle Nutrition Fruit"
+      },
+      {
+        "file": "RMIL_Health_Lifestyle-Yoga_Bark_RGB.svg",
+        "name": "Lifestyle Yoga"
+      },
+      {
+        "file": "RMIL_Health_Medical-Database_Bark_RGB.svg",
+        "name": "Medical Database"
+      },
+      {
+        "file": "RMIL_Health_Medical-Technology_Bark_RGB.svg",
+        "name": "Medical Technology"
+      },
+      {
+        "file": "RMIL_Health_Medicine_Bark_RGB.svg",
+        "name": "Medicine"
+      },
+      {
+        "file": "RMIL_Health_Molecule_Bark_RGB.svg",
+        "name": "Molecule"
+      },
+      {
+        "file": "RMIL_Health_Patient-Portal_Bark_RGB.svg",
+        "name": "Patient Portal"
+      },
+      {
+        "file": "RMIL_Health_Patient-Record_Bark_RGB.svg",
+        "name": "Patient Record"
+      },
+      {
+        "file": "RMIL_Health_Population-Health_Bark_RGB.svg",
+        "name": "Population Health"
+      },
+      {
+        "file": "RMIL_Health_Radiologist_Bark_RGB.svg",
+        "name": "Radiologist"
+      },
+      {
+        "file": "RMIL_Health_Radiologist-X-Ray_Bark_RGB.svg",
+        "name": "Radiologist X Ray"
+      },
+      {
+        "file": "RMIL_Health_Revise-Med_Bark_RGB.svg",
+        "name": "Revise Med"
+      },
+      {
+        "file": "RMIL_Health_Sanitation_Bark_RGB.svg",
+        "name": "Sanitation"
+      },
+      {
+        "file": "RMIL_Health_Stethoscope_Bark_RGB.svg",
+        "name": "Stethoscope"
+      },
+      {
+        "file": "RMIL_Health_Symptoms_Bark_RGB.svg",
+        "name": "Symptoms"
+      },
+      {
+        "file": "RMIL_Health_Telehealth-Computer_Bark_RGB.svg",
+        "name": "Telehealth Computer"
+      },
+      {
+        "file": "RMIL_Health_Telehealth-Home_Bark_RGB.svg",
+        "name": "Telehealth Home"
+      },
+      {
+        "file": "RMIL_Health_Telehealth-Mobile_Bark_RGB.svg",
+        "name": "Telehealth Mobile"
+      },
+      {
+        "file": "RMIL_Health_Test-Tubes_Bark_RGB.svg",
+        "name": "Test Tubes"
+      },
+      {
+        "file": "RMIL_Health_Thermometer_Bark_RGB.svg",
+        "name": "Thermometer"
+      },
+      {
+        "file": "RMIL_Health_Vaccine-Syringe_Bark_RGB.svg",
+        "name": "Vaccine Syringe"
+      },
+      {
+        "file": "RMIL_Health_Virus_Bark_RGB.svg",
+        "name": "Virus"
+      },
+      {
+        "file": "RMIL_Health_Wheelchair_Bark_RGB.svg",
+        "name": "Wheelchair"
+      }
+    ],
+    "Industries": [
+      {
+        "file": "RMIL_Industries_Academics_Bark_RGB.svg",
+        "name": "Academics"
+      },
+      {
+        "file": "RMIL_Industries_Chemicals_Bark_RGB.svg",
+        "name": "Chemicals"
+      },
+      {
+        "file": "RMIL_Industries_City-Planning_Bark_RGB.svg",
+        "name": "City Planning"
+      },
+      {
+        "file": "RMIL_Industries_Communications_Bark_RGB.svg",
+        "name": "Communications"
+      },
+      {
+        "file": "RMIL_Industries_Concierge_Bark_RGB.svg",
+        "name": "Concierge"
+      },
+      {
+        "file": "RMIL_Industries_Construction_Bark_RGB.svg",
+        "name": "Construction"
+      },
+      {
+        "file": "RMIL_Industries_Consumer-Goods_Bark_RGB.svg",
+        "name": "Consumer Goods"
+      },
+      {
+        "file": "RMIL_Industries_Energy-Data-Acquisition_Bark_RGB.svg",
+        "name": "Energy Data Acquisition"
+      },
+      {
+        "file": "RMIL_Industries_Energy-Thermostat_Bark_RGB.svg",
+        "name": "Energy Thermostat"
+      },
+      {
+        "file": "RMIL_Industries_Engineering-and-Construction_Bark_RGB.svg",
+        "name": "Engineering and Construction"
+      },
+      {
+        "file": "RMIL_Industries_Financial-Services-F_Bark_RGB.svg",
+        "name": "Financial Services F"
+      },
+      {
+        "file": "RMIL_Industries_Financial-Services-M_Bark_RGB.svg",
+        "name": "Financial Services M"
+      },
+      {
+        "file": "RMIL_Industries_Gaming-Technology_Bark_RGB.svg",
+        "name": "Gaming Technology"
+      },
+      {
+        "file": "RMIL_Industries_Health-Sciences_Bark_RGB.svg",
+        "name": "Health Sciences"
+      },
+      {
+        "file": "RMIL_Industries_Healthcare-Pulse_Bark_RGB.svg",
+        "name": "Healthcare Pulse"
+      },
+      {
+        "file": "RMIL_Industries_High-Tech_Bark_RGB.svg",
+        "name": "High Tech"
+      },
+      {
+        "file": "RMIL_Industries_Hospitality-Water_Bark_RGB.svg",
+        "name": "Hospitality Water"
+      },
+      {
+        "file": "RMIL_Industries_Hospitality-Wine_Bark_RGB.svg",
+        "name": "Hospitality Wine"
+      },
+      {
+        "file": "RMIL_Industries_Industrial-Manufacturing_Bark_RGB.svg",
+        "name": "Industrial Manufacturing"
+      },
+      {
+        "file": "RMIL_Industries_Insurance_Bark_RGB.svg",
+        "name": "Insurance"
+      },
+      {
+        "file": "RMIL_Industries_Life-Sciences_Bark_RGB.svg",
+        "name": "Life Sciences"
+      },
+      {
+        "file": "RMIL_Industries_Media-and-Entertainment_Bark_RGB.svg",
+        "name": "Media and Entertainment"
+      },
+      {
+        "file": "RMIL_Industries_Natural-Resources-Coal_Bark_RGB.svg",
+        "name": "Natural Resources Coal"
+      },
+      {
+        "file": "RMIL_Industries_Natural-Resources-Solar_Bark_RGB.svg",
+        "name": "Natural Resources Solar"
+      },
+      {
+        "file": "RMIL_Industries_Natural-Resources-Wind_Bark_RGB.svg",
+        "name": "Natural Resources Wind"
+      },
+      {
+        "file": "RMIL_Industries_Oil-and-Gas_Bark_RGB.svg",
+        "name": "Oil and Gas"
+      },
+      {
+        "file": "RMIL_Industries_Online-Retail_Bark_RGB.svg",
+        "name": "Online Retail"
+      },
+      {
+        "file": "RMIL_Industries_Public-Sector_Bark_RGB.svg",
+        "name": "Public Sector"
+      },
+      {
+        "file": "RMIL_Industries_Real-Estate_Bark_RGB.svg",
+        "name": "Real Estate"
+      },
+      {
+        "file": "RMIL_Industries_Research-and-Education_Bark_RGB.svg",
+        "name": "Research and Education"
+      },
+      {
+        "file": "RMIL_Industries_Retail_Bark_RGB.svg",
+        "name": "Retail"
+      },
+      {
+        "file": "RMIL_Industries_Social-Services_Bark_RGB.svg",
+        "name": "Social Services"
+      },
+      {
+        "file": "RMIL_Industries_Utilities_Bark_RGB.svg",
+        "name": "Utilities"
+      },
+      {
+        "file": "RMIL_Industries_Volunteer_Bark_RGB.svg",
+        "name": "Volunteer"
+      }
+    ],
+    "Industry-Hospitality": [
+      {
+        "file": "RMIL_Industry-Hospitality_FoodBeverage-Water_Bark_RGB.svg",
+        "name": "FoodBeverage Water"
+      },
+      {
+        "file": "RMIL_Industry-Hospitality_FoodBeverage-Wine_Bark_RGB.svg",
+        "name": "FoodBeverage Wine"
+      },
+      {
+        "file": "RMIL_Industry-Hospitality_Wine_Bark_RGB.svg",
+        "name": "Wine"
+      }
+    ],
+    "Mobile": [
+      {
+        "file": "RMIL_Mobile_Application_Bark_RGB.svg",
+        "name": "Application"
+      },
+      {
+        "file": "RMIL_Mobile_Pay-Mobile_Bark_RGB.svg",
+        "name": "Pay Mobile"
+      },
+      {
+        "file": "RMIL_Mobile_Phone-1_Bark_RGB.svg",
+        "name": "Phone 1"
+      },
+      {
+        "file": "RMIL_Mobile_Phone-2_Bark_RGB.svg",
+        "name": "Phone 2"
+      },
+      {
+        "file": "RMIL_Mobile_Tablet-1_Bark_RGB.svg",
+        "name": "Tablet 1"
+      },
+      {
+        "file": "RMIL_Mobile_Tablet-2_Bark_RGB.svg",
+        "name": "Tablet 2"
+      },
+      {
+        "file": "RMIL_Mobile_Wearables_Bark_RGB.svg",
+        "name": "Wearables"
+      },
+      {
+        "file": "RMIL_Mobile_Wireless-Network_Bark_RGB.svg",
+        "name": "Wireless Network"
+      }
+    ],
+    "OCI": [
+      {
+        "file": "RMIL_OCI_Autonomous_Bark_RGB.svg",
+        "name": "Autonomous"
+      },
+      {
+        "file": "RMIL_OCI_Autonomous-Database-Warehouse_Bark_RGB.svg",
+        "name": "Autonomous Database Warehouse"
+      },
+      {
+        "file": "RMIL_OCI_Autoscale_Bark_RGB.svg",
+        "name": "Autoscale"
+      },
+      {
+        "file": "RMIL_OCI_BM-Bare-Metal_Bark_RGB.svg",
+        "name": "BM Bare Metal"
+      },
+      {
+        "file": "RMIL_OCI_Big-Data-Service_Bark_RGB.svg",
+        "name": "Big Data Service"
+      },
+      {
+        "file": "RMIL_OCI_Container_Bark_RGB.svg",
+        "name": "Container"
+      },
+      {
+        "file": "RMIL_OCI_DBFW-Traffic-Proxy_Bark_RGB.svg",
+        "name": "DBFW Traffic Proxy"
+      },
+      {
+        "file": "RMIL_OCI_DCT-VM-VNIC_Bark_RGB.svg",
+        "name": "DCT VM VNIC"
+      },
+      {
+        "file": "RMIL_OCI_DIS_Bark_RGB.svg",
+        "name": "DIS"
+      },
+      {
+        "file": "RMIL_OCI_Data-Catalog-DCAT_Bark_RGB.svg",
+        "name": "Data Catalog DCAT"
+      },
+      {
+        "file": "RMIL_OCI_Data-Flow_Bark_RGB.svg",
+        "name": "Data Flow"
+      },
+      {
+        "file": "RMIL_OCI_Functions_Bark_RGB.svg",
+        "name": "Functions"
+      },
+      {
+        "file": "RMIL_OCI_HYPSQL_Bark_RGB.svg",
+        "name": "HYPSQL"
+      },
+      {
+        "file": "RMIL_OCI_Instance-Pools_Bark_RGB.svg",
+        "name": "Instance Pools"
+      },
+      {
+        "file": "RMIL_OCI_OCIR_Bark_RGB.svg",
+        "name": "OCIR"
+      },
+      {
+        "file": "RMIL_OCI_OKE-Kubemetes_Bark_RGB.svg",
+        "name": "OKE Kubemetes"
+      },
+      {
+        "file": "RMIL_OCI_Stream_Bark_RGB.svg",
+        "name": "Stream"
+      },
+      {
+        "file": "RMIL_OCI_VM-Virtual-Machine-GSM_Bark_RGB.svg",
+        "name": "VM Virtual Machine GSM"
+      },
+      {
+        "file": "RMIL_OCI_VPN_Bark_RGB.svg",
+        "name": "VPN"
+      }
+    ],
+    "Personas": [
+      {
+        "file": "RMIL_Personas_Business-Intelligence-F_Bark_RGB.svg",
+        "name": "Business Intelligence F"
+      },
+      {
+        "file": "RMIL_Personas_Business-Intelligence-M_Bark_RGB.svg",
+        "name": "Business Intelligence M"
+      },
+      {
+        "file": "RMIL_Personas_Business-Person-LOB-F_Bark_RGB.svg",
+        "name": "Business Person LOB F"
+      },
+      {
+        "file": "RMIL_Personas_Business-Person-LOB-M_Bark_RGB.svg",
+        "name": "Business Person LOB M"
+      },
+      {
+        "file": "RMIL_Personas_Client-Customer-1_Bark_RGB.svg",
+        "name": "Client Customer 1"
+      },
+      {
+        "file": "RMIL_Personas_Client-Customer-2_Bark_RGB.svg",
+        "name": "Client Customer 2"
+      },
+      {
+        "file": "RMIL_Personas_Client-Customer-3_Bark_RGB.svg",
+        "name": "Client Customer 3"
+      },
+      {
+        "file": "RMIL_Personas_Client-Customer-4_Bark_RGB.svg",
+        "name": "Client Customer 4"
+      },
+      {
+        "file": "RMIL_Personas_Collaboration-Formal-1_Bark_RGB.svg",
+        "name": "Collaboration Formal 1"
+      },
+      {
+        "file": "RMIL_Personas_Collaboration-Formal-2_Bark_RGB.svg",
+        "name": "Collaboration Formal 2"
+      },
+      {
+        "file": "RMIL_Personas_Collaboration-Informal-1_Bark_RGB.svg",
+        "name": "Collaboration Informal 1"
+      },
+      {
+        "file": "RMIL_Personas_Collaboration-Informal-2_Bark_RGB.svg",
+        "name": "Collaboration Informal 2"
+      },
+      {
+        "file": "RMIL_Personas_Consultation-1_Bark_RGB.svg",
+        "name": "Consultation 1"
+      },
+      {
+        "file": "RMIL_Personas_Consultation-2_Bark_RGB.svg",
+        "name": "Consultation 2"
+      },
+      {
+        "file": "RMIL_Personas_Customer-Service-Female_Bark_RGB.svg",
+        "name": "Customer Service Female"
+      },
+      {
+        "file": "RMIL_Personas_Customer-Service-Male_Bark_RGB.svg",
+        "name": "Customer Service Male"
+      },
+      {
+        "file": "RMIL_Personas_Customer-Service-and-Support-Female_Bark_RGB.svg",
+        "name": "Customer Service and Support Female"
+      },
+      {
+        "file": "RMIL_Personas_Customer-Service-and-Support-Male_Bark_RGB.svg",
+        "name": "Customer Service and Support Male"
+      },
+      {
+        "file": "RMIL_Personas_Database-Administrator-F_Bark_RGB.svg",
+        "name": "Database Administrator F"
+      },
+      {
+        "file": "RMIL_Personas_Database-Administrator-M_Bark_RGB.svg",
+        "name": "Database Administrator M"
+      },
+      {
+        "file": "RMIL_Personas_Developer-F_Bark_RGB.svg",
+        "name": "Developer F"
+      },
+      {
+        "file": "RMIL_Personas_Developer-M_Bark_RGB.svg",
+        "name": "Developer M"
+      },
+      {
+        "file": "RMIL_Personas_End-User-Female_Bark_RGB.svg",
+        "name": "End User Female"
+      },
+      {
+        "file": "RMIL_Personas_End-User-Male_Bark_RGB.svg",
+        "name": "End User Male"
+      },
+      {
+        "file": "RMIL_Personas_Executive-Female_Bark_RGB.svg",
+        "name": "Executive Female"
+      },
+      {
+        "file": "RMIL_Personas_Executive-Full-Body-F_Bark_RGB.svg",
+        "name": "Executive Full Body F"
+      },
+      {
+        "file": "RMIL_Personas_Executive-Full-Body-M_Bark_RGB.svg",
+        "name": "Executive Full Body M"
+      },
+      {
+        "file": "RMIL_Personas_Executive-Male_Bark_RGB.svg",
+        "name": "Executive Male"
+      },
+      {
+        "file": "RMIL_Personas_Family-1_Bark_RGB.svg",
+        "name": "Family 1"
+      },
+      {
+        "file": "RMIL_Personas_Family-2_Bark_RGB.svg",
+        "name": "Family 2"
+      },
+      {
+        "file": "RMIL_Personas_Family-3_Bark_RGB.svg",
+        "name": "Family 3"
+      },
+      {
+        "file": "RMIL_Personas_Financial-Advisor-Female_Bark_RGB.svg",
+        "name": "Financial Advisor Female"
+      },
+      {
+        "file": "RMIL_Personas_Financial-Advisor-Male_Bark_RGB.svg",
+        "name": "Financial Advisor Male"
+      },
+      {
+        "file": "RMIL_Personas_Hacker_Bark_RGB.svg",
+        "name": "Hacker"
+      },
+      {
+        "file": "RMIL_Personas_IT-Professional-F_Bark_RGB.svg",
+        "name": "IT Professional F"
+      },
+      {
+        "file": "RMIL_Personas_IT-Professional-M_Bark_RGB.svg",
+        "name": "IT Professional M"
+      },
+      {
+        "file": "RMIL_Personas_Idea-F_Bark_RGB.svg",
+        "name": "Idea F"
+      },
+      {
+        "file": "RMIL_Personas_Idea-M_Bark_RGB.svg",
+        "name": "Idea M"
+      },
+      {
+        "file": "RMIL_Personas_Person-on-Laptop_Bark_RGB.svg",
+        "name": "Person on Laptop"
+      },
+      {
+        "file": "RMIL_Personas_Person-on-Mobile_Bark_RGB.svg",
+        "name": "Person on Mobile"
+      },
+      {
+        "file": "RMIL_Personas_Person-on-Tablet_Bark_RGB.svg",
+        "name": "Person on Tablet"
+      },
+      {
+        "file": "RMIL_Personas_Resources-1_Bark_RGB.svg",
+        "name": "Resources 1"
+      },
+      {
+        "file": "RMIL_Personas_Resources-2_Bark_RGB 2.svg",
+        "name": "Resources 2"
+      },
+      {
+        "file": "RMIL_Personas_Resources-2_Bark_RGB.svg",
+        "name": "Resources 2"
+      },
+      {
+        "file": "RMIL_Personas_Sales-Team-1_Bark_RGB.svg",
+        "name": "Sales Team 1"
+      },
+      {
+        "file": "RMIL_Personas_Sales-Team-2_Bark_RGB.svg",
+        "name": "Sales Team 2"
+      },
+      {
+        "file": "RMIL_Personas_Salesperson-F_Bark_RGB.svg",
+        "name": "Salesperson F"
+      },
+      {
+        "file": "RMIL_Personas_Salesperson-M_Bark_RGB.svg",
+        "name": "Salesperson M"
+      },
+      {
+        "file": "RMIL_Personas_Student-Demographics-F_Bark_RGB.svg",
+        "name": "Student Demographics F"
+      },
+      {
+        "file": "RMIL_Personas_Student-Demographics-M_Bark_RGB.svg",
+        "name": "Student Demographics M"
+      },
+      {
+        "file": "RMIL_Personas_Student-F_Bark_RGB.svg",
+        "name": "Student F"
+      },
+      {
+        "file": "RMIL_Personas_Student-M_Bark_RGB.svg",
+        "name": "Student M"
+      },
+      {
+        "file": "RMIL_Personas_Workforce-1_Bark_RGB.svg",
+        "name": "Workforce 1"
+      },
+      {
+        "file": "RMIL_Personas_Workforce-2_Bark_RGB.svg",
+        "name": "Workforce 2"
+      }
+    ],
+    "Social": [
+      {
+        "file": "RMIL_Social_Blogger_Bark_RGB.svg",
+        "name": "Blogger"
+      },
+      {
+        "file": "RMIL_Social_Discussion_Bark_RGB.svg",
+        "name": "Discussion"
+      },
+      {
+        "file": "RMIL_Social_Facebook_Bark_RGB.svg",
+        "name": "Facebook"
+      },
+      {
+        "file": "RMIL_Social_Google+_Bark_RGB.svg",
+        "name": "Google+"
+      },
+      {
+        "file": "RMIL_Social_Instagram_Bark_RGB.svg",
+        "name": "Instagram"
+      },
+      {
+        "file": "RMIL_Social_LinkedIn_Bark_RGB.svg",
+        "name": "LinkedIn"
+      },
+      {
+        "file": "RMIL_Social_Microsoft Teams_Bark_RGB.svg",
+        "name": "Microsoft Teams"
+      },
+      {
+        "file": "RMIL_Social_Pinterest_Bark_RGB.svg",
+        "name": "Pinterest"
+      },
+      {
+        "file": "RMIL_Social_Podcast_Bark_RGB.svg",
+        "name": "Podcast"
+      },
+      {
+        "file": "RMIL_Social_RSS-Feed_Bark_RGB.svg",
+        "name": "RSS Feed"
+      },
+      {
+        "file": "RMIL_Social_Slack_Bark_RGB.svg",
+        "name": "Slack"
+      },
+      {
+        "file": "RMIL_Social_Social-Network-1_Bark_RGB.svg",
+        "name": "Social Network 1"
+      },
+      {
+        "file": "RMIL_Social_Social-Network-2_Bark_RGB.svg",
+        "name": "Social Network 2"
+      },
+      {
+        "file": "RMIL_Social_Tumblr_Bark_RGB.svg",
+        "name": "Tumblr"
+      },
+      {
+        "file": "RMIL_Social_WhatsApp_Bark_RGB.svg",
+        "name": "WhatsApp"
+      },
+      {
+        "file": "RMIL_Social_X_Bark_RGB.svg",
+        "name": "X"
+      },
+      {
+        "file": "RMIL_Social_YouTube_Bark_RGB.svg",
+        "name": "YouTube"
+      }
+    ],
+    "Social Media": [
+      {
+        "file": "RMIL_Social Media_Facebook Messenger_Bark_RGB.svg",
+        "name": "Facebook Messenger"
+      },
+      {
+        "file": "RMIL_Social Media_Glassdoor_Bark_RGB.svg",
+        "name": "Glassdoor"
+      }
+    ],
+    "Social-Media": [
+      {
+        "file": "RMIL_Social-Media_Bark_RGB.svg",
+        "name": "Bark"
+      }
+    ],
+    "Tech": [
+      {
+        "file": "RMIL_Tech_Automation-CX_Bark_RGB.svg",
+        "name": "Automation CX"
+      },
+      {
+        "file": "RMIL_Tech_Bastion_Bark_RGB.svg",
+        "name": "Bastion"
+      },
+      {
+        "file": "RMIL_Tech_Batch_Bark_RGB.svg",
+        "name": "Batch"
+      },
+      {
+        "file": "RMIL_Tech_Business-Agility_Bark_RGB.svg",
+        "name": "Business Agility"
+      },
+      {
+        "file": "RMIL_Tech_Converged-Database_Bark_RGB.svg",
+        "name": "Converged Database"
+      },
+      {
+        "file": "RMIL_Tech_Data-Engineering_Bark_RGB.svg",
+        "name": "Data Engineering"
+      },
+      {
+        "file": "RMIL_Tech_Edition-based-Redefinition_Bark_RGB.svg",
+        "name": "Edition based Redefinition"
+      },
+      {
+        "file": "RMIL_Tech_Oracle-Site-Guard_Bark_RGB.svg",
+        "name": "Oracle Site Guard"
+      },
+      {
+        "file": "RMIL_Tech_Recovery-Appliance_Bark_RGB.svg",
+        "name": "Recovery Appliance"
+      },
+      {
+        "file": "RMIL_Tech_Remote-Work_Bark_RGB.svg",
+        "name": "Remote Work"
+      },
+      {
+        "file": "RMIL_Tech_Self-service_Bark_RGB.svg",
+        "name": "Self service"
+      },
+      {
+        "file": "RMIL_Tech_Speed_Bark_RGB.svg",
+        "name": "Speed"
+      }
+    ],
+    "Tech-Converged Database": [
+      {
+        "file": "RMIL_Tech-Converged Database_Do-more-with-less_Bark_RGB.svg",
+        "name": "Do more with less"
+      }
+    ],
+    "Tech-Converged-Database": [
+      {
+        "file": "RMIL_Tech-Converged-Database_Modernize-workloads_Bark_RGB.svg",
+        "name": "Modernize workloads"
+      },
+      {
+        "file": "RMIL_Tech-Converged-Database_Shorten-time-to-value_Bark_RGB.svg",
+        "name": "Shorten time to value"
+      }
+    ],
+    "Tech-DevRelations": [
+      {
+        "file": "RMIL_Tech-DevRelations_CloudBricks-framework_Bark_RGB.svg",
+        "name": "CloudBricks framework"
+      },
+      {
+        "file": "RMIL_Tech-DevRelations_Friends-of-DevRel_Bark_RGB.svg",
+        "name": "Friends of DevRel"
+      }
+    ],
+    "Tech-OCI": [
+      {
+        "file": "RMIL_Tech-OCI_Cloud-Advisor_Bark_RGB.svg",
+        "name": "Cloud Advisor"
+      },
+      {
+        "file": "RMIL_Tech-OCI_Core-Aggregation-switch_Bark_RGB.svg",
+        "name": "Core Aggregation switch"
+      },
+      {
+        "file": "RMIL_Tech-OCI_Top-of-Rack-switch_Bark_RGB.svg",
+        "name": "Top of Rack switch"
+      }
+    ],
+    "Technology": [
+      {
+        "file": "RMIL_Technology_26ai_Bark_RGB.svg",
+        "name": "26ai"
+      },
+      {
+        "file": "RMIL_Technology_AI_Data_Platform_Bark_RGB.svg",
+        "name": "AI"
+      },
+      {
+        "file": "RMIL_Technology_AI-Database_Bark_RGB.svg",
+        "name": "AI Database"
+      },
+      {
+        "file": "RMIL_Technology_Acceleron_Bark_RGB.svg",
+        "name": "Acceleron"
+      },
+      {
+        "file": "RMIL_Technology_Animation_Bark_RGB.svg",
+        "name": "Animation"
+      },
+      {
+        "file": "RMIL_Technology_Apex_Bark_RGB.svg",
+        "name": "Apex"
+      },
+      {
+        "file": "RMIL_Technology_Apex-Cloud_Bark_RGB.svg",
+        "name": "Apex Cloud"
+      },
+      {
+        "file": "RMIL_Technology_Artificial-Intelligence_Bark_RGB.svg",
+        "name": "Artificial Intelligence"
+      },
+      {
+        "file": "RMIL_Technology_Autonomous-AI-Database_Bark_RGB.svg",
+        "name": "Autonomous AI Database"
+      },
+      {
+        "file": "RMIL_Technology_Autonomous-AI-Lakehouse_Bark_RGB.svg",
+        "name": "Autonomous AI Lakehouse"
+      },
+      {
+        "file": "RMIL_Technology_Autonomous-AI-Transaction-Processing_Bark_RGB.svg",
+        "name": "Autonomous AI Transaction Processing"
+      },
+      {
+        "file": "RMIL_Technology_Blockchain_Bark_RGB.svg",
+        "name": "Blockchain"
+      },
+      {
+        "file": "RMIL_Technology_Buttons-Links_Bark_RGB.svg",
+        "name": "Buttons Links"
+      },
+      {
+        "file": "RMIL_Technology_Chatbot_Bark_RGB.svg",
+        "name": "Chatbot"
+      },
+      {
+        "file": "RMIL_Technology_Cloud_Bark_RGB.svg",
+        "name": "Cloud"
+      },
+      {
+        "file": "RMIL_Technology_Cloud-Download_Bark_RGB.svg",
+        "name": "Cloud Download"
+      },
+      {
+        "file": "RMIL_Technology_Cloud-IaaS_Bark_RGB.svg",
+        "name": "Cloud IaaS"
+      },
+      {
+        "file": "RMIL_Technology_Cloud-PaaS_Bark_RGB.svg",
+        "name": "Cloud PaaS"
+      },
+      {
+        "file": "RMIL_Technology_Cloud-SaaS_Bark_RGB.svg",
+        "name": "Cloud SaaS"
+      },
+      {
+        "file": "RMIL_Technology_Cloud-upload_Bark_RGB.svg",
+        "name": "Cloud upload"
+      },
+      {
+        "file": "RMIL_Technology_Computer_Bark_RGB.svg",
+        "name": "Computer"
+      },
+      {
+        "file": "RMIL_Technology_Data-Center_Bark_RGB.svg",
+        "name": "Data Center"
+      },
+      {
+        "file": "RMIL_Technology_Data-Mining_Bark_RGB.svg",
+        "name": "Data Mining"
+      },
+      {
+        "file": "RMIL_Technology_Data-Security_Bark_RGB.svg",
+        "name": "Data Security"
+      },
+      {
+        "file": "RMIL_Technology_Data-Sharing_Bark_RGB.svg",
+        "name": "Data Sharing"
+      },
+      {
+        "file": "RMIL_Technology_Data-model_Bark_RGB.svg",
+        "name": "Data model"
+      },
+      {
+        "file": "RMIL_Technology_Database_Bark_RGB.svg",
+        "name": "Database"
+      },
+      {
+        "file": "RMIL_Technology_Database-26ai-Cloud_Bark_RGB.svg",
+        "name": "Database 26ai Cloud"
+      },
+      {
+        "file": "RMIL_Technology_Database-Aggregation_Bark_RGB.svg",
+        "name": "Database Aggregation"
+      },
+      {
+        "file": "RMIL_Technology_Database-Container_Bark_RGB.svg",
+        "name": "Database Container"
+      },
+      {
+        "file": "RMIL_Technology_Database-Pluggable_Bark_RGB.svg",
+        "name": "Database Pluggable"
+      },
+      {
+        "file": "RMIL_Technology_Database-Virtual_Bark_RGB.svg",
+        "name": "Database Virtual"
+      },
+      {
+        "file": "RMIL_Technology_Database-Virtualization_Bark_RGB.svg",
+        "name": "Database Virtualization"
+      },
+      {
+        "file": "RMIL_Technology_Deep-Learning_Bark_RGB.svg",
+        "name": "Deep Learning"
+      },
+      {
+        "file": "RMIL_Technology_Development_Bark_RGB.svg",
+        "name": "Development"
+      },
+      {
+        "file": "RMIL_Technology_Document-Generator_Bark_RGB.svg",
+        "name": "Document Generator"
+      },
+      {
+        "file": "RMIL_Technology_Download_Bark_RGB.svg",
+        "name": "Download"
+      },
+      {
+        "file": "RMIL_Technology_Email_Bark_RGB.svg",
+        "name": "Email"
+      },
+      {
+        "file": "RMIL_Technology_Email-Security_Bark_RGB.svg",
+        "name": "Email Security"
+      },
+      {
+        "file": "RMIL_Technology_Flat_Screen_Monitor_Bark_RGB.svg",
+        "name": "Flat"
+      },
+      {
+        "file": "RMIL_Technology_Fusion-Middleware_Bark_RGB.svg",
+        "name": "Fusion Middleware"
+      },
+      {
+        "file": "RMIL_Technology_Global-Data-Service_Bark_RGB.svg",
+        "name": "Global Data Service"
+      },
+      {
+        "file": "RMIL_Technology_Graph_Bark_RGB 2.svg",
+        "name": "Graph"
+      },
+      {
+        "file": "RMIL_Technology_Graph_Bark_RGB.svg",
+        "name": "Graph"
+      },
+      {
+        "file": "RMIL_Technology_HCM-Detector_Bark_RGB.svg",
+        "name": "HCM Detector"
+      },
+      {
+        "file": "RMIL_Technology_Hard-Drive_Bark_RGB.svg",
+        "name": "Hard Drive"
+      },
+      {
+        "file": "RMIL_Technology_Hardware_Bark_RGB.svg",
+        "name": "Hardware"
+      },
+      {
+        "file": "RMIL_Technology_IT_Bark_RGB.svg",
+        "name": "IT"
+      },
+      {
+        "file": "RMIL_Technology_IT-Administration_Bark_RGB.svg",
+        "name": "IT Administration"
+      },
+      {
+        "file": "RMIL_Technology_IT-Services_Bark_RGB.svg",
+        "name": "IT Services"
+      },
+      {
+        "file": "RMIL_Technology_Infrastructure_Bark_RGB.svg",
+        "name": "Infrastructure"
+      },
+      {
+        "file": "RMIL_Technology_Intelligent_Communications_Orchestration_Network_Bark_RGB.svg",
+        "name": "Intelligent"
+      },
+      {
+        "file": "RMIL_Technology_Interactive_Bark_RGB.svg",
+        "name": "Interactive"
+      },
+      {
+        "file": "RMIL_Technology_IoT-1_Bark_RGB.svg",
+        "name": "IoT 1"
+      },
+      {
+        "file": "RMIL_Technology_IoT-2_Bark_RGB.svg",
+        "name": "IoT 2"
+      },
+      {
+        "file": "RMIL_Technology_Laptop_Bark_RGB.svg",
+        "name": "Laptop"
+      },
+      {
+        "file": "RMIL_Technology_Layout_Bark_RGB.svg",
+        "name": "Layout"
+      },
+      {
+        "file": "RMIL_Technology_Log-Event-Detector_Bark_RGB.svg",
+        "name": "Log Event Detector"
+      },
+      {
+        "file": "RMIL_Technology_Machine-Learning_Bark_RGB.svg",
+        "name": "Machine Learning"
+      },
+      {
+        "file": "RMIL_Technology_Mainframe-Computers-F_Bark_RGB.svg",
+        "name": "Mainframe Computers F"
+      },
+      {
+        "file": "RMIL_Technology_Mainframe-Computers-M_Bark_RGB.svg",
+        "name": "Mainframe Computers M"
+      },
+      {
+        "file": "RMIL_Technology_Maintenance_Bark_RGB.svg",
+        "name": "Maintenance"
+      },
+      {
+        "file": "RMIL_Technology_Navigation_Bark_RGB.svg",
+        "name": "Navigation"
+      },
+      {
+        "file": "RMIL_Technology_OCI_Generative-AI_Bark_RGB.svg",
+        "name": "OCI"
+      },
+      {
+        "file": "RMIL_Technology_OCI_Language_Bark_RGB.svg",
+        "name": "OCI"
+      },
+      {
+        "file": "RMIL_Technology_OCI_Speech_Bark_RGB.svg",
+        "name": "OCI"
+      },
+      {
+        "file": "RMIL_Technology_OCI_Vision_Bark_RGB.svg",
+        "name": "OCI"
+      },
+      {
+        "file": "RMIL_Technology_OCI-Audit-Logs_Bark_RGB.svg",
+        "name": "OCI Audit Logs"
+      },
+      {
+        "file": "RMIL_Technology_OCI-Full-Stack-Disaster_Bark_RGB.svg",
+        "name": "OCI Full Stack Disaster"
+      },
+      {
+        "file": "RMIL_Technology_OCI-GenAI-Agent-Platform_Bark_RGB.svg",
+        "name": "OCI GenAI Agent Platform"
+      },
+      {
+        "file": "RMIL_Technology_ORDS_Bark_RGB.svg",
+        "name": "ORDS"
+      },
+      {
+        "file": "RMIL_Technology_Oracle-Application-Strategy-Technology_Bark_RGB.svg",
+        "name": "Oracle Application Strategy Technology"
+      },
+      {
+        "file": "RMIL_Technology_Oracle-Autonomous-Database_Bark_RGB.svg",
+        "name": "Oracle Autonomous Database"
+      },
+      {
+        "file": "RMIL_Technology_Oracle-Autonomous-PaaS_Bark_RGB.svg",
+        "name": "Oracle Autonomous PaaS"
+      },
+      {
+        "file": "RMIL_Technology_Oracle-Big-Data-Technology_Bark_RGB.svg",
+        "name": "Oracle Big Data Technology"
+      },
+      {
+        "file": "RMIL_Technology_Oracle-Cloud-Guard-Instance-Security_Bark_RGB.svg",
+        "name": "Oracle Cloud Guard Instance Security"
+      },
+      {
+        "file": "RMIL_Technology_Oracle-Cloud-at-Customer_Bark_RGB.svg",
+        "name": "Oracle Cloud at Customer"
+      },
+      {
+        "file": "RMIL_Technology_Oracle-Code-Assist_Bark_RGB.svg",
+        "name": "Oracle Code Assist"
+      },
+      {
+        "file": "RMIL_Technology_Oracle-Data-Center-Technology_Bark_RGB.svg",
+        "name": "Oracle Data Center Technology"
+      },
+      {
+        "file": "RMIL_Technology_Oracle Database 26ai_Bark_RGB.svg",
+        "name": "Oracle Database 26ai"
+      },
+      {
+        "file": "RMIL_Technology_Oracle-Database-Appliance-Technology_Bark_RGB.svg",
+        "name": "Oracle Database Appliance Technology"
+      },
+      {
+        "file": "RMIL_Technology_Oracle-Engineered-Systems-Technology_Bark_RGB.svg",
+        "name": "Oracle Engineered Systems Technology"
+      },
+      {
+        "file": "RMIL_Technology_Oracle-Exadata-12c-Technology_Bark_RGB.svg",
+        "name": "Oracle Exadata 12c Technology"
+      },
+      {
+        "file": "RMIL_Technology_Oracle-Exalogic_Bark_RGB.svg",
+        "name": "Oracle Exalogic"
+      },
+      {
+        "file": "RMIL_Technology_Oracle-Exalytics_Bark_RGB.svg",
+        "name": "Oracle Exalytics"
+      },
+      {
+        "file": "RMIL_Technology_Oracle-Product-Stack_Bark_RGB.svg",
+        "name": "Oracle Product Stack"
+      },
+      {
+        "file": "RMIL_Technology_Oracle-Public-Cloud-Machine_Bark_RGB.svg",
+        "name": "Oracle Public Cloud Machine"
+      },
+      {
+        "file": "RMIL_Technology_Oracle-Server-Technology_Bark_RGB.svg",
+        "name": "Oracle Server Technology"
+      },
+      {
+        "file": "RMIL_Technology_Oracle-Storage-Technology-F_Bark_RGB.svg",
+        "name": "Oracle Storage Technology F"
+      },
+      {
+        "file": "RMIL_Technology_Oracle-Storage-Technology-M_Bark_RGB.svg",
+        "name": "Oracle Storage Technology M"
+      },
+      {
+        "file": "RMIL_Technology_Oracle-University_Bark_RGB.svg",
+        "name": "Oracle University"
+      },
+      {
+        "file": "RMIL_Technology_Public_Safety_Bark_RGB.svg",
+        "name": "Public"
+      },
+      {
+        "file": "RMIL_Technology_Rocket_Bark_RGB.svg",
+        "name": "Rocket"
+      },
+      {
+        "file": "RMIL_Technology_SQL_Developer_Graph_Bark_RGB.svg",
+        "name": "SQL"
+      },
+      {
+        "file": "RMIL_Technology_SQL-Developer_Bark_RGB.svg",
+        "name": "SQL Developer"
+      },
+      {
+        "file": "RMIL_Technology_SQL-Developer-Command-Line_Bark_RGB.svg",
+        "name": "SQL Developer Command Line"
+      },
+      {
+        "file": "RMIL_Technology_SQL-Developer-Data-Modeler_Bark_RGB.svg",
+        "name": "SQL Developer Data Modeler"
+      },
+      {
+        "file": "RMIL_Technology_Security-Endpoint_Bark_RGB.svg",
+        "name": "Security Endpoint"
+      },
+      {
+        "file": "RMIL_Technology_Security-Network_Bark_RGB.svg",
+        "name": "Security Network"
+      },
+      {
+        "file": "RMIL_Technology_Self-Driving_Bark_RGB 2.svg",
+        "name": "Self Driving"
+      },
+      {
+        "file": "RMIL_Technology_Self-Driving_Bark_RGB.svg",
+        "name": "Self Driving"
+      },
+      {
+        "file": "RMIL_Technology_Self-Repairing_Bark_RGB.svg",
+        "name": "Self Repairing"
+      },
+      {
+        "file": "RMIL_Technology_Self-Securing_Bark_RGB.svg",
+        "name": "Self Securing"
+      },
+      {
+        "file": "RMIL_Technology_Server-Application_Bark_RGB.svg",
+        "name": "Server Application"
+      },
+      {
+        "file": "RMIL_Technology_Server-Big_Bark_RGB.svg",
+        "name": "Server Big"
+      },
+      {
+        "file": "RMIL_Technology_Server-Database-Server-Enterprise_Bark_RGB.svg",
+        "name": "Server Database Server Enterprise"
+      },
+      {
+        "file": "RMIL_Technology_Server-Exadata-Exalogic_Bark_RGB.svg",
+        "name": "Server Exadata Exalogic"
+      },
+      {
+        "file": "RMIL_Technology_Software_Bark_RGB.svg",
+        "name": "Software"
+      },
+      {
+        "file": "RMIL_Technology_Software-Update_Bark_RGB.svg",
+        "name": "Software Update"
+      },
+      {
+        "file": "RMIL_Technology_Spatial_Bark_RGB.svg",
+        "name": "Spatial"
+      },
+      {
+        "file": "RMIL_Technology_Spatial-alt_Bark_RGB.svg",
+        "name": "Spatial alt"
+      },
+      {
+        "file": "RMIL_Technology_Storage-Tape-Drive_Bark_RGB.svg",
+        "name": "Storage Tape Drive"
+      },
+      {
+        "file": "RMIL_Technology_Tech-Publications_Bark_RGB.svg",
+        "name": "Tech Publications"
+      },
+      {
+        "file": "RMIL_Technology_Threat-Detector_Bark_RGB.svg",
+        "name": "Threat Detector"
+      },
+      {
+        "file": "RMIL_Technology_Threat-Intelligence_Bark_RGB.svg",
+        "name": "Threat Intelligence"
+      },
+      {
+        "file": "RMIL_Technology_Transaction-Processing_Bark_RGB.svg",
+        "name": "Transaction Processing"
+      },
+      {
+        "file": "RMIL_Technology_User-Experience_Bark_RGB.svg",
+        "name": "User Experience"
+      },
+      {
+        "file": "RMIL_Technology_VR-Persona-M_Bark_RGB.svg",
+        "name": "VR Persona M"
+      },
+      {
+        "file": "RMIL_Technology_Video_Bark_RGB.svg",
+        "name": "Video"
+      },
+      {
+        "file": "RMIL_Technology_Virus_Inspector_Pre-built_function_Bark_RGB.svg",
+        "name": "Virus"
+      },
+      {
+        "file": "RMIL_Technology_Web Browser_Bark_RGB.svg",
+        "name": "Web Browser"
+      },
+      {
+        "file": "RMIL_Technology_eLearing_Bark_RGB.svg",
+        "name": "eLearing"
+      }
+    ],
+    "Vehicles-and-Transport": [
+      {
+        "file": "RMIL_Vehicles-and-Transport_Aerospace-and-Defense_Bark_RGB.svg",
+        "name": "Aerospace and Defense"
+      },
+      {
+        "file": "RMIL_Vehicles-and-Transport_Airline_Bark_RGB.svg",
+        "name": "Airline"
+      },
+      {
+        "file": "RMIL_Vehicles-and-Transport_Ambulance_Bark_RGB.svg",
+        "name": "Ambulance"
+      },
+      {
+        "file": "RMIL_Vehicles-and-Transport_Automotive_Bark_RGB.svg",
+        "name": "Automotive"
+      },
+      {
+        "file": "RMIL_Vehicles-and-Transport_Cargo_Bark_RGB.svg",
+        "name": "Cargo"
+      },
+      {
+        "file": "RMIL_Vehicles-and-Transport_Cargo-Truck_Bark_RGB.svg",
+        "name": "Cargo Truck"
+      },
+      {
+        "file": "RMIL_Vehicles-and-Transport_Cruise_Bark_RGB.svg",
+        "name": "Cruise"
+      },
+      {
+        "file": "RMIL_Vehicles-and-Transport_Cruise-Full-Length_Bark_RGB.svg",
+        "name": "Cruise Full Length"
+      },
+      {
+        "file": "RMIL_Vehicles-and-Transport_Electric-Vehicle_Bark_RGB.svg",
+        "name": "Electric Vehicle"
+      },
+      {
+        "file": "RMIL_Vehicles-and-Transport_Fisheries_Bark_RGB.svg",
+        "name": "Fisheries"
+      },
+      {
+        "file": "RMIL_Vehicles-and-Transport_Forklift_Bark_RGB.svg",
+        "name": "Forklift"
+      },
+      {
+        "file": "RMIL_Vehicles-and-Transport_Logistics-Helicopter_Bark_RGB.svg",
+        "name": "Logistics Helicopter"
+      },
+      {
+        "file": "RMIL_Vehicles-and-Transport_Logistics-Ship_Bark_RGB.svg",
+        "name": "Logistics Ship"
+      },
+      {
+        "file": "RMIL_Vehicles-and-Transport_Logistics-Ship-Full-Length_Bark_RGB.svg",
+        "name": "Logistics Ship Full Length"
+      },
+      {
+        "file": "RMIL_Vehicles-and-Transport_Logistics-Truck_Bark_RGB.svg",
+        "name": "Logistics Truck"
+      },
+      {
+        "file": "RMIL_Vehicles-and-Transport_Train_Bark_RGB.svg",
+        "name": "Train"
+      },
+      {
+        "file": "RMIL_Vehicles-and-Transport_Truck_Bark_RGB.svg",
+        "name": "Truck"
+      }
+    ]
+  }
+}
