@@ -1,0 +1,18 @@
+<svg id="Icon_Art" data-name="Icon Art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.8 28.8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fcfbfa;
+        stroke-miterlimit: 10;
+        stroke-width: 0.8px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M10.6,15.64a15.56,15.56,0,0,0,1.53,6.76h4.54a15.56,15.56,0,0,0,1.53-6.76A15.61,15.61,0,0,0,14.4,5.4,15.61,15.61,0,0,0,10.6,15.64Z"/>
+  <line class="cls-1" x1="14.4" y1="16.2" x2="14.4" y2="24"/>
+  <path class="cls-1" d="M10.65,16.55,8.3,18.9a2.39,2.39,0,0,0-.7,1.69v3H9L11.57,21"/>
+  <path class="cls-1" d="M18.15,16.55,20.5,18.9a2.39,2.39,0,0,1,.7,1.69v3H19.8L17.23,21"/>
+  <line class="cls-1" x1="12.1" y1="9" x2="16.7" y2="9"/>
+  <circle class="cls-1" cx="14.4" cy="13" r="1.4"/>
+</svg>

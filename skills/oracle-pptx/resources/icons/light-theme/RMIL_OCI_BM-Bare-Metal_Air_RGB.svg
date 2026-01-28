@@ -1,0 +1,29 @@
+<svg id="Icon_art" data-name="Icon art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 288">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fcfbfa;
+        stroke-miterlimit: 10;
+        stroke-width: 8px;
+      }
+
+      .cls-2 {
+        fill: #fcfbfa;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <rect class="cls-1" x="40" y="40" width="208" height="208" rx="5"/>
+      <rect class="cls-1" x="64" y="183" width="160" height="40"/>
+      <rect class="cls-1" x="64" y="64" width="160" height="40"/>
+      <rect class="cls-1" x="64" y="124" width="160" height="40"/>
+    </g>
+    <g>
+      <circle class="cls-2" cx="202" cy="203" r="6"/>
+      <circle class="cls-2" cx="202" cy="84" r="6"/>
+      <circle class="cls-2" cx="202" cy="144" r="6"/>
+    </g>
+  </g>
+</svg>

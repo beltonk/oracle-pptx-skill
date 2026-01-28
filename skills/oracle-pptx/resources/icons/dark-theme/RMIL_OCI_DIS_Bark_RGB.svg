@@ -1,0 +1,33 @@
+<svg id="Icon_art" data-name="Icon art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 288">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #312d2a;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-miterlimit: 10;
+        stroke-width: 8px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #312d2a;
+      }
+
+      .cls-2 {
+        stroke: #2f2925;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M65.08,118.91a83,83,0,0,1,5.38-13L54.69,86.23,86.23,54.69l19.71,15.77a83,83,0,0,1,13-5.38L121.7,40h44.6l2.79,25.08a83,83,0,0,1,13,5.38l19.71-15.77,31.54,31.54-15.77,19.71a83,83,0,0,1,5.38,13L248,121.7v44.6l-25.08,2.79a83,83,0,0,1-5.38,13l15.77,19.71-31.54,31.54-19.71-15.77a83,83,0,0,1-13,5.38L166.3,248H121.7l-2.79-25.08a83,83,0,0,1-13-5.38L86.23,233.31,54.69,201.77l15.77-19.71a83,83,0,0,1-5.38-13L40,166.3V121.7Z"/>
+  <rect class="cls-2" x="171" y="125" width="12" height="12"/>
+  <rect class="cls-2" x="197" y="125" width="12" height="12"/>
+  <rect class="cls-2" x="171" y="151" width="12" height="12"/>
+  <rect class="cls-2" x="197" y="151" width="12" height="12"/>
+  <polygon class="cls-3" points="139.03 121 121 121 144 144 121 167 139 167 162 144 139.03 121"/>
+  <circle class="cls-3" cx="79" cy="131" r="8"/>
+  <circle class="cls-3" cx="100.5" cy="160.5" r="6.5"/>
+  <circle class="cls-3" cx="78" cy="155" r="10"/>
+  <circle class="cls-3" cx="106.5" cy="134.5" r="13.5"/>
+</svg>

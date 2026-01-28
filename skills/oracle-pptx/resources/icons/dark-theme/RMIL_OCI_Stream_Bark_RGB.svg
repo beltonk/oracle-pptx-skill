@@ -1,0 +1,39 @@
+<svg id="Icon_art" data-name="Icon art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 288">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #312d2a;
+      }
+    </style>
+  </defs>
+  <g id="Data_Stream" data-name="Data Stream">
+    <g>
+      <rect class="cls-1" x="123" y="71" width="36" height="8"/>
+      <rect class="cls-1" x="95" y="141" width="36" height="8"/>
+      <rect class="cls-1" x="53" y="141" width="8" height="8"/>
+      <rect class="cls-1" x="53" y="71" width="22" height="8"/>
+      <rect class="cls-1" x="165" y="71" width="8" height="8"/>
+      <rect class="cls-1" x="95" y="71" width="8" height="8"/>
+      <rect class="cls-1" x="81" y="71" width="8" height="8"/>
+      <rect class="cls-1" x="179" y="71" width="8" height="8"/>
+      <circle class="cls-1" cx="113" cy="75" r="4"/>
+      <circle class="cls-1" cx="197" cy="75" r="4"/>
+      <circle class="cls-1" cx="155" cy="145" r="4"/>
+      <circle class="cls-1" cx="197" cy="215" r="4"/>
+      <rect class="cls-1" x="137" y="141" width="8" height="8"/>
+      <circle class="cls-1" cx="85" cy="145" r="4"/>
+      <rect class="cls-1" x="67" y="141" width="8" height="8"/>
+      <rect class="cls-1" x="165" y="141" width="36" height="8"/>
+      <rect class="cls-1" x="137" y="211" width="36" height="8"/>
+      <rect class="cls-1" x="179" y="211" width="8" height="8"/>
+      <circle class="cls-1" cx="127" cy="215" r="4"/>
+      <circle class="cls-1" cx="57" cy="215" r="4"/>
+      <rect class="cls-1" x="67" y="211" width="36" height="8"/>
+      <rect class="cls-1" x="109" y="211" width="8" height="8"/>
+      <path class="cls-1" d="M243,36H45a9,9,0,0,0-9,9V243a9,9,0,0,0,9,9H243a9,9,0,0,0,9-9V45A9,9,0,0,0,243,36Zm1,207a1,1,0,0,1-1,1H45a1,1,0,0,1-1-1V45a1,1,0,0,1,1-1H243a1,1,0,0,1,1,1Z"/>
+      <polygon class="cls-1" points="207.12 128.07 220.04 141 207 141 207 149 220.53 149 207.12 162.42 212.77 168.07 235.6 145.25 212.77 122.42 207.12 128.07"/>
+      <polygon class="cls-1" points="207.12 57.91 220.21 71 207 71 207 79 220.37 79 207.12 92.25 212.77 97.91 235.6 75.08 212.77 52.25 207.12 57.91"/>
+      <polygon class="cls-1" points="207.12 197.91 220.21 211 207 211 207 219 220.37 219 207.12 232.25 212.77 237.91 235.6 215.08 212.77 192.25 207.12 197.91"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,98 @@
+# Reference materials (development only, not needed in production)
+/reference/
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE and editor files
+.cursor/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.bak
+*.orig
+
+# OS-specific
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Node.js (if any JavaScript tooling is added)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# OpenSpec temporary files (keep openspec/ directory but ignore temp files)
+openspec/.openspec-cache/
+openspec/tmp/
+
+# Output files (user-generated presentations)
+*.pptx
+!skills/oracle-pptx/resources/templates/*.pptx
+
+# Ignore compiled Python in scripts
+skills/oracle-pptx/scripts/__pycache__/
+skills/oracle-pptx/ooxml/scripts/__pycache__/

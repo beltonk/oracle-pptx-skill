@@ -1,0 +1,27 @@
+<svg id="Icon_Art" data-name="Icon Art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.8 28.8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fcfbfa;
+        stroke-miterlimit: 10;
+        stroke-width: 0.8px;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="14.4" cy="14.8" r="2.4"/>
+  <circle class="cls-1" cx="14.4" cy="7" r="1.8"/>
+  <circle class="cls-1" cx="14.4" cy="22.4" r="1.2"/>
+  <circle class="cls-1" cx="7.8" cy="10.8" r="1.2"/>
+  <circle class="cls-1" cx="21" cy="10.8" r="1.2"/>
+  <circle class="cls-1" cx="21" cy="18.6" r="1.8"/>
+  <line class="cls-1" x1="15.42" y1="21.82" x2="19.45" y2="19.5"/>
+  <line class="cls-1" x1="9.35" y1="19.5" x2="13.38" y2="21.82"/>
+  <line class="cls-1" x1="7.8" y1="12.01" x2="7.8" y2="16.81"/>
+  <line class="cls-1" x1="12.85" y1="7.9" x2="8.82" y2="10.22"/>
+  <line class="cls-1" x1="14.4" y1="12.41" x2="14.4" y2="8.81"/>
+  <line class="cls-1" x1="19.45" y1="17.71" x2="16.47" y2="16"/>
+  <circle class="cls-1" cx="7.8" cy="18.6" r="1.8"/>
+  <line class="cls-1" x1="16.45" y1="13.57" x2="19.99" y2="11.42"/>
+  <line class="cls-1" x1="9.35" y1="17.71" x2="12.33" y2="16"/>
+</svg>

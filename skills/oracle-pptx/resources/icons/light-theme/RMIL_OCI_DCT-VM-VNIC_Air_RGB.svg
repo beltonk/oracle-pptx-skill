@@ -1,0 +1,23 @@
+<svg id="Icon_art" data-name="Icon art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 288">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fcfbfa;
+      }
+    </style>
+  </defs>
+  <g id="Virtual_Machine_VM_VNIC" data-name="Virtual Machine VM VNIC">
+    <g>
+      <path class="cls-1" d="M243,36H45a9,9,0,0,0-9,9V97h8V45a1,1,0,0,1,1-1H243a1,1,0,0,1,1,1V243a1,1,0,0,1-1,1H205v8h38a9,9,0,0,0,9-9V45A9,9,0,0,0,243,36Z"/>
+      <polygon class="cls-1" points="223 174 205 174 205 182 215 182 215 214 205 214 205 222 223 222 223 174"/>
+      <polygon class="cls-1" points="66 66 66 97 73 97 74 97 74 74 106 74 106 105 114 105 114 66 66 66"/>
+      <polygon class="cls-1" points="120 66 120 105 128 105 128 74 160 74 160 105 168 105 168 66 120 66"/>
+      <polygon class="cls-1" points="222 66 174 66 174 105 182 105 182 74 214 74 214 106 205 106 205 112 205 114 222 114 222 66"/>
+      <polygon class="cls-1" points="222 120 205 120 205 128 214 128 214 160 205 160 205 168 222 168 222 120"/>
+      <rect class="cls-1" x="49" y="146" width="10" height="10"/>
+      <rect class="cls-1" x="49" y="202" width="10" height="10"/>
+      <path class="cls-1" d="M198,112H73v-8H27v8h8V259H73v-8H87v-6h28v14h8V245h6v14h8V245h6v14h8V245h6v14h8V245h6v14h8V245h19Zm-30,8h22V237H79v6H73V120h95ZM43,112H65V251H43Z"/>
+      <path class="cls-1" d="M79,126v49h8v8H79v48h52V199h6v32h48V205H167.92a8,8,0,1,0,0,8H177v10H145V191H131v-8h-8v-8h14V138h5.5v43H156v4h29V169H156v4h-5.5V159H156v4h29V147H156v4h-5.5V138H156v4h29V126H156v4H137v-4Zm16,49h6v8H95Zm28,48H87V191h36Zm-8-40h-6v-8h6Zm14-49v33H87V134Z"/>
+    </g>
+  </g>
+</svg>

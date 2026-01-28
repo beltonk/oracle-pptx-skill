@@ -1,0 +1,48 @@
+<svg id="Icon_art" data-name="Icon art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 288">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #312d2a;
+        stroke-miterlimit: 10;
+        stroke-width: 8px;
+      }
+
+      .cls-2 {
+        fill: #2f2925;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g>
+    <polyline class="cls-1" points="36 40 96 40 96 248 58 248 58 40"/>
+    <rect class="cls-2" x="72" y="94" width="10" height="10"/>
+    <rect class="cls-2" x="72" y="190" width="4" height="16"/>
+    <rect class="cls-2" x="73" y="193" width="8" height="10" transform="translate(-121 275) rotate(-90)"/>
+    <polyline class="cls-1" points="96 48 248 48 248 227 110 227 110 240 96 240"/>
+    <line class="cls-1" x1="227" y1="252" x2="227" y2="228"/>
+    <line class="cls-1" x1="213" y1="252" x2="213" y2="228"/>
+    <line class="cls-1" x1="199" y1="252" x2="199" y2="228"/>
+    <line class="cls-1" x1="185" y1="252" x2="185" y2="228"/>
+    <line class="cls-1" x1="171" y1="252" x2="171" y2="228"/>
+    <line class="cls-1" x1="120" y1="159" x2="120" y2="120"/>
+    <line class="cls-1" x1="134" y1="159" x2="134" y2="120"/>
+    <line class="cls-1" x1="148" y1="159" x2="148" y2="120"/>
+    <rect class="cls-1" x="112" y="64" width="56" height="56"/>
+    <rect class="cls-1" x="112" y="159" width="44" height="44"/>
+    <polyline class="cls-1" points="156 167 185 167 185 203 233 203 233 181 211 181"/>
+    <line class="cls-1" x1="167" y1="71" x2="206" y2="71"/>
+    <rect class="cls-1" x="206" y="64" width="27" height="14"/>
+    <rect class="cls-1" x="206" y="91" width="27" height="14"/>
+    <rect class="cls-1" x="206" y="119" width="27" height="14"/>
+    <polyline class="cls-1" points="190.5 71 190.5 126 206 126"/>
+    <line class="cls-1" x1="190.5" y1="98" x2="206" y2="98"/>
+    <circle class="cls-3" cx="211" cy="181" r="8"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg id="Icon_art" data-name="Icon art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 288">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fcfbfa;
+      }
+    </style>
+  </defs>
+  <g id="VPN_Virtual_Private_Network" data-name="VPN Virtual Private Network">
+    <g>
+      <path class="cls-1" d="M136.06,178.2,132.67,200h22.66l-3.17-21.92a17,17,0,1,0-16.1.12Z"/>
+      <path class="cls-1" d="M226.83,138.17l-5.66,5.66L236.34,159H213V96H193V85.56a49,49,0,0,0-51.59-48.94C115.38,38,95,59.78,95,86.28V96H75v63H51.66l15.17-15.17-5.66-5.66L36.34,163l24.83,24.83,5.66-5.66L51.66,167H75v70H213V167h23.34l-15.17,15.17,5.66,5.66L251.66,163ZM103,86.28c0-22.24,17-40.54,38.82-41.66A41,41,0,0,1,185,85.56V96h-6V85.52a35,35,0,0,0-35.92-35C124.29,51,109,67,109,86.22V96h-6ZM171,96H117V86.22c0-14.89,11.79-27.31,26.28-27.69a27,27,0,0,1,27.72,27Zm34,63h-8v8h8v62H83V167h8v-8H83V104H205Z"/>
+      <polygon class="cls-1" points="205 243 83 243 83 243 74.98 243 74.98 247 83 251 205 251 213.02 247 213.02 243 205 243 205 243"/>
+      <rect class="cls-1" x="111" y="159" width="8" height="8"/>
+      <rect class="cls-1" x="97" y="159" width="8" height="8"/>
+      <rect class="cls-1" x="183" y="159" width="8" height="8"/>
+      <rect class="cls-1" x="169" y="159" width="8" height="8"/>
+    </g>
+  </g>
+</svg>

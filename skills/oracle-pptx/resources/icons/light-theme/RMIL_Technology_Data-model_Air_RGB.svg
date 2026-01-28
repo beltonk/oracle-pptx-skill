@@ -1,0 +1,24 @@
+<svg id="Icon_Art" data-name="Icon Art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.8 28.8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fcfbfa;
+        stroke-miterlimit: 10;
+        stroke-width: 0.8px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="12.2" y="5.8" width="4.4" height="4"/>
+  <rect class="cls-1" x="12.2" y="12.4" width="4.4" height="4"/>
+  <rect class="cls-1" x="19.2" y="12.4" width="4.4" height="4"/>
+  <rect class="cls-1" x="19.2" y="19" width="4.4" height="4"/>
+  <rect class="cls-1" x="5.2" y="12.4" width="4.4" height="4"/>
+  <rect class="cls-1" x="5.2" y="19" width="4.4" height="4"/>
+  <line class="cls-1" x1="12.2" y1="14.4" x2="9.6" y2="14.4"/>
+  <line class="cls-1" x1="14.4" y1="9.8" x2="14.4" y2="12.4"/>
+  <line class="cls-1" x1="16.6" y1="14.4" x2="19.1" y2="14.4"/>
+  <line class="cls-1" x1="7.4" y1="16.4" x2="7.4" y2="19"/>
+  <line class="cls-1" x1="21.4" y1="16.4" x2="21.4" y2="19"/>
+  <polyline class="cls-1" points="14.4 16.4 14.4 21 19.2 21"/>
+</svg>

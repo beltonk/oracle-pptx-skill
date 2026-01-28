@@ -1,0 +1,19 @@
+<svg id="Icon_art" data-name="Icon art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 288">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fcfbfa;
+      }
+    </style>
+  </defs>
+  <g id="Container_Registry_OCIR" data-name="Container Registry OCIR">
+    <path class="cls-1" d="M243,252H45a9,9,0,0,1-9-9V45a9,9,0,0,1,9-9H243a9,9,0,0,1,9,9V243A9,9,0,0,1,243,252ZM45,44a1,1,0,0,0-1,1V243a1,1,0,0,0,1,1H243a1,1,0,0,0,1-1V45a1,1,0,0,0-1-1Z"/>
+    <g>
+      <path class="cls-1" d="M140.5,141h-48V93h48Zm-40-8h32V101h-32Z"/>
+      <path class="cls-1" d="M194.5,141h-48V93h48Zm-40-8h32V101h-32Z"/>
+      <path class="cls-1" d="M168,195H120V147h48Zm-40-8h32V155H128Z"/>
+      <path class="cls-1" d="M222,195H174V147h48Zm-40-8h32V155H182Z"/>
+      <path class="cls-1" d="M114,195H66V147h48Zm-40-8h32V155H74Z"/>
+    </g>
+  </g>
+</svg>

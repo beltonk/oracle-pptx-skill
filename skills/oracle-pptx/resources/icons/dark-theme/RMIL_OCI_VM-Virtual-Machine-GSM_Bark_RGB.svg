@@ -1,0 +1,24 @@
+<svg id="Icon_art" data-name="Icon art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 288">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #312d2a;
+      }
+    </style>
+  </defs>
+  <g id="VM_Virtual_Machine_GSM" data-name="VM Virtual Machine GSM">
+    <g>
+      <path class="cls-1" d="M243,252H45a9,9,0,0,1-9-9V45a9,9,0,0,1,9-9H243a9,9,0,0,1,9,9V243A9,9,0,0,1,243,252ZM45,44a1,1,0,0,0-1,1V243a1,1,0,0,0,1,1H243a1,1,0,0,0,1-1V45a1,1,0,0,0-1-1Z"/>
+      <g>
+        <path class="cls-1" d="M223,222H66V174H223ZM74,214H215V182H74Z"/>
+        <circle class="cls-1" cx="197" cy="198" r="6"/>
+      </g>
+      <path class="cls-1" d="M114,114H66V66h48Zm-40-8h32V74H74Z"/>
+      <path class="cls-1" d="M168,114H120V66h48Zm-40-8h32V74H128Z"/>
+      <path class="cls-1" d="M114,168H66V120h48Zm-40-8h32V128H74Z"/>
+      <path class="cls-1" d="M168,168H120V120h48Zm-40-8h32V128H128Z"/>
+      <path class="cls-1" d="M222,114H174V66h48Zm-40-8h32V74H182Z"/>
+      <path class="cls-1" d="M222,168H174V120h48Zm-40-8h32V128H182Z"/>
+    </g>
+  </g>
+</svg>

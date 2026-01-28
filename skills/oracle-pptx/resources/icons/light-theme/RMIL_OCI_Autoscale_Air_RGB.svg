@@ -1,0 +1,57 @@
+<svg id="Icon_art" data-name="Icon art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 288">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fcfbfa;
+        stroke-miterlimit: 10;
+        stroke-width: 8px;
+      }
+
+      .cls-2 {
+        fill: #fcfbfa;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-1" x="40" y="40" width="208" height="208" rx="5"/>
+    <rect class="cls-1" x="56" y="115" width="117" height="117"/>
+    <g>
+      <rect class="cls-2" x="68" y="52" width="8" height="8"/>
+      <rect class="cls-2" x="52" y="52" width="8" height="8"/>
+      <rect class="cls-2" x="84" y="52" width="8" height="8"/>
+      <rect class="cls-2" x="100" y="52" width="8" height="8"/>
+      <rect class="cls-2" x="116" y="52" width="8" height="8"/>
+      <rect class="cls-2" x="132" y="52" width="8" height="8"/>
+      <rect class="cls-2" x="148" y="52" width="8" height="8"/>
+      <rect class="cls-2" x="164" y="52" width="8" height="8"/>
+      <rect class="cls-2" x="180" y="52" width="8" height="8"/>
+      <rect class="cls-2" x="196" y="52" width="8" height="8"/>
+      <rect class="cls-2" x="212" y="52" width="8" height="8"/>
+      <rect class="cls-2" x="228" y="52" width="8" height="8"/>
+      <rect class="cls-2" x="228" y="68" width="8" height="8"/>
+      <rect class="cls-2" x="228" y="84" width="8" height="8"/>
+      <rect class="cls-2" x="228" y="100" width="8" height="8"/>
+      <rect class="cls-2" x="228" y="116" width="8" height="8"/>
+      <rect class="cls-2" x="228" y="132" width="8" height="8"/>
+      <rect class="cls-2" x="228" y="148" width="8" height="8"/>
+      <rect class="cls-2" x="228" y="164" width="8" height="8"/>
+      <rect class="cls-2" x="228" y="180" width="8" height="8"/>
+      <rect class="cls-2" x="228" y="196" width="8" height="8"/>
+      <rect class="cls-2" x="228" y="212" width="8" height="8"/>
+      <rect class="cls-2" x="228" y="228" width="8" height="8"/>
+    </g>
+    <g>
+      <polyline class="cls-1" points="199 72 216 72 216 89"/>
+      <polyline class="cls-1" points="203 102 186 102 186 85"/>
+      <line class="cls-1" x1="216" y1="72" x2="186" y2="102"/>
+    </g>
+    <rect class="cls-1" x="70" y="196.2" width="89" height="21.8"/>
+    <rect class="cls-1" x="70" y="163" width="20" height="20"/>
+    <rect class="cls-1" x="104.5" y="163" width="20" height="20"/>
+    <rect class="cls-1" x="139" y="163" width="20" height="20"/>
+    <rect class="cls-1" x="70" y="129" width="20" height="20"/>
+    <rect class="cls-1" x="104.5" y="129" width="20" height="20"/>
+    <rect class="cls-1" x="139" y="129" width="20" height="20"/>
+  </g>
+</svg>

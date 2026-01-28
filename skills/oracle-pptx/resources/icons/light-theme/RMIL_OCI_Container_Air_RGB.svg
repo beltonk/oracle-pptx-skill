@@ -1,0 +1,43 @@
+<svg id="Icon_art" data-name="Icon art" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 288">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fcfbfa;
+        stroke-miterlimit: 10;
+        stroke-width: 8px;
+      }
+
+      .cls-2 {
+        fill: #fcfbfa;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect class="cls-1" x="40" y="40" width="208" height="208" rx="5"/>
+    <rect class="cls-1" x="64" y="183" width="160" height="40"/>
+    <circle class="cls-2" cx="202" cy="203" r="6"/>
+    <g>
+      <rect class="cls-1" x="64" y="64" width="70" height="40"/>
+      <line class="cls-1" x1="78" y1="64" x2="78" y2="104"/>
+      <line class="cls-1" x1="92" y1="64" x2="92" y2="104"/>
+      <line class="cls-1" x1="106" y1="64" x2="106" y2="104"/>
+      <line class="cls-1" x1="120" y1="64" x2="120" y2="104"/>
+      <line class="cls-1" x1="168" y1="64" x2="168" y2="104"/>
+      <line class="cls-1" x1="182" y1="64" x2="182" y2="104"/>
+      <line class="cls-1" x1="196" y1="64" x2="196" y2="104"/>
+      <line class="cls-1" x1="210" y1="64" x2="210" y2="104"/>
+      <line class="cls-1" x1="168" y1="124" x2="168" y2="164"/>
+      <line class="cls-1" x1="182" y1="124" x2="182" y2="164"/>
+      <line class="cls-1" x1="196" y1="124" x2="196" y2="164"/>
+      <line class="cls-1" x1="210" y1="124" x2="210" y2="164"/>
+      <line class="cls-1" x1="78" y1="124" x2="78" y2="164"/>
+      <line class="cls-1" x1="92" y1="124" x2="92" y2="164"/>
+      <line class="cls-1" x1="106" y1="124" x2="106" y2="164"/>
+      <line class="cls-1" x1="120" y1="124" x2="120" y2="164"/>
+    </g>
+    <rect class="cls-1" x="154" y="64" width="70" height="40"/>
+    <rect class="cls-1" x="64" y="124" width="70" height="40"/>
+    <rect class="cls-1" x="154" y="124" width="70" height="40"/>
+  </g>
+</svg>
